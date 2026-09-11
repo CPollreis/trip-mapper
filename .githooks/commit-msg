@@ -1,0 +1,9 @@
+#!/bin/sh
+# Blocks a commit whose MESSAGE carries personal data.
+#
+# The pre-commit hook only ever sees staged file content, so a contact email in
+# a commit subject sails straight past it. That happened once already. On a
+# public repo the message is as visible as the diff.
+#
+# To commit anyway: git commit --no-verify
+node scripts/scan-personal.mjs --message "$1"

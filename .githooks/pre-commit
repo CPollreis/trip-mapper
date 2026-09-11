@@ -1,0 +1,15 @@
+#!/bin/sh
+# Blocks a commit that would put personal data into a public repo.
+#
+# Enabled with: git config core.hooksPath .githooks
+# Lives in the repo rather than .git/hooks so it survives a fresh clone.
+#
+# Only staged content is scanned, so this is fast enough to run every time.
+# Matches print redacted; run `npm run scan` to see them in full.
+node scripts/scan-personal.mjs --staged || {
+  echo ""
+  echo "pre-commit: blocked. Move the offending values into resources/private.json,"
+  echo "which is gitignored, or add a false positive to ALLOW in scripts/scan-personal.mjs."
+  echo "To commit anyway: git commit --no-verify"
+  exit 1
+}

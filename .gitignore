@@ -7,3 +7,7 @@ node_modules/
 # Personal files: tickets, receipts, confirmations. Nothing here reaches GitHub.
 resources/*
 !resources/.gitkeep
+
+# Astro build cache. Committed by accident in PR #1; untrack with:
+#   git rm -r --cached .astro
+.astro/
