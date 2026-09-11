@@ -14,10 +14,11 @@ if (errors.length) {
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (overlaid) console.log(`  private overlay applied to ${overlaid} places (local build)`);
 
-const mapped = trip.places.filter((p) => typeof p.lat === 'number');
+const mapped = trip.places.filter((p: { lat?: unknown }) => typeof p.lat === 'number');
 const routed = legs.length > 0 && legs.every((l) => l.routed);
 
-const data = { trip: trip.trip, places: mapped, days: trip.days, legs, modes: MODES, routed };
+const data = { trip: trip.trip, places: mapped, days: trip.days, legs,
+               advice: trip.advice ?? [], modes: MODES, routed };
 const title = trip.trip.title ?? `${trip.trip.city} trip`;
 ---
 <Base title={title} description={`${trip.trip.city}, ${trip.trip.start} to ${trip.trip.end}`}>

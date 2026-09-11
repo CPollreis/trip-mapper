@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import maplibregl, { type Map as MLMap, type StyleSpecification } from 'maplibre-gl';
-import type { TripData, Leg, Place, Day, Item } from './types';
+import type { TripData, Leg, Place, Day, Item, Advice } from './types';
 
 // CARTO's dark basemap. Free, no key, and already the right value range for
 // the portfolio's palette, so the trip data stays the only saturated thing
@@ -12,12 +12,13 @@ const fmt = (iso: string) =>
     { month: 'short', day: 'numeric', timeZone: 'UTC' });
 
 export default function TripApp({ data }: { data: TripData }) {
-  const { trip, places, days, legs, modes } = data;
+  const { trip, places, days, legs, modes, advice } = data;
   const mapRef = useRef<MLMap | null>(null);
   const holder = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState<number | null>(null);
   const [ready, setReady] = useState(false);
   const [panel, setPanel] = useState(true);
+  const [tab, setTab] = useState<'plan' | 'tips'>('plan');
 
   const byId = useMemo(() => new Map(places.map((p) => [p.id, p])), [places]);
 
@@ -148,6 +149,7 @@ export default function TripApp({ data }: { data: TripData }) {
                <div style="font-weight:600;margin-top:3px">${esc(p.name)}</div>
                ${p.neighbourhood ? `<div style="font-size:12px;color:#a1a1aa">${esc(p.neighbourhood)}</div>` : ''}
                ${p.note ? `<div style="font-size:12px;color:#a1a1aa;margin-top:6px">${esc(p.note)}</div>` : ''}
+               ${p.tip ? `<div style="font-size:12px;color:#a1a1aa;margin-top:6px;padding-top:6px;border-top:1px solid #27272a">${esc(p.tip)}</div>` : ''}
              </div>`)
           .addTo(map);
       });
@@ -194,6 +196,28 @@ export default function TripApp({ data }: { data: TripData }) {
   };
 
   const shown = active === null ? days : days.filter((d) => d.dayNumber === active);
+
+  // Travel time per day. Legs cover stop-to-stop hops; title-only transit items
+  // (the Niagara coach, the UP Express runs) have no place and so no leg, so
+  // their own duration is added from the clock.
+  const travelByDate = useMemo(() => {
+    const m = new Map<string, { min: number; km: number }>();
+    for (const l of legs) {
+      const cur = m.get(l.date) ?? { min: 0, km: 0 };
+      m.set(l.date, { min: cur.min + l.minutes, km: cur.km + l.km });
+    }
+    for (const day of days)
+      for (const it of day.items) {
+        // A mode marks a real journey; the locked checkout blocks are typed
+        // transit but carry none, and legs already cover stop-to-stop hops.
+        if (it.type !== 'transit' || it.placeId || !it.end || !it.mode) continue;
+        const mins = span(it.start, it.end);
+        if (mins == null) continue;
+        const cur = m.get(day.date) ?? { min: 0, km: 0 };
+        m.set(day.date, { min: cur.min + mins, km: cur.km });
+      }
+    return m;
+  }, [legs, days]);
   const legsByArrival = useMemo(() => {
     const m = new Map<string, Leg>();
     for (const l of legs) m.set(`${l.date}|${l.toId}|${l.arrive}`, l);
@@ -235,21 +259,38 @@ export default function TripApp({ data }: { data: TripData }) {
           )}
         </header>
 
-        <div className="flex flex-wrap gap-1.5 border-b border-line px-5 py-3">
-          <Chip on={active === null} onClick={() => setActive(null)} label="All" />
-          {days.map((d) => (
-            <Chip
-              key={d.dayNumber}
-              on={active === d.dayNumber}
-              onClick={() => setActive(active === d.dayNumber ? null : d.dayNumber)}
-              color={d.color}
-              label={String(d.dayNumber)}
-            />
+        <div className="flex gap-4 border-b border-line px-5">
+          {(['plan', 'tips'] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              aria-selected={tab === t}
+              className={`-mb-px border-b-2 py-2.5 text-xs font-medium capitalize transition
+                          ${tab === t ? 'border-ink text-ink' : 'border-transparent text-muted hover:text-ink'}`}
+            >
+              {t === 'plan' ? 'Day plan' : `Toronto tips (${advice.length})`}
+            </button>
           ))}
         </div>
 
+        {tab === 'plan' && (
+          <div className="flex flex-wrap gap-1.5 border-b border-line px-5 py-3">
+            <Chip on={active === null} onClick={() => setActive(null)} label="All" />
+            {days.map((d) => (
+              <Chip
+                key={d.dayNumber}
+                on={active === d.dayNumber}
+                onClick={() => setActive(active === d.dayNumber ? null : d.dayNumber)}
+                color={d.color}
+                label={String(d.dayNumber)}
+              />
+            ))}
+          </div>
+        )}
+
         <div className="min-h-0 flex-1 overflow-y-auto px-5 py-4">
-          {shown.map((d) => (
+          {tab === 'tips' && <Tips advice={advice} />}
+          {tab === 'plan' && shown.map((d) => (
             <section key={d.date} className="mb-6 last:mb-0">
               <div className="mb-2 flex items-center gap-2">
                 <span
@@ -261,6 +302,13 @@ export default function TripApp({ data }: { data: TripData }) {
                 <div>
                   <div className="text-[13px] font-semibold">{d.weekday} {fmt(d.date)}</div>
                   {d.label && <div className="text-xs text-muted">{d.label}</div>}
+                  {travelByDate.get(d.date) && (
+                    <div className="tabular text-[11px] text-faint">
+                      {hm(travelByDate.get(d.date)!.min)} travelling
+                      {travelByDate.get(d.date)!.km > 0 &&
+                        ` \u00b7 ${Math.round(travelByDate.get(d.date)!.km)} km`}
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -338,6 +386,29 @@ function LegRow({ leg, modes }: { leg: Leg; modes: TripData['modes'] }) {
   );
 }
 
+function Tips({ advice }: { advice: Advice[] }) {
+  if (!advice.length)
+    return <p className="text-xs italic text-faint">No general tips recorded yet.</p>;
+  const tags = [...new Set(advice.map((a) => a.tag))];
+  return (
+    <div>
+      {tags.map((tag) => (
+        <section key={tag} className="mb-6 last:mb-0">
+          <h2 className="mb-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-faint">{tag}</h2>
+          <ul className="space-y-3">
+            {advice.filter((a) => a.tag === tag).map((a) => (
+              <li key={a.title} className="border-l border-line pl-3">
+                <div className="text-[13px] font-semibold text-ink">{a.title}</div>
+                <p className="mt-0.5 text-xs leading-snug text-muted">{a.body}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  );
+}
+
 function Chip({ on, onClick, label, color }: {
   on: boolean; onClick: () => void; label: string; color?: string;
 }) {
@@ -352,6 +423,21 @@ function Chip({ on, onClick, label, color }: {
       {label}
     </button>
   );
+}
+
+// Minutes between two HH:MM stamps on the same day, or null if unparseable.
+function span(a: string, b: string) {
+  const m = (t: string) => {
+    const r = /^(\d{2}):(\d{2})$/.exec(t || '');
+    return r ? +r[1] * 60 + +r[2] : null;
+  };
+  const s = m(a), e = m(b);
+  return s == null || e == null || e <= s ? null : e - s;
+}
+
+function hm(min: number) {
+  const h = Math.floor(min / 60), r = min % 60;
+  return h ? `${h}h${r ? ` ${r}m` : ''}` : `${r}m`;
 }
 
 function esc(s: string) {
@@ -388,7 +474,8 @@ function stopGeoJSON(stops: { place: Place; day: Day; item: Item }[]): GeoJSON.F
       geometry: { type: 'Point', coordinates: [place.lon, place.lat] },
       properties: {
         name: place.name, neighbourhood: place.neighbourhood ?? '',
-        note: item.notes ?? place.notes ?? '',
+        note: item.notes ?? '',
+        tip: place.notes ?? '',
         dayNumber: day.dayNumber, color: day.color,
         time: item.end ? `${item.start}-${item.end}` : item.start,
       },

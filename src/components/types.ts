@@ -66,11 +66,18 @@ export interface TripMeta {
   end: string;
 }
 
+export interface Advice {
+  tag: string;
+  title: string;
+  body: string;
+}
+
 export interface TripData {
   trip: TripMeta;
   places: Place[];
   days: Day[];
   legs: Leg[];
+  advice: Advice[];
   modes: Record<string, ModeSpec>;
   routed: boolean;
 }
