@@ -1,0 +1,14 @@
+{
+  "name": "trip-mapper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plan a trip in one JSON file. Generates a day-coded map, an itinerary, a booking checklist and a Google My Maps import.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node dev.mjs",
+    "new-trip": "node lib/seed.mjs",
+    "trips": "node -e \"import('./lib/trips.mjs').then(m=>console.log(m.listTrips(new URL('.',import.meta.url)).join('\\n')||'no trips yet'))\""
+  }
+}

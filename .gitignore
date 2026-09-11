@@ -1,0 +1,9 @@
+dist/
+node_modules/
+.DS_Store
+*.log
+.env
+
+# Personal files: tickets, receipts, confirmations. Nothing here reaches GitHub.
+resources/*
+!resources/.gitkeep

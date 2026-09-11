@@ -1,0 +1,396 @@
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<style>
+  :root {
+    --ground: #f4f6f7;
+    --panel: #ffffff;
+    --ink: #16212b;
+    --ink-2: #4a5a68;
+    --ink-3: #7d8d99;
+    --rule: #d9e1e5;
+    --water: #b9cdd8;
+    --water-edge: #a8bcc7;
+    --land: #f7fafb;
+    --locked: #16212b;
+    --shadow: 0 1px 2px rgba(22,33,43,.06), 0 4px 14px rgba(22,33,43,.05);
+    --pin-ring: #ffffff;
+    --focus: #0a7ea4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0f151a;
+      --panel: #161e25;
+      --ink: #e7eef2;
+      --ink-2: #9fb2bf;
+      --ink-3: #6d808e;
+      --rule: #263239;
+      --water: #0d2030;
+      --water-edge: #23394a;
+      --land: #1b262e;
+      --locked: #e7eef2;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.35);
+      --pin-ring: #0f151a;
+      --focus: #4cc4e8;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0f151a;
+    --panel: #161e25;
+    --ink: #e7eef2;
+    --ink-2: #9fb2bf;
+    --ink-3: #6d808e;
+    --rule: #263239;
+    --water: #0d2030;
+    --water-edge: #23394a;
+    --land: #1b262e;
+    --locked: #e7eef2;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.35);
+    --pin-ring: #0f151a;
+    --focus: #4cc4e8;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: Archivo, ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .wrap { max-width: 1320px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 56px; }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 3px; }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin-bottom: 6px; }
+  h1 { font-size: clamp(26px, 4.2vw, 40px); font-weight: 700; letter-spacing: -.022em; margin: 0; text-wrap: balance; }
+  .dates { font-family: Newsreader, Georgia, serif; font-size: 17px; color: var(--ink-2); font-style: italic; }
+  .standfirst { font-family: Newsreader, Georgia, serif; font-size: 16.5px; color: var(--ink-2); max-width: 64ch; margin: 10px 0 0; }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 22px; }
+  .stat {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 7px;
+    padding: 7px 13px; font-size: 12.5px; color: var(--ink-2);
+    display: flex; align-items: baseline; gap: 7px;
+  }
+  .stat b { font-size: 15px; color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px;
+    border: 1px solid var(--rule); background: var(--panel); color: var(--ink-2);
+    border-radius: 999px; padding: 5px 12px 5px 7px; cursor: pointer;
+    font: inherit; font-size: 12.5px; transition: border-color .12s, color .12s;
+  }
+  .chip:hover { border-color: var(--ink-3); color: var(--ink); }
+  .chip .dot { width: 11px; height: 11px; border-radius: 50%; flex: none; }
+  .chip .n { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--ink); }
+  .chip[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); background: var(--land); }
+  .chip.all { padding-left: 12px; }
+
+  .cols { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+  @media (max-width: 940px) { .cols { grid-template-columns: 1fr; } }
+
+  .mapcard { background: var(--panel); border: 1px solid var(--rule); border-radius: 12px; padding: 14px; box-shadow: var(--shadow); position: sticky; top: 16px; }
+  @media (max-width: 940px) { .mapcard { position: static; } }
+  svg.map { display: block; width: 100%; height: auto; }
+  .maplegend { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; padding-top: 11px; border-top: 1px solid var(--rule); font-size: 11.5px; color: var(--ink-3); }
+  .maplegend span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 16px; height: 3px; border-radius: 2px; }
+
+  .rail { display: flex; flex-direction: column; gap: 14px; }
+  .day {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 11px;
+    overflow: hidden; transition: opacity .14s;
+  }
+  .day.dim { opacity: .32; }
+  .dayhead { display: flex; align-items: center; gap: 10px; padding: 11px 14px; border-bottom: 1px solid var(--rule); }
+  .daynum {
+    width: 25px; height: 25px; border-radius: 6px; flex: none;
+    display: grid; place-items: center; color: #fff;
+    font-size: 12.5px; font-weight: 700; font-variant-numeric: tabular-nums;
+  }
+  .daymeta { min-width: 0; }
+  .daydate { font-size: 13px; font-weight: 600; letter-spacing: -.01em; }
+  .daylabel { font-family: Newsreader, Georgia, serif; font-size: 13px; color: var(--ink-2); font-style: italic; }
+  .items { list-style: none; margin: 0; padding: 4px 0; }
+  .item { display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 11px; padding: 7px 14px; }
+  .item + .item { border-top: 1px dashed var(--rule); }
+  .item.locked { border-left: 3px solid var(--locked); padding-left: 11px; }
+  .when { font-size: 11.5px; color: var(--ink-3); font-variant-numeric: tabular-nums; padding-top: 2px; white-space: nowrap; }
+  .what { min-width: 0; }
+  .name { font-size: 13.5px; font-weight: 500; letter-spacing: -.005em; }
+  .hood { font-size: 11.5px; color: var(--ink-3); }
+  .note { font-family: Newsreader, Georgia, serif; font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+  .tag {
+    display: inline-block; font-size: 9.5px; letter-spacing: .07em; text-transform: uppercase;
+    font-weight: 600; border: 1px solid var(--rule); border-radius: 3px;
+    padding: 0 4px; color: var(--ink-3); vertical-align: 1px; margin-left: 6px;
+  }
+  .tag.yours { border-color: var(--ink-2); color: var(--ink); }
+  .empty { padding: 12px 14px; font-family: Newsreader, Georgia, serif; font-style: italic; color: var(--ink-3); font-size: 13px; }
+
+  footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--ink-3); max-width: 68ch; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; background: var(--land); padding: 1px 4px; border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  /*__LINE_TOKENS__*/
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Toronto Thirteen Days</h1>
+    <span class="dates" id="daterange"></span>
+  </header>
+  <p class="standfirst" id="standfirst"></p>
+
+  <div class="stats" id="stats"></div>
+  <div class="legend" id="legend"></div>
+
+  <div class="cols">
+    <div class="mapcard">
+      <svg class="map" id="map" role="img" aria-label="Map of Toronto showing planned stops coloured by day"></svg>
+      <div class="maplegend" id="maplegend"></div>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/;
+
+const { trip, places, days, city } = DATA;
+const lines = city?.lines ?? [];
+const byId = Object.fromEntries(places.map(p => [p.id, p]));
+const fmt = iso => new Date(iso + 'T12:00:00Z')
+  .toLocaleDateString('en-CA', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+
+/* ---------- map ---------- */
+const W = 1000, PAD = 58;
+const pts = places.filter(p => typeof p.lat === 'number');
+const midLat = pts.reduce((s, p) => s + p.lat, 0) / pts.length;
+const kx = Math.cos(midLat * Math.PI / 180);
+const px = ll => [ll[1] * kx, -ll[0]];
+
+let ext = pts.map(p => px([p.lat, p.lon]))
+  .reduce((a, [x, y]) => ({ x0: Math.min(a.x0, x), x1: Math.max(a.x1, x),
+                            y0: Math.min(a.y0, y), y1: Math.max(a.y1, y) }),
+          { x0: 1e9, x1: -1e9, y0: 1e9, y1: -1e9 });
+const mx = (ext.x1 - ext.x0) * 0.09, my = (ext.y1 - ext.y0) * 0.14;
+ext = { x0: ext.x0 - mx, x1: ext.x1 + mx, y0: ext.y0 - my, y1: ext.y1 + my };
+
+const scale = (W - PAD * 2) / (ext.x1 - ext.x0);
+const H = Math.round((ext.y1 - ext.y0) * scale + PAD * 2);
+const proj = ll => { const [x, y] = px(ll);
+  return [PAD + (x - ext.x0) * scale, PAD + (y - ext.y0) * scale]; };
+const path = arr => arr.map(proj).map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join('');
+
+const svg = document.getElementById('map');
+svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+const NS = 'http://www.w3.org/2000/svg';
+const el = (n, a = {}) => { const e = document.createElementNS(NS, n);
+  for (const k in a) e.setAttribute(k, a[k]); return e; };
+
+svg.append(el('rect', { x: 0, y: 0, width: W, height: H, fill: 'var(--land)', rx: 8 }));
+
+const clip = el('clipPath', { id: 'frame' });
+clip.append(el('rect', { x: 0, y: 0, width: W, height: H, rx: 8 }));
+svg.append(clip);
+const g = el('g', { 'clip-path': 'url(#frame)' });
+svg.append(g);
+
+// water: the shoreline, closed down past the bottom edge
+if (city?.shore?.length) {
+  const shoreProj = city.shore.map(proj);
+  g.append(el('path', {
+    d: path(city.shore) + `L${shoreProj.at(-1)[0].toFixed(1)} ${H + 40}L${shoreProj[0][0].toFixed(1)} ${H + 40}Z`,
+    fill: 'var(--water)'
+  }));
+  g.append(el('path', { d: path(city.shore), fill: 'none', stroke: 'var(--water-edge)', 'stroke-width': 1.4 }));
+}
+
+lines.forEach((line, i) =>
+  g.append(el('path', { d: path(line.path), fill: 'none', stroke: `var(--line-${i})`,
+    'stroke-width': 4.5, 'stroke-linejoin': 'round', 'stroke-linecap': 'round', opacity: .85 })));
+
+for (const [lat, lon, name] of city?.stations ?? []) {
+  const [x, y] = proj([lat, lon]);
+  g.append(el('circle', { cx: x, cy: y, r: 3.4, fill: 'var(--panel)', stroke: 'var(--ink-3)', 'stroke-width': 1.4 }));
+  const t = el('text', { x: x, y: y - 9, 'text-anchor': 'middle', fill: 'var(--ink-2)',
+    'font-size': 13, 'font-family': 'Archivo, sans-serif', 'font-weight': 600,
+    stroke: 'var(--panel)', 'stroke-width': 3, 'paint-order': 'stroke fill' });
+  t.textContent = name; g.append(t);
+}
+
+for (const [lat, lon, name] of city?.labels ?? []) {
+  const [x, y] = proj([lat, lon]);
+  const t = el('text', { x, y, 'text-anchor': 'middle', fill: 'var(--ink-3)', 'font-size': 14,
+    'font-family': 'Archivo, sans-serif', 'letter-spacing': '.08em', opacity: .78,
+    stroke: 'var(--land)', 'stroke-width': 3.5, 'paint-order': 'stroke fill' });
+  t.textContent = name.toUpperCase(); g.append(t);
+}
+
+// pins, with relaxation so the harbourfront cluster stays legible
+const pins = [];
+for (const d of days) for (const it of d.items) {
+  const p = it.placeId && byId[it.placeId];
+  if (!p || typeof p.lat !== 'number') continue;
+  if (pins.some(q => q.place.id === p.id && q.day === d.dayNumber)) continue;
+  const [x, y] = proj([p.lat, p.lon]);
+  pins.push({ place: p, day: d.dayNumber, colour: d.color, x, y, ax: x, ay: y });
+}
+const R = 15;
+for (let pass = 0; pass < 220; pass++) {
+  let moved = false;
+  for (let i = 0; i < pins.length; i++) for (let j = i + 1; j < pins.length; j++) {
+    const a = pins[i], b = pins[j];
+    let dx = b.ax - a.ax, dy = b.ay - a.ay;
+    let dist = Math.hypot(dx, dy) || 0.01;
+    if (dist < R * 2) {
+      if (dist < 0.05) { dx = (i % 2 ? 1 : -1) * 0.6; dy = 0.6; dist = 0.85; }
+      const push = (R * 2 - dist) / 2, ux = dx / dist, uy = dy / dist;
+      a.ax -= ux * push; a.ay -= uy * push;
+      b.ax += ux * push; b.ay += uy * push;
+      moved = true;
+    }
+  }
+  for (const p of pins) { // spring back toward true position
+    p.ax += (p.x - p.ax) * 0.06;
+    p.ay += (p.y - p.ay) * 0.06;
+  }
+  if (!moved) break;
+}
+
+for (const p of pins) {
+  const grp = el('g', { class: 'pin', 'data-day': p.day, tabindex: '0', role: 'listitem' });
+  const moved = Math.hypot(p.ax - p.x, p.ay - p.y) > 2.5;
+  if (moved) grp.append(el('line', { x1: p.x, y1: p.y, x2: p.ax, y2: p.ay,
+    stroke: p.colour, 'stroke-width': 1.2, opacity: .5 }));
+  if (moved) grp.append(el('circle', { cx: p.x, cy: p.y, r: 1.8, fill: p.colour, opacity: .7 }));
+  const lodging = p.place.category === 'lodging';
+  grp.append(lodging
+    ? el('rect', { x: p.ax - 10, y: p.ay - 10, width: 20, height: 20, rx: 4,
+        fill: p.colour, stroke: 'var(--pin-ring)', 'stroke-width': 2.4 })
+    : el('circle', { cx: p.ax, cy: p.ay, r: 11, fill: p.colour,
+        stroke: 'var(--pin-ring)', 'stroke-width': 2.4 }));
+  const t = el('text', { x: p.ax, y: p.ay + 4, 'text-anchor': 'middle', fill: '#fff',
+    'font-size': 12.5, 'font-weight': 700, 'font-family': 'Archivo, sans-serif',
+    'pointer-events': 'none' });
+  t.textContent = p.day; grp.append(t);
+  const title = el('title');
+  title.textContent = `${p.place.name} - Day ${p.day}${p.place.neighbourhood ? ', ' + p.place.neighbourhood : ''}`;
+  grp.append(title);
+  g.append(grp);
+}
+
+/* ---------- rail ---------- */
+const rail = document.getElementById('rail');
+for (const d of days) {
+  const card = el2('div', 'day'); card.dataset.day = d.dayNumber;
+  const head = el2('div', 'dayhead');
+  const n = el2('div', 'daynum'); n.style.background = d.color; n.textContent = d.dayNumber;
+  const meta = el2('div', 'daymeta');
+  meta.append(txt('div', 'daydate', `${d.weekday} ${fmt(d.date)}`));
+  if (d.label) meta.append(txt('div', 'daylabel', d.label));
+  head.append(n, meta); card.append(head);
+
+  if (!d.items.length) card.append(txt('div', 'empty', 'Open. Nothing scheduled yet.'));
+  else {
+    const ul = el2('ul', 'items');
+    for (const it of d.items) {
+      const p = it.placeId && byId[it.placeId];
+      const li = el2('li', 'item' + (it.locked ? ' locked' : ''));
+      li.append(txt('div', 'when', it.end ? `${it.start}-${it.end}` : it.start));
+      const what = el2('div', 'what');
+      const nm = el2('div', 'name');
+      nm.append(document.createTextNode(p ? p.name : it.title));
+      if (it.locked) nm.append(tag('yours', 'yours'));
+      if (p && p.source && p.source.confidence === 'inferred') nm.append(tag('', 'inferred'));
+      what.append(nm);
+      if (p && p.neighbourhood) what.append(txt('div', 'hood', p.neighbourhood));
+      if (it.notes) what.append(txt('div', 'note', it.notes));
+      li.append(what); ul.append(li);
+    }
+    card.append(ul);
+  }
+  rail.append(card);
+}
+function el2(t, c) { const e = document.createElement(t); if (c) e.className = c; return e; }
+function txt(t, c, s) { const e = el2(t, c); e.textContent = s; return e; }
+function tag(c, s) { const e = el2('span', 'tag' + (c ? ' ' + c : '')); e.textContent = s; return e; }
+
+/* ---------- header + filter ---------- */
+const mapped = places.filter(p => typeof p.lat === 'number').length;
+const unresolved = places.length - mapped;
+const items = days.reduce((n, d) => n + d.items.length, 0);
+const lockedN = days.reduce((n, d) => n + d.items.filter(i => i.locked).length, 0);
+document.getElementById('daterange').textContent = `${fmt(trip.start)} to ${fmt(trip.end)}, ${days.length} days`;
+document.querySelector('h1').textContent = trip.title || `${trip.city} trip`;
+document.title = trip.title || `${trip.city} trip`;
+const sleeps = places.filter(p => p.category === 'lodging').length;
+document.getElementById('standfirst').textContent = trip.subtitle || (
+  (lines.length
+    ? `Every stop, placed on the ${trip.city} transit network you will actually navigate by. `
+    : `Every stop, placed by coordinate. `) +
+  `Pins carry their day number` +
+  (sleeps ? `, and the ${sleeps === 1 ? 'place' : `${sleeps} places`} you sleep ${sleeps === 1 ? 'is drawn as a square' : 'are drawn as squares'}` : '') +
+  `. Items marked "yours" are fixed commitments the plan is built around.`);
+
+const ml = document.getElementById('maplegend');
+const legendItem = (node, label) => { const s = document.createElement('span'); s.append(node, label); ml.append(s); };
+lines.forEach((line, i) => {
+  const sw = document.createElement('i'); sw.className = 'swatch';
+  sw.style.background = `var(--line-${i})`;
+  legendItem(sw, line.name);
+});
+const mini = (shape) => {
+  const s = document.createElementNS(NS, 'svg');
+  s.setAttribute('width', 11); s.setAttribute('height', 11);
+  const e = el(shape, shape === 'rect'
+    ? { x: 1, y: 1, width: 9, height: 9, rx: 1.5 }
+    : { cx: 5.5, cy: 5.5, r: 4.2 });
+  e.setAttribute('fill', 'none'); e.setAttribute('stroke', 'currentColor'); e.setAttribute('stroke-width', 1.5);
+  s.append(e); return s;
+};
+if (sleeps) legendItem(mini('rect'), 'where you sleep');
+legendItem(mini('circle'), 'numbered by day');
+
+const stats = document.getElementById('stats');
+for (const [label, value] of [['scheduled', items], ['of them yours', lockedN],
+    ['places mapped', mapped], ['open days', days.filter(d => !d.items.length).length],
+    ...(unresolved ? [['unresolved', unresolved]] : [])])
+  { const s = el2('div', 'stat'); s.append(txt('b', '', value), document.createTextNode(label)); stats.append(s); }
+
+const legend = document.getElementById('legend');
+let active = null;
+const allChip = el2('button', 'chip all'); allChip.type = 'button';
+allChip.textContent = 'All days'; allChip.setAttribute('aria-pressed', 'true');
+legend.append(allChip);
+const chips = [allChip];
+for (const d of days) {
+  const c = el2('button', 'chip'); c.type = 'button'; c.setAttribute('aria-pressed', 'false');
+  const dot = el2('i', 'dot'); dot.style.background = d.color;
+  c.append(dot, txt('span', 'n', d.dayNumber), document.createTextNode(fmt(d.date)));
+  c.onclick = () => setActive(active === d.dayNumber ? null : d.dayNumber);
+  legend.append(c); chips.push(c); c.dataset.day = d.dayNumber;
+}
+allChip.onclick = () => setActive(null);
+
+function setActive(day) {
+  active = day;
+  for (const c of chips) c.setAttribute('aria-pressed',
+    String(c === allChip ? day === null : +c.dataset.day === day));
+  for (const el of document.querySelectorAll('.pin'))
+    el.style.opacity = day === null || +el.dataset.day === day ? '1' : '.16';
+  for (const el of document.querySelectorAll('.day'))
+    el.classList.toggle('dim', day !== null && +el.dataset.day !== day);
+}
+
+document.getElementById('foot').innerHTML =
+  'Generated from the trip file. Edit it and run <code>npm run build</code> to regenerate this page, the ' +
+  'Google My Maps import, the itinerary and the booking checklist. Run <code>npm run dev</code> to rebuild ' +
+  'and reload automatically while you edit. Set <code>"locked": true</code> on anything of your own so the ' +
+  'plan is built around it rather than over it.';
+</script>
