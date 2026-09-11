@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "maplibre-gl/dist/maplibre-gl.css";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+
+/* Tokens mirror calebpollreis.com so the two sites read as one system. */
+@theme {
+  --color-bg: #09090b;
+  --color-surface: #111113;
+  --color-raised: #18181b;
+  --color-line: #27272a;
+  --color-line-soft: #1c1c1f;
+  --color-ink: #fafafa;
+  --color-muted: #a1a1aa;
+  --color-faint: #71717a;
+
+  --color-accent: #2563eb;
+  --color-cyan: #25c6eb;
+  --color-indigo: #4a25eb;
+
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SF Mono", monospace;
+
+  --ease-out-hud: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 180ms;
+  --dur-base: 280ms;
+}
+
+:root {
+  color-scheme: dark;
+  --z-panel: 40;
+  --z-overlay: 60;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+:focus-visible { outline: 2px solid var(--color-cyan); outline-offset: 2px; border-radius: 3px; }
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* MapLibre ships a light chrome. Bring it onto the dark base. */
+.maplibregl-ctrl-group {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-line) !important;
+  box-shadow: none !important;
+}
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--color-line) !important; }
+.maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: invert(1) opacity(0.7); }
+.maplibregl-ctrl-attrib {
+  background: rgba(9, 9, 11, 0.8) !important;
+  color: var(--color-faint) !important;
+  font-size: 10px !important;
+}
+.maplibregl-ctrl-attrib a { color: var(--color-muted) !important; }
+.maplibregl-popup-content {
+  background: var(--color-raised) !important;
+  color: var(--color-ink) !important;
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+  padding: 10px 12px !important;
+  font-family: var(--font-sans);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.maplibregl-popup-tip { border-top-color: var(--color-raised) !important; }
+.maplibregl-popup-close-button { color: var(--color-faint) !important; font-size: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 1ms !important; animation-duration: 1ms !important; }
+}

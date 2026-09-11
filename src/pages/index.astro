@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+import TripApp from '../components/TripApp.tsx';
+import { loadTrip } from '../lib/load.mjs';
+import { MODES } from '../lib/modes.mjs';
+
+// Build time only. A CI checkout has no resources/ directory, so the overlay is
+// absent there and the deployed site gets neighbourhood-level data.
+const { trip, legs, errors, warnings, overlaid } = loadTrip();
+
+if (errors.length) {
+  throw new Error(`Trip file failed validation:\n  ${errors.join('\n  ')}`);
+}
+for (const w of warnings) console.warn(`warn  ${w}`);
+if (overlaid) console.log(`  private overlay applied to ${overlaid} places (local build)`);
+
+const mapped = trip.places.filter((p) => typeof p.lat === 'number');
+const routed = legs.length > 0 && legs.every((l) => l.routed);
+
+const data = { trip: trip.trip, places: mapped, days: trip.days, legs, modes: MODES, routed };
+const title = trip.trip.title ?? `${trip.trip.city} trip`;
+---
+<Base title={title} description={`${trip.trip.city}, ${trip.trip.start} to ${trip.trip.end}`}>
+  <TripApp client:load data={data} />
+</Base>
