@@ -4,7 +4,10 @@ import { basename } from 'node:path';
 
 export function listTrips(root) {
   const dir = new URL('trips/', root);
-  return existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).sort() : [];
+  // .routes.json files sit beside their trip and are generated, not trips.
+  return existsSync(dir)
+    ? readdirSync(dir).filter((f) => f.endsWith('.json') && !f.endsWith('.routes.json')).sort()
+    : [];
 }
 
 export function pickTrip(root, arg) {
