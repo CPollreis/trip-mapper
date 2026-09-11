@@ -4,7 +4,7 @@
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/jetbrains-mono";
 
-/* Tokens mirror calebpollreis.com so the two sites read as one system. */
+/* Tokens are shared with my other site so the two read as one system. */
 @theme {
   --color-bg: #09090b;
   --color-surface: #111113;
