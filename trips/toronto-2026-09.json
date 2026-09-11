@@ -1,0 +1,1518 @@
+{
+  "_readme": "A single trip. See schema.md. Build with `npm run build`.",
+  "trip": {
+    "city": "Toronto",
+    "timezone": "America/Toronto",
+    "start": "2026-09-20",
+    "end": "2026-10-02",
+    "citySlug": "toronto",
+    "title": "Toronto Thirteen Days"
+  },
+  "places": [
+    {
+      "id": "stay-sherbourne",
+      "name": "Stay: St. James Town",
+      "category": "lodging",
+      "neighbourhood": "St. James Town",
+      "lat": 43.67,
+      "lon": -79.38,
+      "address": "",
+      "notes": "Sept 20-27. Sherbourne station, Line 2.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "stay-stephenson",
+      "name": "Stay: East End-Danforth",
+      "category": "lodging",
+      "neighbourhood": "East End-Danforth",
+      "lat": 43.69,
+      "lon": -79.31,
+      "address": "",
+      "notes": "Sept 27-Oct 2. Main Street station, Line 2.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "sheraton-centre",
+      "name": "ROSCon Global 2026",
+      "category": "conference",
+      "neighbourhood": "Financial District",
+      "lat": 43.65111,
+      "lon": -79.38347,
+      "address": "123 Queen St W, Toronto, ON",
+      "notes": "Sheraton Centre. Sept 22-24.",
+      "source": {
+        "type": "web",
+        "url": "https://roscon.ros.org/2026/",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "scotiabank-arena",
+      "name": "Scotiabank Arena",
+      "category": "venue",
+      "neighbourhood": "South Core",
+      "lat": 43.64343,
+      "lon": -79.37908,
+      "address": "40 Bay St, Toronto, ON",
+      "notes": "Weezer Sept 25, Phoebe Bridgers Oct 1-2.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "held",
+        "how": "Tickets already purchased. Check the door time on the ticket."
+      }
+    },
+    {
+      "id": "history-venue",
+      "name": "History",
+      "category": "venue",
+      "neighbourhood": "The Beaches",
+      "lat": 43.6667,
+      "lon": -79.31331,
+      "address": "1663 Queen St E, Toronto, ON",
+      "notes": "Malcolm Todd Sept 28. ~20 min walk from the east-end place.",
+      "source": {
+        "type": "web",
+        "url": "https://www.songkick.com/concerts/43264129-malcolm-todd-at-history",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "held",
+        "how": "Tickets already purchased. Check the door time on the ticket."
+      }
+    },
+    {
+      "id": "cn-tower",
+      "name": "CN Tower",
+      "category": "sight",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.64256,
+      "lon": -79.38709,
+      "address": "290 Bremner Blvd, Toronto, ON",
+      "notes": "CityPASS. Timed entry, reserve ahead.",
+      "source": {
+        "type": "web",
+        "url": "https://www.citypass.com/toronto",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "required",
+        "how": "My CityPASS app. Timed entry."
+      }
+    },
+    {
+      "id": "ripleys-aquarium",
+      "name": "Ripley's Aquarium of Canada",
+      "category": "sight",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.64248,
+      "lon": -79.38613,
+      "address": "288 Bremner Blvd, Toronto, ON",
+      "notes": "CityPASS. 100 m from CN Tower. Reserve ahead.",
+      "source": {
+        "type": "web",
+        "url": "https://www.citypass.com/toronto",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "recommended",
+        "how": "My CityPASS app. Saturday morning is the busiest slot of the week."
+      }
+    },
+    {
+      "id": "casa-loma",
+      "name": "Casa Loma",
+      "category": "sight",
+      "neighbourhood": "Casa Loma",
+      "lat": 43.6781,
+      "lon": -79.40942,
+      "address": "1 Austin Terrace, Toronto, ON",
+      "notes": "CityPASS. Reserve ahead in peak season.",
+      "source": {
+        "type": "web",
+        "url": "https://www.citypass.com/toronto",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "recommended",
+        "how": "My CityPASS app. Peak-season slots go early."
+      }
+    },
+    {
+      "id": "rom",
+      "name": "Royal Ontario Museum",
+      "category": "sight",
+      "neighbourhood": "Yorkville",
+      "lat": 43.66766,
+      "lon": -79.3947,
+      "address": "100 Queens Park, Toronto, ON",
+      "notes": "CityPASS. Reservation required.",
+      "source": {
+        "type": "web",
+        "url": "https://www.citypass.com/toronto",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "required",
+        "how": "My CityPASS app. Timed entry."
+      }
+    },
+    {
+      "id": "city-cruises",
+      "name": "City Cruises Toronto",
+      "category": "activity",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.63826,
+      "lon": -79.3805,
+      "address": "207 Queens Quay W, Toronto, ON",
+      "notes": "CityPASS. Advance reservation REQUIRED. Verify late-season sailing schedule.",
+      "source": {
+        "type": "web",
+        "url": "https://www.citypass.com/toronto/city-cruises-toronto",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "required",
+        "how": "My CityPASS app. ALSO confirm the boat is still sailing in late September and what time."
+      }
+    },
+    {
+      "id": "ago",
+      "name": "Art Gallery of Ontario",
+      "category": "sight",
+      "neighbourhood": "Grange Park",
+      "lat": 43.65361,
+      "lon": -79.39278,
+      "address": "317 Dundas St W, Toronto, ON",
+      "notes": "Free for under 25s. Not a CityPASS pick.",
+      "source": {
+        "type": "web",
+        "url": "https://ago.ca/",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "recommended",
+        "how": "ago.ca. Free under 25 but still book a slot. Bring photo ID."
+      }
+    },
+    {
+      "id": "arcadia-earth",
+      "name": "Arcadia Earth",
+      "category": "activity",
+      "neighbourhood": "King West",
+      "lat": 43.64309,
+      "lon": -79.39495,
+      "address": "486 Front St W, Bldg C, Toronto, ON",
+      "notes": "At The Well, 2nd floor above Indigo.",
+      "source": {
+        "type": "web",
+        "url": "https://www.arcadiaearth.ca/",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "recommended",
+        "how": "arcadiaearth.ca. Timed entry."
+      }
+    },
+    {
+      "id": "allan-gardens",
+      "name": "Allan Gardens Conservatory",
+      "category": "outdoors",
+      "neighbourhood": "Cabbagetown",
+      "lat": 43.66165,
+      "lon": -79.37463,
+      "address": "160 Gerrard St E",
+      "notes": "Free Victorian greenhouse. Palms, cacti, orchids. Closes around 17:00.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbXJHiwxfcw/",
+        "handle": "@juni.toronto",
+        "caption_excerpt": "One of the best free thing to do in Toronto",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "ten-dean",
+      "name": "10 Dean",
+      "category": "coffee",
+      "neighbourhood": "Harbord Village",
+      "lat": 43.65829,
+      "lon": -79.40075,
+      "address": "484 Spadina Ave",
+      "notes": "In the lobby of The Waverley. Contemporary art decor, strong matcha.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DY7MjcCpRJu/",
+        "handle": "@jen.trt",
+        "caption_excerpt": "my new favorite WFH spot in downtown toronto",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "ezras-pound",
+      "name": "Ezra's Pound",
+      "category": "coffee",
+      "neighbourhood": "Annex",
+      "lat": 43.6753,
+      "lon": -79.4059,
+      "address": "238 Dupont St",
+      "notes": "Retro coffee shop with a hidden back patio. Five minutes from Dupont station, on the way to Casa Loma.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbwpKCNDXQX/",
+        "handle": "@levanttan",
+        "caption_excerpt": "found a secret patio + retro coffee shop",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "zui-beer-bar",
+      "name": "Zui Beer Bar",
+      "category": "bar",
+      "neighbourhood": "Koreatown",
+      "lat": 43.66368,
+      "lon": -79.41732,
+      "address": "693 Bloor St W",
+      "notes": "Cyberpunk styling, Chinese street snacks, drink towers. DJs Fri and Sat from 21:00.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbq-bfhvwLR/",
+        "handle": "@joyceposted",
+        "caption_excerpt": "cyberpunk-inspired bar with Chinese street snacks",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "nathan-phillips-square",
+      "name": "Nathan Phillips Square",
+      "category": "sight",
+      "neighbourhood": "Financial District",
+      "lat": 43.65271,
+      "lon": -79.38384,
+      "address": "100 Queen St W",
+      "notes": "Directly across Queen St from the Sheraton. Two minutes from the ROSCon doors.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbJzVEoo1I-/",
+        "handle": "@travelmowgly",
+        "caption_excerpt": "hot summer nights, mid-July",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "yunnan-noodle-shack",
+      "name": "Yunnan Noodle Shack",
+      "category": "food",
+      "neighbourhood": "Baldwin Village",
+      "lat": 43.65582,
+      "lon": -79.39369,
+      "address": "43 Baldwin St",
+      "notes": "Solo-dining booths with panels you can fold away. Built for eating alone.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbv461sz8RH/",
+        "handle": "@jia.lia",
+        "caption_excerpt": "this unique concept for solo dining is an introverts dream",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "cibc-square-park",
+      "name": "CIBC Square Park",
+      "category": "outdoors",
+      "neighbourhood": "Financial District",
+      "lat": 43.64417,
+      "lon": -79.37735,
+      "address": "81 Bay St",
+      "notes": "Elevated park above the rail corridor. Skyline and CN Tower, best at sunset.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZn3UY1peKM/",
+        "handle": "@mytoronnodiary",
+        "caption_excerpt": "10/10 view in Toronnooooooo",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hanoi-bites",
+      "name": "Hanoi Bites",
+      "category": "food",
+      "neighbourhood": "King West",
+      "lat": 43.64673,
+      "lon": -79.39923,
+      "address": "50 Brant St",
+      "notes": "Northern Vietnamese in Waterworks Food Hall. Banh mi and bun cha.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbWIh32hhWj/",
+        "handle": "@kiarakacvinskyy",
+        "caption_excerpt": "Finally Toronto coffee I can get behind",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "roy-thomson-hall",
+      "name": "Roy Thomson Hall",
+      "category": "sight",
+      "neighbourhood": "Entertainment District",
+      "lat": 43.64656,
+      "lon": -79.38634,
+      "address": "60 Simcoe St",
+      "notes": "Photo spot. The trick from the reel: wait for a streetcar to cross the frame.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbn8XtYReV7/",
+        "handle": "@brockwunder",
+        "caption_excerpt": "Roy Thompson hall is a super underrated location for a photo",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "dear-darling",
+      "name": "Dear Darling",
+      "category": "bar",
+      "neighbourhood": "King West",
+      "lat": 43.64679,
+      "lon": -79.40311,
+      "address": "612 Richmond St W",
+      "notes": "Cocktail bar and kitchen. The \"love bomb\" is the one from the reel.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DYsx_Z2PfYo/",
+        "handle": "@thivv.jeyan",
+        "caption_excerpt": "The love bomb drink only at Dear Darling",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "toronto-music-garden",
+      "name": "Toronto Music Garden",
+      "category": "outdoors",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.63697,
+      "lon": -79.39406,
+      "address": "475 Queens Quay W",
+      "notes": "Waterfront garden laid out to follow a Yo-Yo Ma cello suite. Walkable west along the water from the cruise dock.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DYinl6axCic/",
+        "handle": "@juni.toronto",
+        "caption_excerpt": "designed around music",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "the-beaches",
+      "name": "The Beaches",
+      "category": "outdoors",
+      "neighbourhood": "The Beaches",
+      "lat": 43.67102,
+      "lon": -79.29671,
+      "address": "Queen St E at Lee Ave",
+      "notes": "Boardwalk, lake, Queen St E shops. Ten minutes on foot from the east-end place.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db1k52YxWnI/",
+        "handle": "@boyanace",
+        "caption_excerpt": "this doesn't feel like Toronto and maybe that's why I love it",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "rc-harris",
+      "name": "R.C. Harris Water Treatment Plant",
+      "category": "outdoors",
+      "neighbourhood": "The Beaches",
+      "lat": 43.67438,
+      "lon": -79.27919,
+      "address": "2701 Queen St E",
+      "notes": "Art deco waterworks on the bluffs. Grounds open to the public, picnic and sunset spot.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Day97y6Jvya/",
+        "handle": "@juni.toronto",
+        "caption_excerpt": "my favorite picnic spot",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "woodbine-beach",
+      "name": "Woodbine Beach",
+      "category": "outdoors",
+      "neighbourhood": "The Beaches",
+      "lat": 43.66186,
+      "lon": -79.30728,
+      "address": "1675 Lake Shore Blvd E",
+      "notes": "Wide sand beach. Walk the boardwalk back east toward your place.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbJzVEoo1I-/",
+        "handle": "@travelmowgly",
+        "caption_excerpt": "Woodbine Beach (Canada Day Fireworks)",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "biidaasige-park",
+      "name": "Biidaasige Park",
+      "category": "outdoors",
+      "neighbourhood": "Port Lands",
+      "lat": 43.64914,
+      "lon": -79.34344,
+      "address": "Commissioners St",
+      "notes": "Toronto\u2019s largest new park in a generation, on the restored mouth of the Don. Wetlands, trails, ziplines. Two separate accounts flagged this one.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db1351dRzXB/",
+        "handle": "@juni.toronto",
+        "caption_excerpt": "Toronto\u2019s newest and largest park in a generation",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "polson-pier",
+      "name": "Polson Pier",
+      "category": "outdoors",
+      "neighbourhood": "Port Lands",
+      "lat": 43.64008,
+      "lon": -79.35444,
+      "address": "11 Polson St",
+      "notes": "Skyline across the harbour. Ten minutes from Biidaasige.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbJzVEoo1I-/",
+        "handle": "@travelmowgly",
+        "caption_excerpt": "Polson Pier",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "riverdale-park-east",
+      "name": "Riverdale Park East",
+      "category": "outdoors",
+      "neighbourhood": "Riverdale",
+      "lat": 43.67146,
+      "lon": -79.35516,
+      "address": "550 Broadview Ave",
+      "notes": "The postcard skyline view from the east. Steep hill, worth it at sunset.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbEVDNQAUKu/",
+        "handle": "@arjsun",
+        "caption_excerpt": "Summers in Toronto hit different",
+        "confidence": "inferred"
+      }
+    },
+    {
+      "id": "cafe-85",
+      "name": "Cafe 85",
+      "category": "food",
+      "neighbourhood": "Bay Street Corridor",
+      "lat": 43.65824,
+      "lon": -79.38453,
+      "address": "695 Bay St",
+      "notes": "Brunch at Bay and Gerrard. The tiramisu french toast is the order; the reviewer was lukewarm on the roast beef benedict.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db3by5uxpGl/",
+        "handle": "@mochieats.to",
+        "caption_excerpt": "still thinking about this tiramisu french toast",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "osgoode-hall",
+      "name": "Osgoode Hall",
+      "category": "sight",
+      "neighbourhood": "Financial District",
+      "lat": 43.6521,
+      "lon": -79.38579,
+      "address": "130 Queen St W",
+      "notes": "Free. The Great Library is the reason to go, and it keeps restricted weekday hours, so check before turning up.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbEsrvwxgfi/",
+        "handle": "@elin.toronto",
+        "caption_excerpt": "One of Toronto\u2019s most beautiful buildings with a breathtaking library",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "401-richmond",
+      "name": "401 Richmond",
+      "category": "sight",
+      "neighbourhood": "Entertainment District",
+      "lat": 43.64782,
+      "lon": -79.39483,
+      "address": "401 Richmond St W",
+      "notes": "Galleries, artist studios, a bookstore and a public courtyard garden. Dark Horse Espresso inside. The open stairs are see-through.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZRJHSlRryJ/",
+        "handle": "@juni.toronto",
+        "caption_excerpt": "home to galleries, artist studios, a bookstore, and even a hidden courtyard garden",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "uoft-campus",
+      "name": "University of Toronto, St George",
+      "category": "sight",
+      "neighbourhood": "Harbord Village",
+      "lat": 43.66175,
+      "lon": -79.39518,
+      "address": "King's College Cir",
+      "notes": "Walkable historic campus. Front and back campus are the photogenic parts.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DYqPkFXN_25/",
+        "handle": "@chris.caren",
+        "caption_excerpt": "UofT glaze",
+        "confidence": "inferred"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "acacia-cafe",
+      "name": "Acacia Cafe",
+      "category": "coffee",
+      "neighbourhood": "Harbord Village",
+      "lat": 43.66452,
+      "lon": -79.39514,
+      "address": "5 Hoskin Ave",
+      "notes": "Inside Wycliffe College at UofT. Called a hidden gem in the reel.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db3-rahAGX_/",
+        "handle": "@cherstravels",
+        "caption_excerpt": "3 of my fav, most aesthetic caf\u00e9s at uoft",
+        "confidence": "confirmed"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "arbor-room",
+      "name": "Arbor Room, Hart House",
+      "category": "coffee",
+      "neighbourhood": "Harbord Village",
+      "lat": 43.66392,
+      "lon": -79.39397,
+      "address": "7 Hart House Cir",
+      "notes": "In Hart House at UofT. Hart House is generally open to the public.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db3-rahAGX_/",
+        "handle": "@cherstravels",
+        "caption_excerpt": "3 of my fav, most aesthetic caf\u00e9s at uoft",
+        "confidence": "confirmed"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "ace-hotel",
+      "name": "Ace Hotel Toronto",
+      "category": "coffee",
+      "neighbourhood": "Garment District",
+      "lat": 43.64671,
+      "lon": -79.39805,
+      "address": "51 Camden St",
+      "notes": "Shim-Sutcliffe building, RAIC Gold Medal 2021. Lobby cafe. Go for coffee, stay for the concrete.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZ2Gmzaz2N3/",
+        "handle": "@park.estudio",
+        "caption_excerpt": "go for the coffee and stay for the architecture",
+        "confidence": "confirmed"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "gbc-waterfront",
+      "name": "George Brown Waterfront library",
+      "category": "sight",
+      "neighbourhood": "East Bayfront",
+      "lat": 43.64414,
+      "lon": -79.36574,
+      "address": "51 Dockside Dr",
+      "notes": "Lake-facing library. ACCESS UNCERTAIN: commenters could not agree whether non-students get in.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DYNqCHAKbGR/",
+        "handle": "@casswebs",
+        "caption_excerpt": "waterfront library",
+        "confidence": "inferred"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "ferry-terminal",
+      "name": "Jack Layton Ferry Terminal",
+      "category": "activity",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.64036,
+      "lon": -79.37508,
+      "address": "9 Queens Quay W",
+      "notes": "Ferry to the Islands. Cheap alternative to the CityPASS cruise, and the reel says the skyline is best on the ride BACK after dark.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DYS8YMGvonG/",
+        "handle": "@travelwithaudy",
+        "caption_excerpt": "the ride back at night gave me the most beautiful views",
+        "confidence": "confirmed"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "dupont-station",
+      "name": "Dupont Station",
+      "category": "sight",
+      "neighbourhood": "Annex",
+      "lat": 43.6747,
+      "lon": -79.40698,
+      "address": "Dupont St at Spadina Rd",
+      "notes": "Tiled Line 1 station called the prettiest in the city. Walk north to the Baldwin Steps from here.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbuil7dwOZP/",
+        "handle": "@applecrit",
+        "caption_excerpt": "The prettiest subway station in Toronto",
+        "confidence": "inferred"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "st-patrick-station",
+      "name": "St. Patrick Station",
+      "category": "sight",
+      "neighbourhood": "Grange Park",
+      "lat": 43.65481,
+      "lon": -79.38802,
+      "address": "449 University Ave",
+      "notes": "From a montage of TTC station architecture. Ride Line 1 and look up.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dan2S0vsJsv/",
+        "handle": "@devonmcole",
+        "caption_excerpt": "if St. Patrick had buskers and/or snacks she would be a 10",
+        "confidence": "inferred"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "financial-district",
+      "name": "Financial District",
+      "category": "sight",
+      "neighbourhood": "Financial District",
+      "lat": 43.64738,
+      "lon": -79.38136,
+      "address": "King St W at Bay St",
+      "notes": "Skyscraper canyon. Best at golden hour, and you walk through it daily during ROSCon anyway.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Da6V86QxFwA/",
+        "handle": "@alexfilmmood",
+        "caption_excerpt": "Toronto Is Giving Major NYC Energy",
+        "confidence": "inferred"
+      },
+      "shortlist": true
+    },
+    {
+      "id": "unresolved-dzxpjwoub85",
+      "name": "Unidentified reel by @hadar.realtor",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Realtor condo tour, not a visitable place.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZxPjWoub85/",
+        "handle": "@hadar.realtor",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbodu-oerul",
+      "name": "Unidentified reel by @lexilaube",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Multi-stop road trip reel, no Toronto venue named.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DboDU_OERUL/",
+        "handle": "@lexilaube",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dzu-gjao7fj",
+      "name": "Unidentified reel by @fred.bk",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Shopify office workspace. Commenters confirm it is not publicly accessible.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZU-gJAO7fj/",
+        "handle": "@fred.bk",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbt5kujt7ry",
+      "name": "Unidentified reel by @whilmina",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Opinion reel on downtown rent. No venue.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbt5Kujt7ry/",
+        "handle": "@whilmina",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dzpucfvxdsp",
+      "name": "Unidentified reel by @nicktarmo",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Opinion reel on city vs suburbs. No venue.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZpucfVxdsp/",
+        "handle": "@nicktarmo",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-db1dnapgq-u",
+      "name": "Unidentified reel by @arjsun",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Summer photo carousel, no location given. Commenters repeatedly asked where and got no answer.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db1DnApGQ_u/",
+        "handle": "@arjsun",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dabymgot6ed",
+      "name": "Unidentified reel by @lucasrozmus.realtor",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Realtor's six-things-about-Toronto reel. No single venue, but name-drops St. Lawrence Market, Kensington Market, Chinatown, Little Portugal, High Park, Scarborough Bluffs, Rouge National Urban Park.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DabYMgoT6Ed/",
+        "handle": "@lucasrozmus.realtor",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbylv9-x3mi",
+      "name": "Unidentified reel by @brewingbrokers",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Midtown neighbourhood tier ranking. Opinion content, no venue.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbYlV9-x3mI/",
+        "handle": "@brewingbrokers",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dzykl6im7x9",
+      "name": "Unidentified reel by @torontotwinss",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Sponsored 24-hour Toronto montage (#ad for A&W). No specific venue identifiable from the caption.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DZYKl6iM7X9/",
+        "handle": "@torontotwinss",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbosy9igegl",
+      "name": "Unidentified reel by @travelmowgly",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "CN Tower day vs night photo comparison. The shooting location is not given, and the tower itself is already on the plan.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbosy9iGEgL/",
+        "handle": "@travelmowgly",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbexv1jnkr6",
+      "name": "Unidentified reel by @callmesilvs",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "General new-to-Toronto advice reel. No venue.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbExV1JNkR6/",
+        "handle": "@callmesilvs",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-db1bue4ooz-",
+      "name": "Unidentified reel by @jamie.fischh",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "NOT TORONTO. This is the Brooklyn Bridge in New York (#nyc #brooklynbridge). Likely saved by mistake.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Db1bUe4OOz-/",
+        "handle": "@jamie.fischh",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbeeppsokq8",
+      "name": "Unidentified reel by @cole_ryski",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Photography project: CN Tower shot from many points on a 3 km radius. A technique, not a destination.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbEEPpSOKq8/",
+        "handle": "@cole_ryski",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbzixqkj61w",
+      "name": "Unidentified reel by @jordshore",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "'Best new spot for a nighttime stroll', a waterfront park with skyline views, but never named. A commenter also asked and got no answer. Possibly Love Park or The Bentway; not confident enough to place a pin.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbzIxqKJ61W/",
+        "handle": "@jordshore",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbqgopikycx",
+      "name": "Unidentified reel by @arjsun",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "'Arrival of august' photo set. No location given; a commenter asked and got no answer.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/DbqgoPIkYcX/",
+        "handle": "@arjsun",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-dbtvw-wkedk",
+      "name": "Unidentified reel by @sidneysmithcommons",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Carousel comparing travel times to parks near UofT (Queen's Park, High Park and others). A reference chart, not a single destination.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Dbtvw-WkeDK/",
+        "handle": "@sidneysmithcommons",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    },
+    {
+      "id": "unresolved-da2tcweukr2",
+      "name": "Unidentified reel by @kurt.wang",
+      "category": "sight",
+      "neighbourhood": "",
+      "lat": null,
+      "lon": null,
+      "address": "",
+      "notes": "Sunrise skyline photo. Shooting location never given; a commenter asked directly and got no answer.",
+      "source": {
+        "type": "instagram",
+        "url": "https://www.instagram.com/p/Da2tCwEukr2/",
+        "handle": "@kurt.wang",
+        "caption_excerpt": "",
+        "confidence": "unresolved"
+      }
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-09-20",
+      "dayNumber": 1,
+      "weekday": "Sunday",
+      "label": "Arrival + Allan Gardens",
+      "color": "#d55948",
+      "base": "St. James Town",
+      "items": [
+        {
+          "start": "15:00",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": true,
+          "notes": "Check in. Confirm your real arrival time."
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "placeId": "allan-gardens",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "12 min walk from the apartment. Free, and it closes around 17:00 so go straight there."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "dayNumber": 2,
+      "weekday": "Monday",
+      "label": "CityPASS museums + the Annex",
+      "color": "#cd6500",
+      "base": "St. James Town",
+      "items": [
+        {
+          "start": "09:15",
+          "end": "10:00",
+          "placeId": "ten-dean",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Coffee before the museum opens."
+        },
+        {
+          "start": "10:30",
+          "end": "13:00",
+          "placeId": "rom",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "CityPASS 1 of 5. This starts the 9-day clock: it expires Sept 29."
+        },
+        {
+          "start": "13:30",
+          "end": "14:15",
+          "placeId": "ezras-pound",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Line 1 to Dupont. Five minutes from the station."
+        },
+        {
+          "start": "14:45",
+          "end": "17:00",
+          "placeId": "casa-loma",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "CityPASS 2 of 5. Ten minutes uphill from Ezra\u2019s. Come back down the Baldwin Steps."
+        },
+        {
+          "start": "19:30",
+          "end": "21:30",
+          "placeId": "zui-beer-bar",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Line 2 west to Christie. DJs from 21:00 on Fridays and Saturdays, so tonight is the quieter version."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "dayNumber": 3,
+      "weekday": "Tuesday",
+      "label": "ROSCon day 1",
+      "color": "#bb7500",
+      "base": "Financial District",
+      "items": [
+        {
+          "start": "09:00",
+          "end": "18:00",
+          "placeId": "sheraton-centre",
+          "title": null,
+          "type": "fixed",
+          "locked": true,
+          "notes": ""
+        },
+        {
+          "start": "18:15",
+          "end": "19:00",
+          "placeId": "nathan-phillips-square",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Straight across Queen St from the conference doors."
+        },
+        {
+          "start": "19:30",
+          "end": "21:00",
+          "placeId": "yunnan-noodle-shack",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "15 min walk northwest. Solo booths, so a conference day alone is fine here."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "dayNumber": 4,
+      "weekday": "Wednesday",
+      "label": "ROSCon day 2",
+      "color": "#9d8600",
+      "base": "Financial District",
+      "items": [
+        {
+          "start": "09:00",
+          "end": "18:00",
+          "placeId": "sheraton-centre",
+          "title": null,
+          "type": "fixed",
+          "locked": true,
+          "notes": ""
+        },
+        {
+          "start": "18:30",
+          "end": "19:15",
+          "placeId": "cibc-square-park",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "10 min walk south toward Union. Sunset is around 19:05 this week."
+        },
+        {
+          "start": "19:45",
+          "end": "21:15",
+          "placeId": "hanoi-bites",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "King West, in Waterworks Food Hall."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "dayNumber": 5,
+      "weekday": "Thursday",
+      "label": "ROSCon day 3",
+      "color": "#749500",
+      "base": "Financial District",
+      "items": [
+        {
+          "start": "09:00",
+          "end": "18:00",
+          "placeId": "sheraton-centre",
+          "title": null,
+          "type": "fixed",
+          "locked": true,
+          "notes": ""
+        },
+        {
+          "start": "18:30",
+          "end": "19:15",
+          "placeId": "roy-thomson-hall",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "10 min walk. Dusk, and wait for a streetcar."
+        },
+        {
+          "start": "19:45",
+          "end": "21:30",
+          "placeId": "dear-darling",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Last night of the conference. Ask for the love bomb."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "dayNumber": 6,
+      "weekday": "Friday",
+      "label": "Hackathon + Weezer",
+      "color": "#329f47",
+      "base": "Financial District",
+      "items": [
+        {
+          "start": "09:00",
+          "end": "17:30",
+          "placeId": null,
+          "title": "Hackathon (post-ROSCon)",
+          "type": "fixed",
+          "locked": true,
+          "notes": "Venue unconfirmed. Hard stop 17:30: Sheraton to Scotiabank Arena is a ~15 min walk, leaves time to eat."
+        },
+        {
+          "start": "19:00",
+          "end": "22:30",
+          "placeId": "scotiabank-arena",
+          "title": null,
+          "type": "show",
+          "locked": true,
+          "notes": "Weezer, with The Shins and Silversun Pickups. Doors before 19:00."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "dayNumber": 7,
+      "weekday": "Saturday",
+      "label": "CityPASS harbourfront",
+      "color": "#00a377",
+      "base": "St. James Town",
+      "items": [
+        {
+          "start": "09:30",
+          "end": "11:30",
+          "placeId": "ripleys-aquarium",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "CityPASS 3 of 5. Opens 09:00. Go early, it is a Saturday."
+        },
+        {
+          "start": "12:00",
+          "end": "14:00",
+          "placeId": "cn-tower",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "CityPASS 4 of 5. 100 m walk from the aquarium door."
+        },
+        {
+          "start": "15:00",
+          "end": "16:30",
+          "placeId": "city-cruises",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "CityPASS 5 of 5, and the window closes Sept 29. Confirm the sailing time when you reserve."
+        },
+        {
+          "start": "17:00",
+          "end": "18:00",
+          "placeId": "toronto-music-garden",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Walk west along the water from the dock. Quiet way to end a heavy tourist day."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "dayNumber": 8,
+      "weekday": "Sunday",
+      "label": "Move east",
+      "color": "#00a2a1",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "placeId": null,
+          "title": "Check out of the St. James Town place",
+          "type": "transit",
+          "locked": true,
+          "notes": ""
+        },
+        {
+          "start": "15:00",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": true,
+          "notes": "Line 2 east to Main Street."
+        },
+        {
+          "start": "17:00",
+          "end": "18:30",
+          "placeId": "the-beaches",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "10 min walk from the new place. Gentle way to learn the neighbourhood."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "dayNumber": 9,
+      "weekday": "Monday",
+      "label": "East end + Malcolm Todd",
+      "color": "#009bc4",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "11:00",
+          "end": "12:30",
+          "placeId": "rc-harris",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "15 min east along Queen St E."
+        },
+        {
+          "start": "13:00",
+          "end": "14:30",
+          "placeId": "woodbine-beach",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Walk the boardwalk back west."
+        },
+        {
+          "start": "19:00",
+          "end": "22:30",
+          "placeId": "history-venue",
+          "title": null,
+          "type": "show",
+          "locked": true,
+          "notes": "Malcolm Todd. 20 min walk from the east-end place, so no transit to worry about."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "dayNumber": 10,
+      "weekday": "Tuesday",
+      "label": "Port Lands",
+      "color": "#008fdb",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "12:30",
+          "end": "15:00",
+          "placeId": "biidaasige-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "The strongest signal in your whole channel: two unrelated accounts posted it."
+        },
+        {
+          "start": "15:30",
+          "end": "16:30",
+          "placeId": "polson-pier",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "10 min from Biidaasige. Skyline across the harbour."
+        },
+        {
+          "start": "18:00",
+          "end": "19:15",
+          "placeId": "riverdale-park-east",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Line 2 to Broadview. The classic east-side skyline view at sunset."
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "dayNumber": 11,
+      "weekday": "Wednesday",
+      "label": "Downtown culture",
+      "color": "#5281e5",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "09:30",
+          "end": "10:45",
+          "placeId": "cafe-85",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Brunch at Bay and Gerrard. Order the tiramisu french toast."
+        },
+        {
+          "start": "11:30",
+          "end": "13:45",
+          "placeId": "ago",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Free for under 25s. Bring photo ID."
+        },
+        {
+          "start": "14:15",
+          "end": "15:00",
+          "placeId": "osgoode-hall",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "8 min walk. Check the Great Library hours before you go."
+        },
+        {
+          "start": "15:30",
+          "end": "16:45",
+          "placeId": "401-richmond",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "10 min walk. Galleries, bookstore, courtyard."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "dayNumber": 12,
+      "weekday": "Thursday",
+      "label": "The Well + Phoebe Bridgers",
+      "color": "#8173e0",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "13:00",
+          "end": "15:00",
+          "placeId": "arcadia-earth",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "At The Well, 2nd floor above Indigo."
+        },
+        {
+          "start": "19:30",
+          "end": "23:00",
+          "placeId": "scotiabank-arena",
+          "title": null,
+          "type": "show",
+          "locked": true,
+          "notes": "Phoebe Bridgers with Alex G. 20 min walk east from The Well, so the afternoon sets you up for it."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "dayNumber": 13,
+      "weekday": "Friday",
+      "label": "Departure",
+      "color": "#a366cd",
+      "base": "East End-Danforth",
+      "items": [
+        {
+          "start": "11:00",
+          "end": "12:00",
+          "placeId": null,
+          "title": "Check out of the east-end place",
+          "type": "transit",
+          "locked": true,
+          "notes": "Confirm your flight time. Nothing else scheduled."
+        }
+      ]
+    }
+  ]
+}
