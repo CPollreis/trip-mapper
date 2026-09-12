@@ -62,6 +62,44 @@
       }
     },
     {
+      "id": "dual-citizen-sheraton",
+      "name": "Dual Citizen Coffee (Sheraton Centre)",
+      "category": "coffee",
+      "neighbourhood": "Financial District",
+      "lat": 43.65111,
+      "lon": -79.38347,
+      "address": "123 Queen St W, Toronto, ON",
+      "notes": "Host venue for the three NVIDIA daily meetups. Inside the Sheraton Centre, the same building as ROSCon, so there is no travel time. The organiser's own post asked \"the same ROSCon Sheraton?\", so find the exact spot in the lobby on day 1. Not the same as the unresolved Dual Citizen saved off Instagram (the one with the waterfall); confirm whether that is this location.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "NVIDIA daily meetup at Dual Citizen Coffee Shop, Sheraton Centre",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hackathon-65-king",
+      "name": "Post-ROSCon Hackathon",
+      "category": "conference",
+      "neighbourhood": "St. Lawrence",
+      "lat": 43.64959,
+      "lon": -79.37549,
+      "address": "65 King St E, Toronto, ON M5C 0C1",
+      "notes": "Fri Sept 25, 09:30-17:30. King and Church, 10 min walk from the Sheraton. Hosted by Google / Intrinsic, so their guest security policy applies: the Luma registration must use your full legal name exactly as it appears on your passport, and you must bring the passport on the day. RSVP closes Mon Sept 21. Hacking on OSRF projects: ROS and ROS Control, Gazebo, Open-RMF, core infrastructure. Existing contributors welcome to come mentor.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "held",
+        "how": "Registered via Luma, https://luma.com/vo6zoq5b, ticket in the event app. Shows as \"You're Going\". Before Sept 21, check the registered name is character-for-character what your passport says; Google / Intrinsic turn guests away on a name mismatch."
+      }
+    },
+    {
       "id": "scotiabank-arena",
       "name": "Scotiabank Arena",
       "category": "venue",
@@ -504,8 +542,7 @@
         "handle": "@juni.toronto",
         "caption_excerpt": "Toronto’s newest and largest park in a generation",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "polson-pier",
@@ -522,8 +559,7 @@
         "handle": "@travelmowgly",
         "caption_excerpt": "Polson Pier",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "riverdale-park-east",
@@ -540,8 +576,7 @@
         "handle": "@arjsun",
         "caption_excerpt": "Summers in Toronto hit different",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "cafe-85",
@@ -645,8 +680,7 @@
         "handle": "@cherstravels",
         "caption_excerpt": "3 of my fav, most aesthetic cafés at uoft",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ace-hotel",
@@ -663,8 +697,7 @@
         "handle": "@park.estudio",
         "caption_excerpt": "go for the coffee and stay for the architecture",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "gbc-waterfront",
@@ -699,8 +732,7 @@
         "handle": "@travelwithaudy",
         "caption_excerpt": "the ride back at night gave me the most beautiful views",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "dupont-station",
@@ -717,8 +749,7 @@
         "handle": "@applecrit",
         "caption_excerpt": "The prettiest subway station in Toronto",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "st-patrick-station",
@@ -735,8 +766,7 @@
         "handle": "@devonmcole",
         "caption_excerpt": "if St. Patrick had buskers and/or snacks she would be a 10",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "financial-district",
@@ -753,8 +783,7 @@
         "handle": "@alexfilmmood",
         "caption_excerpt": "Toronto Is Giving Major NYC Energy",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "sankofa-square",
@@ -873,8 +902,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "cactus-club",
@@ -1033,8 +1061,7 @@
         "handle": "@beantheredonethatto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "little-pebbles",
@@ -1068,8 +1095,7 @@
         "handle": "@thivv.jeyan",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "am-coffee-lab",
@@ -1104,8 +1130,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "mossops-social",
@@ -1207,8 +1232,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "sneaky-dees",
@@ -1225,8 +1249,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "firefly-burger",
@@ -1399,8 +1422,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "brickhouse-waffle",
@@ -1417,8 +1439,7 @@
         "handle": "@toastymochieats",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "pizzeria-badiali",
@@ -1453,8 +1474,7 @@
         "handle": "@fu2zy_peach",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ghazale",
@@ -1505,8 +1525,7 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "future-nightclub",
@@ -1523,8 +1542,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "vertigo",
@@ -1964,8 +1982,7 @@
         "handle": "@sidneysmithcommons",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "grange-park",
@@ -1982,8 +1999,7 @@
         "handle": "@sidneysmithcommons",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "christie-pits",
@@ -2000,8 +2016,7 @@
         "handle": "@sidneysmithcommons",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "trinity-bellwoods",
@@ -2018,8 +2033,7 @@
         "handle": "@sidneysmithcommons",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "trillium-park",
@@ -2036,8 +2050,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "high-park",
@@ -2054,8 +2067,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "spadina-museum",
@@ -2089,8 +2101,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "scarborough-bluffs",
@@ -2107,8 +2118,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "guild-park",
@@ -2125,8 +2135,7 @@
         "handle": "@theinsidertoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "distillery-district",
@@ -2143,8 +2152,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "graffiti-alley",
@@ -2188,15 +2196,14 @@
       "lat": 43.64874,
       "lon": -79.37157,
       "address": "93 Front St E",
-      "notes": "Closed Mondays. Peameal bacon sandwich is the classic order.",
+      "notes": "Closed Mondays. Fri hours run to 19:00. Peameal bacon sandwich is the classic order.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "gooderham-building",
@@ -2213,8 +2220,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "stackt-market",
@@ -2267,8 +2273,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "aga-khan",
@@ -2303,8 +2308,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "little-canada",
@@ -2339,8 +2343,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "little-italy",
@@ -2357,8 +2360,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "kew-beach",
@@ -2375,8 +2377,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "wards-island",
@@ -2429,8 +2430,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "hart-house",
@@ -2447,8 +2447,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "trinity-college",
@@ -2537,8 +2536,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "acadia-books",
@@ -2626,11 +2624,11 @@
         "caption_excerpt": "",
         "confidence": "inferred"
       },
-      "shortlist": true,
       "booking": {
         "level": "recommended",
         "how": "Niagara Parks site, timed entry."
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "journey-behind-falls",
@@ -3187,7 +3185,7 @@
       "date": "2026-09-20",
       "dayNumber": 1,
       "weekday": "Sunday",
-      "label": "Arrival + Allan Gardens",
+      "label": "Arrival + Allan Gardens + Yonge",
       "color": "#d55948",
       "base": "St. James Town",
       "items": [
@@ -3267,6 +3265,16 @@
           "mode": "walk"
         },
         {
+          "start": "16:45",
+          "end": "18:15",
+          "placeId": "eaton-centre",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Sunday hours are short, usually 11:00-19:00, so this is the one evening slot that works. PATH connects it back toward the hotel.",
+          "mode": "transit"
+        },
+        {
           "start": "18:30",
           "end": "20:00",
           "placeId": "firefly-burger",
@@ -3275,6 +3283,36 @@
           "locked": false,
           "notes": "Dinner. Easy first night food, open late.",
           "mode": "transit"
+        },
+        {
+          "start": "20:15",
+          "end": "20:45",
+          "placeId": "sankofa-square",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Two minutes from dinner, at the Eaton Centre north door. Big screens, best after dark.",
+          "mode": "walk"
+        },
+        {
+          "start": "20:55",
+          "end": "21:30",
+          "placeId": "yonge-street",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Browse north from Sankofa. Sunday evening: most stores will be shut, so treat this as a walk, not shopping.",
+          "mode": "walk"
+        },
+        {
+          "start": "21:45",
+          "end": "22:45",
+          "placeId": "seven-west-cafe",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Open 24/7 at Yonge & Bloor, and on the way back to St. James Town. The reliable late stop on a night when everything else has closed.",
+          "mode": "transit"
         }
       ]
     },
@@ -3282,7 +3320,7 @@
       "date": "2026-09-21",
       "dayNumber": 2,
       "weekday": "Monday",
-      "label": "Museums, Casa Loma + Bloor West",
+      "label": "UofT, ROM, Casa Loma + Bloor West",
       "color": "#cd6500",
       "base": "St. James Town",
       "items": [
@@ -3297,18 +3335,48 @@
           "mode": "transit"
         },
         {
-          "start": "10:30",
-          "end": "13:00",
+          "start": "09:50",
+          "end": "10:10",
+          "placeId": "queens-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Canada's first municipal park, and the gateway to the UofT block. Twenty minutes west of breakfast.",
+          "mode": "walk"
+        },
+        {
+          "start": "10:25",
+          "end": "10:35",
+          "placeId": "hart-house",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Public access. Candlelight concerts are held here, worth checking listings while you are standing in it.",
+          "mode": "walk"
+        },
+        {
+          "start": "10:35",
+          "end": "10:45",
+          "placeId": "arbor-room",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "The cafe inside Hart House, so zero travel from the stop above.",
+          "mode": "walk"
+        },
+        {
+          "start": "11:20",
+          "end": "13:20",
           "placeId": "rom",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "CityPASS 1 of 5. This starts the 9-day clock: it expires Sept 29.",
+          "notes": "Trimmed by 20 min to make room for the UofT stops. Still over two hours, but the ROM can eat a day: pick two or three galleries before you go in.",
           "mode": "walk"
         },
         {
-          "start": "13:25",
-          "end": "14:10",
+          "start": "13:45",
+          "end": "14:25",
           "placeId": "mcha-bar",
           "title": null,
           "type": "meal",
@@ -3317,13 +3385,13 @@
           "mode": "walk"
         },
         {
-          "start": "14:30",
+          "start": "14:40",
           "end": "15:00",
           "placeId": "ezras-pound",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Line 1 to Dupont. Five minutes from the station.",
+          "notes": "Tight: this is a grab-and-go now, Casa Loma is five minutes away and holds the 15:15 slot.",
           "mode": "transit"
         },
         {
@@ -3347,8 +3415,28 @@
           "mode": "walk"
         },
         {
-          "start": "19:15",
-          "end": "20:30",
+          "start": "18:30",
+          "end": "18:45",
+          "placeId": "dupont-station",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Tiled Line 1 station called the prettiest in the city. You pass through heading west anyway.",
+          "mode": "walk"
+        },
+        {
+          "start": "19:05",
+          "end": "19:20",
+          "placeId": "christie-pits",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Quick look at the bowl on the Line 2 run west to dinner.",
+          "mode": "transit"
+        },
+        {
+          "start": "19:40",
+          "end": "20:55",
           "placeId": "el-pastorcito",
           "title": null,
           "type": "meal",
@@ -3357,13 +3445,23 @@
           "mode": "transit"
         },
         {
-          "start": "20:55",
-          "end": "22:15",
+          "start": "21:20",
+          "end": "22:35",
           "placeId": "zui-beer-bar",
           "title": null,
           "type": "drinks",
           "locked": false,
           "notes": "15 min east along Bloor. Cyberpunk bar, Chinese street snacks, drink towers.",
+          "mode": "walk"
+        },
+        {
+          "start": "22:45",
+          "end": "23:00",
+          "placeId": "civil-liberties",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "No menu: tell the bartender what you like and they build it. Ten minutes from Zui. Very short slot, so this is a nightcap or it is next trip.",
           "mode": "walk"
         }
       ]
@@ -3372,87 +3470,86 @@
       "date": "2026-09-22",
       "dayNumber": 3,
       "weekday": "Tuesday",
-      "label": "ROSCon day 1 + Yonge shopping",
+      "label": "ROSCon workshops + NVIDIA happy hour",
       "color": "#bb7500",
       "base": "Financial District",
       "items": [
         {
-          "start": "07:45",
-          "end": "08:30",
+          "start": "07:00",
+          "end": "07:40",
           "placeId": "brick-room",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Breakfast in the PATH, two minutes from the conference doors.",
+          "notes": "Breakfast in the PATH, two minutes from the conference doors. Early: the first workshop starts at 08:00. Confirm it opens by 07:00.",
           "mode": "walk"
         },
         {
-          "start": "09:00",
-          "end": "18:00",
+          "start": "08:00",
+          "end": "12:00",
           "placeId": "sheraton-centre",
           "title": null,
           "type": "fixed",
           "locked": true,
-          "notes": ""
+          "notes": "Workshop: Train, Simulate, Deploy: Agentic AI from Cloud to Robot. Dominion S. AMD + Robotec.ai. On-device NPU inference, cloud-to-robot fine-tuning, RL in GPU-accelerated sim. Hands-on, bring the laptop.",
+          "mode": "walk"
         },
         {
-          "start": "12:30",
-          "end": "13:15",
+          "start": "12:10",
+          "end": "12:45",
           "placeId": "butter-baker",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Lunch break. 114 Dundas W, 8 min walk. Almond walnut croissant.",
+          "notes": "Lunch in the one-hour gap between workshops. 114 Dundas W, 9 min walk each way, so the window is genuinely tight: take the almond walnut croissant to go if the morning session runs over.",
           "mode": "walk"
         },
         {
-          "start": "18:10",
-          "end": "18:35",
+          "start": "13:00",
+          "end": "17:00",
+          "placeId": "sheraton-centre",
+          "title": null,
+          "type": "fixed",
+          "locked": true,
+          "notes": "Workshop: Train and Deploy Contact-Rich Robot Manipulation Skills With Isaac Lab and Isaac ROS. NVIDIA. Contact-rich pick-and-insert, cuMotion GPU planning, RL policy, sim-to-real tuning."
+        },
+        {
+          "start": "17:05",
+          "end": "17:40",
           "placeId": "nathan-phillips-square",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "Straight across Queen St from the conference doors.",
+          "notes": "Directly across Queen St from the ROSCon doors, and the happy hour is in the same building you walk back into. Fills the hour between sessions ending and 18:00.",
           "mode": "walk"
         },
         {
-          "start": "18:50",
-          "end": "19:10",
-          "placeId": "sankofa-square",
+          "start": "18:00",
+          "end": "21:00",
+          "placeId": "dual-citizen-sheraton",
           "title": null,
-          "type": "sight",
+          "type": "drinks",
           "locked": false,
-          "notes": "Dundas Square, for the pictures. Big screens, busiest corner in the city.",
+          "notes": "NVIDIA meetup day 1: Welcome Happy Hour. Same building as the workshops, so you walk downstairs at 17:00 and have an hour spare. Isaac and Agentic AI are the thread across all three mornings. This replaced the Yonge St shopping evening; those stops are on the shortlist if a later night opens up.",
           "mode": "walk"
         },
         {
-          "start": "19:15",
-          "end": "19:50",
-          "placeId": "eaton-centre",
-          "title": null,
-          "type": "activity",
+          "start": "18:00",
+          "end": "21:00",
+          "placeId": null,
+          "title": "Rootly ROSCon Kickoff Mixer (waitlist)",
+          "type": "drinks",
           "locked": false,
-          "notes": "Right there at the north door. Closes 21:00 on weekdays. You said this might be enough shopping on its own.",
-          "mode": "walk"
+          "notes": "WAITLISTED. Location only shown once you are off the list, listed as central Toronto. Clashes head-on with the NVIDIA happy hour above, which is the default plan: only take this one if you clear the waitlist and prefer it."
         },
         {
-          "start": "20:05",
-          "end": "20:35",
-          "placeId": "yonge-street",
-          "title": null,
-          "type": "activity",
-          "locked": false,
-          "notes": "The strip runs north from the Eaton Centre. Lots of stores, browse as far as you feel like.",
-          "mode": "walk"
-        },
-        {
-          "start": "20:55",
-          "end": "22:00",
+          "start": "21:20",
+          "end": "22:20",
           "placeId": "yunnan-noodle-shack",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner. 15 min walk west. Solo booths, good after a conference day.",
+          "notes": "Late dinner, 15 min walk west from the Sheraton. Solo booths. Later than originally planned because the happy hour runs to 21:00, so check the kitchen is still serving.",
           "mode": "walk"
         }
       ]
@@ -3466,13 +3563,13 @@
       "base": "Financial District",
       "items": [
         {
-          "start": "07:45",
-          "end": "08:30",
-          "placeId": "mossops-social",
+          "start": "08:00",
+          "end": "08:50",
+          "placeId": "dual-citizen-sheraton",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Breakfast near Union.",
+          "notes": "NVIDIA meetup day 2: Isaac Sim and Isaac ROS. Coffee at 08:00 in the conference hotel, so it costs you nothing but the early start and you are already at the doors for 09:00. Replaced breakfast at Mossop's Social, now on the shortlist.",
           "mode": "walk"
         },
         {
@@ -3483,6 +3580,15 @@
           "type": "fixed",
           "locked": true,
           "notes": ""
+        },
+        {
+          "start": "10:00",
+          "end": "10:30",
+          "placeId": "sheraton-centre",
+          "title": null,
+          "type": "fixed",
+          "locked": true,
+          "notes": "Keynote: Accelerated Memory Transports: Hardware-Accelerated Pipelines for Physical AI in ROS 2 Lyrical. Grand Ballroom West/Centre. Karsten Patzwaldt + CY Chen, NVIDIA. Near-zero-overhead transfer of tensors and point clouds."
         },
         {
           "start": "12:30",
@@ -3513,6 +3619,16 @@
           "locked": false,
           "notes": "Dinner. 12 min walk south to Waterworks Food Hall.",
           "mode": "walk"
+        },
+        {
+          "start": "22:20",
+          "end": "23:00",
+          "placeId": "ace-hotel",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Shim-Sutcliffe building, RAIC Gold Medal 2021. Six minutes from dinner. Go for the lobby, the concrete is the point. Confirm the lobby bar is still serving this late.",
+          "mode": "walk"
         }
       ]
     },
@@ -3525,14 +3641,14 @@
       "base": "Financial District",
       "items": [
         {
-          "start": "07:45",
-          "end": "08:30",
-          "placeId": "blackbird-baking",
+          "start": "08:00",
+          "end": "08:50",
+          "placeId": "dual-citizen-sheraton",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Breakfast. 172 Baldwin St, triple chocolate cookies.",
-          "mode": "transit"
+          "notes": "NVIDIA meetup day 3: Agentic Skills. Coffee at 08:00 in the conference hotel. Replaced breakfast at Blackbird Baking, which is 20 min away in Baldwin Village and could never have made an 08:00 start; it is on the shortlist now.",
+          "mode": "walk"
         },
         {
           "start": "09:00",
@@ -3551,6 +3667,16 @@
           "type": "meal",
           "locked": false,
           "notes": "Lunch break. Michelin-recognized aburi soba, 214 Queen W.",
+          "mode": "walk"
+        },
+        {
+          "start": "18:05",
+          "end": "18:20",
+          "placeId": "financial-district",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Skyscraper canyon at golden hour, and it sits between the conference doors and Roy Thomson Hall. No detour at all.",
           "mode": "walk"
         },
         {
@@ -3605,7 +3731,7 @@
       "items": [
         {
           "start": "07:45",
-          "end": "08:30",
+          "end": "08:25",
           "placeId": "little-pebbles",
           "title": null,
           "type": "coffee",
@@ -3614,13 +3740,24 @@
           "mode": "transit"
         },
         {
-          "start": "09:00",
+          "start": "08:40",
+          "end": "08:55",
+          "placeId": "st-patrick-station",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "From the TTC station architecture montage. You ride Line 1 from Baldwin Village to the hackathon anyway, so get off here and look up.",
+          "mode": "walk"
+        },
+        {
+          "start": "09:30",
           "end": "17:30",
-          "placeId": null,
-          "title": "Hackathon (post-ROSCon)",
+          "placeId": "hackathon-65-king",
+          "title": null,
           "type": "fixed",
           "locked": true,
-          "notes": "Venue unconfirmed. Hard stop 17:30."
+          "notes": "Venue confirmed: 65 King St E, the Google / Intrinsic Toronto office. Ticket held. BRING YOUR PASSPORT, their security will not let you in without it and the name on it must match your Luma registration. Hard stop 17:30 for Weezer.",
+          "mode": "transit"
         },
         {
           "start": "12:30",
@@ -3635,12 +3772,12 @@
         {
           "start": "17:40",
           "end": "18:40",
-          "placeId": "rendezviews",
+          "placeId": "st-lawrence-market",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner before the show. 229 Richmond W, big patio. Streetcar down to the arena, about 15 min.",
-          "mode": "transit"
+          "notes": "Dinner. 5 min east of the hackathon, then 12 min south to the arena. Vendors wind down by 19:00 so go straight in. Peameal bacon sandwich.",
+          "mode": "walk"
         },
         {
           "start": "19:00",
@@ -3658,13 +3795,13 @@
       "date": "2026-09-26",
       "dayNumber": 7,
       "weekday": "Saturday",
-      "label": "CityPASS harbourfront",
+      "label": "CityPASS harbourfront + Ossington night",
       "color": "#00a377",
       "base": "St. James Town",
       "items": [
         {
           "start": "08:15",
-          "end": "09:00",
+          "end": "08:50",
           "placeId": "forno-cultura",
           "title": null,
           "type": "coffee",
@@ -3673,8 +3810,8 @@
           "mode": "transit"
         },
         {
-          "start": "09:30",
-          "end": "11:30",
+          "start": "09:20",
+          "end": "11:10",
           "placeId": "ripleys-aquarium",
           "title": null,
           "type": "sight",
@@ -3683,8 +3820,18 @@
           "mode": "transit"
         },
         {
-          "start": "12:00",
-          "end": "13:40",
+          "start": "11:15",
+          "end": "11:25",
+          "placeId": "toronto-railway-museum",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "In Roundhouse Park at the base of the CN Tower, so it is literally on the walk between the aquarium and the tower.",
+          "mode": "walk"
+        },
+        {
+          "start": "11:30",
+          "end": "13:00",
           "placeId": "cn-tower",
           "title": null,
           "type": "sight",
@@ -3693,13 +3840,23 @@
           "mode": "walk"
         },
         {
-          "start": "14:00",
-          "end": "14:40",
+          "start": "13:20",
+          "end": "13:50",
           "placeId": "alexandros",
           "title": null,
           "type": "meal",
           "locked": false,
           "notes": "Lunch. 5 Queens Quay W, fast Greek gyros, 7 min from the cruise dock.",
+          "mode": "walk"
+        },
+        {
+          "start": "13:55",
+          "end": "14:05",
+          "placeId": "ferry-terminal",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Two minutes from lunch and two from the cruise dock. Note the fares for a possible island run: the reel says the skyline is best on the ride BACK after dark.",
           "mode": "walk"
         },
         {
@@ -3714,7 +3871,7 @@
         },
         {
           "start": "17:00",
-          "end": "18:00",
+          "end": "17:50",
           "placeId": "toronto-music-garden",
           "title": null,
           "type": "outdoors",
@@ -3731,6 +3888,46 @@
           "locked": false,
           "notes": "Dinner. 1087 Queen W. Martini happy hour runs 5-7pm if you shift earlier.",
           "mode": "transit"
+        },
+        {
+          "start": "20:30",
+          "end": "20:50",
+          "placeId": "ossington-ave",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Saturday night on Ossington is the whole point of this strip. Walk it before you stop anywhere.",
+          "mode": "walk"
+        },
+        {
+          "start": "20:55",
+          "end": "21:25",
+          "placeId": "bang-bang",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "1000/10. London fog and mango are the standouts. Expect a line, it is Saturday.",
+          "mode": "walk"
+        },
+        {
+          "start": "21:35",
+          "end": "22:15",
+          "placeId": "paris-paris",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Wine bar, best around 9pm but this is close enough. Two minutes from Bang Bang.",
+          "mode": "walk"
+        },
+        {
+          "start": "22:30",
+          "end": "23:00",
+          "placeId": "future-nightclub",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Free entry before 23:30 on a Saturday, which is exactly why this is the last stop. Twelve minutes east on Queen.",
+          "mode": "transit"
         }
       ]
     },
@@ -3738,19 +3935,29 @@
       "date": "2026-09-27",
       "dayNumber": 8,
       "weekday": "Sunday",
-      "label": "Move east + Kensington",
+      "label": "Move east, Kensington + Port Lands",
       "color": "#00a2a1",
       "base": "East End-Danforth",
       "items": [
         {
           "start": "09:00",
-          "end": "09:45",
+          "end": "09:35",
           "placeId": "le-beau",
           "title": null,
           "type": "meal",
           "locked": false,
           "notes": "Breakfast. 665 Dundas E, butter croissant. Pack first.",
           "mode": "walk"
+        },
+        {
+          "start": "09:50",
+          "end": "10:00",
+          "placeId": "distillery-district",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Free to wander, cobblestone pedestrian streets, and a straight run south from breakfast. Back at the apartment for the 11:00 checkout.",
+          "mode": "transit"
         },
         {
           "start": "11:00",
@@ -3763,13 +3970,23 @@
         },
         {
           "start": "12:30",
-          "end": "13:45",
+          "end": "13:35",
           "placeId": "kensington-market",
           "title": null,
           "type": "meal",
           "locked": false,
           "notes": "Lunch. Pedestrian Sunday: the market goes car-free. Locals call it free therapy.",
           "mode": "transit"
+        },
+        {
+          "start": "13:50",
+          "end": "14:00",
+          "placeId": "blackbird-baking",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Triple chocolate cookies. Two minutes from Kensington, and this is the day it finally fits after the NVIDIA meetup took its old slot.",
+          "mode": "walk"
         },
         {
           "start": "15:00",
@@ -3783,7 +4000,7 @@
         },
         {
           "start": "16:00",
-          "end": "17:15",
+          "end": "17:05",
           "placeId": "the-beaches",
           "title": null,
           "type": "outdoors",
@@ -3792,24 +4009,74 @@
           "mode": "walk"
         },
         {
-          "start": "18:10",
-          "end": "18:40",
+          "start": "17:20",
+          "end": "17:30",
+          "placeId": "kew-beach",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Next to Woodbine, five minutes along the boardwalk from the stop above. Same beach walk, different stretch.",
+          "mode": "walk"
+        },
+        {
+          "start": "18:15",
+          "end": "18:35",
           "placeId": "cibc-square-park",
           "title": null,
           "type": "activity",
           "locked": false,
-          "notes": "Sky park on the 4th floor at 81 Bay St. Easy from Union or the PATH.",
+          "notes": "Shifted 10 min later to absorb the run in from the Beaches.",
           "mode": "transit"
         },
         {
-          "start": "19:10",
-          "end": "20:40",
+          "start": "18:50",
+          "end": "19:00",
+          "placeId": "gooderham-building",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "The flatiron. Classic shot is looking east down Wellington, five minutes from the park and five from dinner.",
+          "mode": "walk"
+        },
+        {
+          "start": "19:15",
+          "end": "20:45",
           "placeId": "cactus-club",
           "title": null,
           "type": "meal",
           "locked": false,
           "notes": "Dinner. 77 Adelaide W, 10 min walk. The peach bellini you asked for.",
           "mode": "walk"
+        },
+        {
+          "start": "21:00",
+          "end": "21:25",
+          "placeId": "humble-donkey",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Best late-night laptop-friendly cafe downtown, patties from Patty Cake. Ten minutes from dinner.",
+          "mode": "walk"
+        },
+        {
+          "start": "21:50",
+          "end": "22:15",
+          "placeId": "polson-pier",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Skyline across the harbour, and night is when it is worth seeing. Check how you are getting back east before you commit, this is a quiet corner after dark.",
+          "mode": "transit"
+        },
+        {
+          "start": "22:30",
+          "end": "23:00",
+          "placeId": "biidaasige-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Ten minutes from Polson. Toronto's largest new park in a generation, two separate accounts flagged it. Night visit: trails will be dark, so this may be a drive-past rather than a walk.",
+          "mode": "transit"
         }
       ]
     },
@@ -3817,13 +4084,33 @@
       "date": "2026-09-28",
       "dayNumber": 9,
       "weekday": "Monday",
-      "label": "East end + Malcolm Todd",
+      "label": "East end, Bluffs + Malcolm Todd",
       "color": "#009bc4",
       "base": "East End-Danforth",
       "items": [
         {
-          "start": "09:15",
-          "end": "10:00",
+          "start": "08:15",
+          "end": "08:40",
+          "placeId": "riverdale-park-east",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "The postcard skyline from the east. Steep hill. Morning light rather than the sunset the reel used, but it is twenty minutes from the new place and the hill is quiet this early.",
+          "mode": "transit"
+        },
+        {
+          "start": "09:00",
+          "end": "09:50",
+          "placeId": "evergreen-brick-works",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Former quarry turned park. The farmers market is Saturdays so you get the site without the crowd.",
+          "mode": "transit"
+        },
+        {
+          "start": "10:20",
+          "end": "11:05",
           "placeId": "serano-bakery",
           "title": null,
           "type": "meal",
@@ -3832,18 +4119,8 @@
           "mode": "transit"
         },
         {
-          "start": "11:00",
-          "end": "12:30",
-          "placeId": "rc-harris",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "15 min east along Queen St E. Best sunset spot, but good any time.",
-          "mode": "transit"
-        },
-        {
-          "start": "13:05",
-          "end": "13:50",
+          "start": "11:25",
+          "end": "12:10",
           "placeId": "mon-k",
           "title": null,
           "type": "meal",
@@ -3852,8 +4129,8 @@
           "mode": "transit"
         },
         {
-          "start": "14:20",
-          "end": "15:30",
+          "start": "12:40",
+          "end": "13:45",
           "placeId": "woodbine-beach",
           "title": null,
           "type": "outdoors",
@@ -3862,13 +4139,43 @@
           "mode": "transit"
         },
         {
+          "start": "14:05",
+          "end": "15:15",
+          "placeId": "rc-harris",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "15 min east along Queen St E. Best sunset spot, but good any time.",
+          "mode": "transit"
+        },
+        {
+          "start": "15:50",
+          "end": "16:25",
+          "placeId": "scarborough-bluffs",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "90m cliffs and beach. Much closer from the Beaches than from downtown, which is why it lands here and not on a downtown day.",
+          "mode": "transit"
+        },
+        {
           "start": "17:00",
-          "end": "18:15",
+          "end": "17:40",
+          "placeId": "guild-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Architectural relics salvaged from demolished downtown buildings, including the Greek Theatre from the old Bank of Toronto. Twenty minutes further east from the Bluffs.",
+          "mode": "transit"
+        },
+        {
+          "start": "18:05",
+          "end": "18:40",
           "placeId": "mirello",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner and dessert. Pay-by-weight tiramisu, $9/100g. No scoop-backs, so go easy.",
+          "notes": "Compressed to 35 min: the Bluffs and Guild Park now sit ahead of it and History is a hard 19:00.",
           "mode": "drive"
         },
         {
@@ -4075,13 +4382,23 @@
       "date": "2026-09-30",
       "dayNumber": 11,
       "weekday": "Wednesday",
-      "label": "Mississauga + Chinatown",
+      "label": "Lakeshore west, Mississauga + Chinatown",
       "color": "#5281e5",
       "base": "Mississauga",
       "items": [
         {
-          "start": "08:45",
-          "end": "09:35",
+          "start": "08:05",
+          "end": "08:20",
+          "placeId": "brickhouse-waffle",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Rated 6/10 in the reel, matcha kinda mid. It is two minutes from Cafe 85 and this is a long day west, so it is here on convenience, not merit.",
+          "mode": "walk"
+        },
+        {
+          "start": "08:30",
+          "end": "09:10",
           "placeId": "cafe-85",
           "title": null,
           "type": "meal",
@@ -4090,8 +4407,38 @@
           "mode": "transit"
         },
         {
-          "start": "10:55",
-          "end": "11:55",
+          "start": "09:35",
+          "end": "09:45",
+          "placeId": "trillium-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Free. 1200 trees planted during the build. First stop on the run west along the lake.",
+          "mode": "transit"
+        },
+        {
+          "start": "10:00",
+          "end": "10:10",
+          "placeId": "exhibition-place",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Grounds of the CNE, five minutes west of Trillium.",
+          "mode": "walk"
+        },
+        {
+          "start": "10:45",
+          "end": "10:55",
+          "placeId": "humber-bay-bridge",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Free. Skyline shots back east, on the Martin Goodman Trail and directly on the route to Etobicoke.",
+          "mode": "transit"
+        },
+        {
+          "start": "11:35",
+          "end": "12:35",
           "placeId": "memory-express",
           "title": null,
           "type": "activity",
@@ -4101,7 +4448,17 @@
         },
         {
           "start": "12:50",
-          "end": "13:25",
+          "end": "13:35",
+          "placeId": "sherway-gardens",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "One kilometre from Memory Express and on the way to Mississauga, exactly as its note says. The euro-summer hack mall.",
+          "mode": "transit"
+        },
+        {
+          "start": "13:55",
+          "end": "14:15",
           "placeId": "java-u",
           "title": null,
           "type": "coffee",
@@ -4110,8 +4467,8 @@
           "mode": "drive"
         },
         {
-          "start": "13:45",
-          "end": "15:30",
+          "start": "14:35",
+          "end": "15:55",
           "placeId": "square-one",
           "title": null,
           "type": "activity",
@@ -4120,8 +4477,8 @@
           "mode": "walk"
         },
         {
-          "start": "15:30",
-          "end": "16:15",
+          "start": "15:55",
+          "end": "16:30",
           "placeId": "simons-square-one",
           "title": null,
           "type": "activity",
@@ -4130,8 +4487,28 @@
           "mode": "walk"
         },
         {
-          "start": "17:50",
-          "end": "18:20",
+          "start": "17:45",
+          "end": "17:55",
+          "placeId": "high-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Free. Breaks up the 45 min haul back from Mississauga and it is right on the Bloor line.",
+          "mode": "transit"
+        },
+        {
+          "start": "18:25",
+          "end": "18:45",
+          "placeId": "kill-kill-coffee",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "New spot on Dundas West, five minutes from High Park.",
+          "mode": "walk"
+        },
+        {
+          "start": "19:10",
+          "end": "19:30",
           "placeId": "chinatown",
           "title": null,
           "type": "sight",
@@ -4140,8 +4517,8 @@
           "mode": "transit"
         },
         {
-          "start": "18:35",
-          "end": "19:05",
+          "start": "19:45",
+          "end": "20:10",
           "placeId": "canada-computers",
           "title": null,
           "type": "activity",
@@ -4150,13 +4527,33 @@
           "mode": "walk"
         },
         {
-          "start": "19:25",
-          "end": "20:40",
+          "start": "20:30",
+          "end": "21:40",
           "placeId": "ghazale",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner. 661 College, ten minutes west. Huge portions, chicken shawarma plate.",
+          "notes": "Dinner pushed late by the west-end additions. Check they seat past 21:00.",
+          "mode": "walk"
+        },
+        {
+          "start": "21:50",
+          "end": "22:05",
+          "placeId": "little-italy",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "The College St strip, and Ghazale is on it. Walk it off.",
+          "mode": "walk"
+        },
+        {
+          "start": "22:20",
+          "end": "23:00",
+          "placeId": "sneaky-dees",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Toronto icon, open to 3am, so the 23:00 cut-off is yours not theirs. Nachos after a very long day.",
           "mode": "walk"
         }
       ]
@@ -4170,6 +4567,16 @@
       "base": "East End-Danforth",
       "items": [
         {
+          "start": "08:15",
+          "end": "08:45",
+          "placeId": "mossops-social",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Aesthetic cafe near Union. Lost its Sept 23 slot to the NVIDIA meetup, so it lands here before the Queen West walk.",
+          "mode": "transit"
+        },
+        {
           "start": "09:00",
           "end": "09:40",
           "placeId": "butter-baker",
@@ -4181,7 +4588,7 @@
         },
         {
           "start": "09:55",
-          "end": "10:35",
+          "end": "10:30",
           "placeId": "osgoode-hall",
           "title": null,
           "type": "sight",
@@ -4190,8 +4597,28 @@
           "mode": "walk"
         },
         {
-          "start": "10:50",
-          "end": "11:50",
+          "start": "10:45",
+          "end": "11:10",
+          "placeId": "grange-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Owned by the AGO, ten minutes west of Osgoode Hall.",
+          "mode": "walk"
+        },
+        {
+          "start": "11:15",
+          "end": "11:35",
+          "placeId": "misfit-icecream",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Award-winning rotating flavours, at the edge of Grange Park. WARNING: a pop-up with limited time left as of Aug 2026, check it still exists before you walk over.",
+          "mode": "walk"
+        },
+        {
+          "start": "11:50",
+          "end": "12:45",
           "placeId": "401-richmond",
           "title": null,
           "type": "sight",
@@ -4200,8 +4627,8 @@
           "mode": "walk"
         },
         {
-          "start": "12:05",
-          "end": "12:30",
+          "start": "12:55",
+          "end": "13:20",
           "placeId": "graffiti-alley",
           "title": null,
           "type": "sight",
@@ -4210,8 +4637,8 @@
           "mode": "walk"
         },
         {
-          "start": "12:45",
-          "end": "13:25",
+          "start": "13:35",
+          "end": "14:10",
           "placeId": "nadege",
           "title": null,
           "type": "meal",
@@ -4220,8 +4647,8 @@
           "mode": "walk"
         },
         {
-          "start": "13:45",
-          "end": "15:30",
+          "start": "14:30",
+          "end": "16:00",
           "placeId": "arcadia-earth",
           "title": null,
           "type": "activity",
@@ -4230,13 +4657,33 @@
           "mode": "transit"
         },
         {
-          "start": "16:45",
-          "end": "18:15",
+          "start": "16:20",
+          "end": "16:45",
+          "placeId": "trinity-bellwoods",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Largest park in the downtown core, and it sits directly between Arcadia Earth and dinner.",
+          "mode": "transit"
+        },
+        {
+          "start": "17:05",
+          "end": "18:25",
           "placeId": "milou",
           "title": null,
           "type": "meal",
           "locked": false,
           "notes": "Dinner. The steak in Little Portugal. Thursday is one of the days it is open.",
+          "mode": "transit"
+        },
+        {
+          "start": "18:45",
+          "end": "19:10",
+          "placeId": "rendezviews",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Big patio bar eight minutes from the arena doors. One drink before Phoebe Bridgers, then walk over.",
           "mode": "transit"
         },
         {
@@ -4300,11 +4747,11 @@
         {
           "start": "12:45",
           "end": "13:10",
-          "placeId": null,
-          "title": "UP Express, Union to Pearson",
+          "placeId": "up-express",
+          "title": null,
           "type": "transit",
           "locked": false,
-          "notes": "25 min. Runs every 15, so a missed train is not fatal.",
+          "notes": "Union to Pearson in about 20 min, trains roughly every 15. Fixed fare, no traffic risk.",
           "mode": "transit"
         },
         {
@@ -4418,6 +4865,11 @@
       "tag": "money",
       "title": "GO+WEGO combo ticket",
       "body": "About $34 return on a weekday, bundling the GO trip with unlimited WEGO in Niagara. Worth it: the GO station sits roughly 2km from Horseshoe Falls and the attractions are spread along the Parkway. WEGO Green Line runs every 15-20 min, last buses around 23:10."
+    },
+    {
+      "tag": "timing",
+      "title": "Passport for the Friday hackathon",
+      "body": "The post-ROSCon hackathon is hosted at the Google / Intrinsic Toronto office and their guest policy has no flexibility: register in Luma under your full legal name exactly as it appears on your passport, and carry the passport on Sept 25. Check the registered name now rather than on the day, and note RSVPs close Mon Sept 21."
     }
   ]
 }
