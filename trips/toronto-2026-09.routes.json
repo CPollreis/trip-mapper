@@ -424,6 +424,362 @@
     "clifton-hill>table-rock": {
       "roadKm": 3.34,
       "carMin": 6.4
+    },
+    "butter-baker>sheraton-centre": {
+      "roadKm": 0.61,
+      "carMin": 1.3
+    },
+    "little-pebbles>hackathon-65-king": {
+      "roadKm": 2.85,
+      "carMin": 6.1
+    },
+    "hackathon-65-king>le-genie": {
+      "roadKm": 1.38,
+      "carMin": 2.8
+    },
+    "le-genie>st-lawrence-market": {
+      "roadKm": 1.86,
+      "carMin": 4
+    },
+    "st-lawrence-market>scotiabank-arena": {
+      "roadKm": 1.1,
+      "carMin": 1.5
+    },
+    "sheraton-centre>dual-citizen-sheraton": {
+      "roadKm": 0,
+      "carMin": 0
+    },
+    "dual-citizen-sheraton>yunnan-noodle-shack": {
+      "roadKm": 1.5,
+      "carMin": 3.4
+    },
+    "dual-citizen-sheraton>sheraton-centre": {
+      "roadKm": 0,
+      "carMin": 0
+    },
+    "allan-gardens>eaton-centre": {
+      "roadKm": 1.35,
+      "carMin": 3.3
+    },
+    "eaton-centre>firefly-burger": {
+      "roadKm": 0.8,
+      "carMin": 2.3
+    },
+    "firefly-burger>sankofa-square": {
+      "roadKm": 0.31,
+      "carMin": 0.8
+    },
+    "sankofa-square>yonge-street": {
+      "roadKm": 0.79,
+      "carMin": 2
+    },
+    "yonge-street>seven-west-cafe": {
+      "roadKm": 1.31,
+      "carMin": 2.9
+    },
+    "egg-club>reference-library": {
+      "roadKm": 0.99,
+      "carMin": 2.1
+    },
+    "reference-library>queens-park": {
+      "roadKm": 1.73,
+      "carMin": 3.6
+    },
+    "queens-park>hart-house": {
+      "roadKm": 0.94,
+      "carMin": 2
+    },
+    "hart-house>arbor-room": {
+      "roadKm": 0,
+      "carMin": 0
+    },
+    "arbor-room>trinity-college": {
+      "roadKm": 1.6,
+      "carMin": 3.3
+    },
+    "trinity-college>uoft-campus": {
+      "roadKm": 0.8,
+      "carMin": 2.6
+    },
+    "uoft-campus>acacia-cafe": {
+      "roadKm": 1.48,
+      "carMin": 4.1
+    },
+    "acacia-cafe>rom": {
+      "roadKm": 1.34,
+      "carMin": 4.5
+    },
+    "rom>emmer": {
+      "roadKm": 1.35,
+      "carMin": 4
+    },
+    "emmer>mcha-bar": {
+      "roadKm": 0.57,
+      "carMin": 1.6
+    },
+    "spadina-museum>dupont-station": {
+      "roadKm": 0.85,
+      "carMin": 1.7
+    },
+    "dupont-station>christie-pits": {
+      "roadKm": 2.79,
+      "carMin": 5.8
+    },
+    "christie-pits>el-pastorcito": {
+      "roadKm": 1.91,
+      "carMin": 4.7
+    },
+    "zui-beer-bar>civil-liberties": {
+      "roadKm": 0.69,
+      "carMin": 1.5
+    },
+    "nathan-phillips-square>dual-citizen-sheraton": {
+      "roadKm": 0.24,
+      "carMin": 0.5
+    },
+    "hanoi-bites>ace-hotel": {
+      "roadKm": 0.28,
+      "carMin": 0.9
+    },
+    "kajiken>financial-district": {
+      "roadKm": 1.29,
+      "carMin": 2.6
+    },
+    "financial-district>roy-thomson-hall": {
+      "roadKm": 0.47,
+      "carMin": 1.1
+    },
+    "little-pebbles>st-patrick-station": {
+      "roadKm": 1.19,
+      "carMin": 2.7
+    },
+    "st-patrick-station>hackathon-65-king": {
+      "roadKm": 1.61,
+      "carMin": 3.5
+    },
+    "ripleys-aquarium>toronto-railway-museum": {
+      "roadKm": 0.29,
+      "carMin": 0.9
+    },
+    "toronto-railway-museum>cn-tower": {
+      "roadKm": 0.24,
+      "carMin": 0.8
+    },
+    "alexandros>ferry-terminal": {
+      "roadKm": 0.15,
+      "carMin": 0.7
+    },
+    "ferry-terminal>city-cruises": {
+      "roadKm": 1.16,
+      "carMin": 3.9
+    },
+    "city-cruises>martin-goodman-trail": {
+      "roadKm": 0.37,
+      "carMin": 2
+    },
+    "martin-goodman-trail>hto-park": {
+      "roadKm": 0.69,
+      "carMin": 2.5
+    },
+    "hto-park>toronto-music-garden": {
+      "roadKm": 0.97,
+      "carMin": 2.4
+    },
+    "toronto-music-garden>stackt-market": {
+      "roadKm": 3.22,
+      "carMin": 7
+    },
+    "stackt-market>gloria-great-hall": {
+      "roadKm": 2.17,
+      "carMin": 5
+    },
+    "gloria-great-hall>ossington-ave": {
+      "roadKm": 0.61,
+      "carMin": 1.4
+    },
+    "ossington-ave>bang-bang": {
+      "roadKm": 0.06,
+      "carMin": 0.1
+    },
+    "bang-bang>paris-paris": {
+      "roadKm": 0.42,
+      "carMin": 0.9
+    },
+    "paris-paris>future-nightclub": {
+      "roadKm": 1.94,
+      "carMin": 4
+    },
+    "le-beau>distillery-district": {
+      "roadKm": 1.34,
+      "carMin": 3
+    },
+    "distillery-district>kensington-market": {
+      "roadKm": 5.45,
+      "carMin": 9.1
+    },
+    "kensington-market>blackbird-baking": {
+      "roadKm": 0.96,
+      "carMin": 2.2
+    },
+    "blackbird-baking>ten-dean": {
+      "roadKm": 1.01,
+      "carMin": 2.7
+    },
+    "ten-dean>stay-stephenson": {
+      "roadKm": 9.17,
+      "carMin": 18.3
+    },
+    "the-beaches>kew-beach": {
+      "roadKm": 1.15,
+      "carMin": 3.1
+    },
+    "kew-beach>cibc-square-park": {
+      "roadKm": 7.86,
+      "carMin": 12.4
+    },
+    "cibc-square-park>gooderham-building": {
+      "roadKm": 1.1,
+      "carMin": 2.4
+    },
+    "gooderham-building>cactus-club": {
+      "roadKm": 1.08,
+      "carMin": 2.6
+    },
+    "cactus-club>humble-donkey": {
+      "roadKm": 0.91,
+      "carMin": 2
+    },
+    "humble-donkey>polson-pier": {
+      "roadKm": 4.37,
+      "carMin": 8.7
+    },
+    "polson-pier>biidaasige-park": {
+      "roadKm": 1.78,
+      "carMin": 4.1
+    },
+    "riverdale-park-east>evergreen-brick-works": {
+      "roadKm": 3.06,
+      "carMin": 6.2
+    },
+    "evergreen-brick-works>serano-bakery": {
+      "roadKm": 2.96,
+      "carMin": 6.5
+    },
+    "serano-bakery>mon-k": {
+      "roadKm": 2.83,
+      "carMin": 5.5
+    },
+    "woodbine-beach>rc-harris": {
+      "roadKm": 2.97,
+      "carMin": 5.6
+    },
+    "rc-harris>scarborough-bluffs": {
+      "roadKm": 7.75,
+      "carMin": 11.9
+    },
+    "scarborough-bluffs>guild-park": {
+      "roadKm": 7.52,
+      "carMin": 11.9
+    },
+    "guild-park>mirello": {
+      "roadKm": 10.13,
+      "carMin": 14.5
+    },
+    "niagara-bus-terminal>horseshoe-falls": {
+      "roadKm": 5.58,
+      "carMin": 11.4
+    },
+    "niagara-city-cruises>niagara-takes-flight": {
+      "roadKm": 3.25,
+      "carMin": 6.6
+    },
+    "niagara-takes-flight>white-water-walk": {
+      "roadKm": 4.19,
+      "carMin": 7
+    },
+    "brickhouse-waffle>cafe-85": {
+      "roadKm": 0.16,
+      "carMin": 0.4
+    },
+    "cafe-85>trillium-park": {
+      "roadKm": 5.21,
+      "carMin": 9.9
+    },
+    "trillium-park>exhibition-place": {
+      "roadKm": 1.1,
+      "carMin": 4
+    },
+    "exhibition-place>humber-bay-bridge": {
+      "roadKm": 7.34,
+      "carMin": 10.3
+    },
+    "humber-bay-bridge>memory-express": {
+      "roadKm": 8.96,
+      "carMin": 11.7
+    },
+    "simons-square-one>high-park": {
+      "roadKm": 22.09,
+      "carMin": 27.3
+    },
+    "high-park>kill-kill-coffee": {
+      "roadKm": 2.19,
+      "carMin": 6
+    },
+    "kill-kill-coffee>chinatown": {
+      "roadKm": 4.62,
+      "carMin": 9.6
+    },
+    "ghazale>little-italy": {
+      "roadKm": 0.34,
+      "carMin": 0.9
+    },
+    "little-italy>sneaky-dees": {
+      "roadKm": 0.94,
+      "carMin": 2
+    },
+    "mossops-social>butter-baker": {
+      "roadKm": 1.21,
+      "carMin": 2.6
+    },
+    "osgoode-hall>grange-park": {
+      "roadKm": 0.99,
+      "carMin": 2.4
+    },
+    "grange-park>misfit-icecream": {
+      "roadKm": 0.3,
+      "carMin": 0.9
+    },
+    "misfit-icecream>401-richmond": {
+      "roadKm": 0.76,
+      "carMin": 2
+    },
+    "arcadia-earth>trinity-bellwoods": {
+      "roadKm": 3.11,
+      "carMin": 7.1
+    },
+    "trinity-bellwoods>milou": {
+      "roadKm": 2.19,
+      "carMin": 5.1
+    },
+    "milou>rendezviews": {
+      "roadKm": 3.74,
+      "carMin": 8.2
+    },
+    "mon-k>up-express": {
+      "roadKm": 12.09,
+      "carMin": 13.7
+    },
+    "egg-club>queens-park": {
+      "roadKm": 1.23,
+      "carMin": 2.4
+    },
+    "arbor-room>rom": {
+      "roadKm": 2.75,
+      "carMin": 6.8
+    },
+    "blackbird-baking>stay-stephenson": {
+      "roadKm": 11.46,
+      "carMin": 19.1
     }
   }
 }
