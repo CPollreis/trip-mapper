@@ -12,6 +12,11 @@ export interface Place {
   source?: { url?: string; handle?: string; confidence?: string };
 }
 
+/** A mapped place no day schedules, with the days that pass within walking distance. */
+export interface Spare extends Place {
+  nearDays: number[];
+}
+
 export interface Item {
   start: string;
   end?: string | null;
@@ -77,6 +82,7 @@ export interface TripData {
   places: Place[];
   days: Day[];
   legs: Leg[];
+  spare: Spare[];
   advice: Advice[];
   modes: Record<string, ModeSpec>;
   routed: boolean;

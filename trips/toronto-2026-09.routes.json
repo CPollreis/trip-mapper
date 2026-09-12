@@ -780,6 +780,158 @@
     "blackbird-baking>stay-stephenson": {
       "roadKm": 11.46,
       "carMin": 19.1
+    },
+    "city-cruises>ferry-terminal": {
+      "roadKm": 0.87,
+      "carMin": 2.6
+    },
+    "ferry-terminal>wards-island": {
+      "roadKm": 2,
+      "carMin": 5,
+      "manual": "ferry/boardwalk, OSRM has no ferry data"
+    },
+    "wards-island>centre-island": {
+      "roadKm": 1.5,
+      "carMin": 3,
+      "manual": "ferry/boardwalk, OSRM has no ferry data"
+    },
+    "centre-island>hanlans-point": {
+      "roadKm": 1.6,
+      "carMin": 3,
+      "manual": "ferry/boardwalk, OSRM has no ferry data"
+    },
+    "hanlans-point>gloria-great-hall": {
+      "roadKm": 11,
+      "carMin": 20,
+      "manual": "ferry/boardwalk, OSRM has no ferry data"
+    },
+    "arcadia-earth>toronto-music-garden": {
+      "roadKm": 1.45,
+      "carMin": 3.2
+    },
+    "toronto-music-garden>trinity-bellwoods": {
+      "roadKm": 4.63,
+      "carMin": 9.6
+    },
+    "kew-beach>biidaasige-park": {
+      "roadKm": 5.63,
+      "carMin": 9.2
+    },
+    "polson-pier>cactus-club": {
+      "roadKm": 4.48,
+      "carMin": 9
+    },
+    "cactus-club>gooderham-building": {
+      "roadKm": 0.88,
+      "carMin": 1.9
+    },
+    "gooderham-building>cibc-square-park": {
+      "roadKm": 0.78,
+      "carMin": 1.8
+    },
+    "pearson-airport>up-express": {
+      "roadKm": 28.27,
+      "carMin": 25.7
+    },
+    "up-express>stay-sherbourne": {
+      "roadKm": 3.46,
+      "carMin": 6.8
+    },
+    "seven-west-cafe>stay-sherbourne": {
+      "roadKm": 1.42,
+      "carMin": 3.1
+    },
+    "stay-sherbourne>egg-club": {
+      "roadKm": 1.3,
+      "carMin": 2.5
+    },
+    "civil-liberties>stay-sherbourne": {
+      "roadKm": 4.31,
+      "carMin": 8.7
+    },
+    "stay-sherbourne>brick-room": {
+      "roadKm": 3.42,
+      "carMin": 7
+    },
+    "yunnan-noodle-shack>stay-sherbourne": {
+      "roadKm": 2.89,
+      "carMin": 5.7
+    },
+    "stay-sherbourne>dual-citizen-sheraton": {
+      "roadKm": 2.98,
+      "carMin": 5.8
+    },
+    "ace-hotel>stay-sherbourne": {
+      "roadKm": 4.56,
+      "carMin": 9.3
+    },
+    "dear-darling>stay-sherbourne": {
+      "roadKm": 5,
+      "carMin": 10.3
+    },
+    "stay-sherbourne>little-pebbles": {
+      "roadKm": 3.46,
+      "carMin": 7
+    },
+    "scotiabank-arena>stay-sherbourne": {
+      "roadKm": 6.2,
+      "carMin": 10.9
+    },
+    "stay-sherbourne>forno-cultura": {
+      "roadKm": 4.91,
+      "carMin": 9.9
+    },
+    "bang-bang>stay-sherbourne": {
+      "roadKm": 5.82,
+      "carMin": 11.6
+    },
+    "stay-sherbourne>le-beau": {
+      "roadKm": 2.39,
+      "carMin": 4.9
+    },
+    "cibc-square-park>stay-stephenson": {
+      "roadKm": 9.91,
+      "carMin": 14.1
+    },
+    "stay-stephenson>riverdale-park-east": {
+      "roadKm": 4.92,
+      "carMin": 10.6
+    },
+    "history-venue>stay-stephenson": {
+      "roadKm": 3.18,
+      "carMin": 5.2
+    },
+    "stay-stephenson>brickhouse-waffle": {
+      "roadKm": 9.59,
+      "carMin": 15.5
+    },
+    "sneaky-dees>stay-stephenson": {
+      "roadKm": 9.78,
+      "carMin": 19.6
+    },
+    "stay-stephenson>mossops-social": {
+      "roadKm": 8.76,
+      "carMin": 13.2
+    },
+    "scotiabank-arena>stay-stephenson": {
+      "roadKm": 12.71,
+      "carMin": 16.7
+    },
+    "stay-stephenson>mon-k": {
+      "roadKm": 3.13,
+      "carMin": 5.5
+    },
+    "mon-k>stay-stephenson": {
+      "roadKm": 3.3,
+      "carMin": 5.5
+    },
+    "stay-stephenson>up-express": {
+      "roadKm": 9.3,
+      "carMin": 14.5
+    },
+    "up-express>pearson-airport": {
+      "roadKm": 26.99,
+      "carMin": 24.5
     }
   }
 }

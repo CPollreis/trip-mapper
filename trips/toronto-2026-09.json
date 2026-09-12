@@ -888,6 +888,23 @@
       }
     },
     {
+      "id": "pearson-airport",
+      "name": "Toronto Pearson (YYZ)",
+      "category": "activity",
+      "neighbourhood": "Airport",
+      "lat": 43.6796,
+      "lon": -79.6115,
+      "address": "Toronto Pearson International Airport, Terminal 3, Mississauga, ON",
+      "notes": "Flair flies out of Terminal 3. UP Express platform is at Terminal 1, LINK train between them.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      }
+    },
+    {
       "id": "up-express",
       "name": "UP Express (Union Station)",
       "category": "activity",
@@ -1040,7 +1057,6 @@
         "caption_excerpt": "",
         "confidence": "confirmed"
       },
-      "shortlist": true,
       "booking": {
         "level": "recommended",
         "how": "Toronto Island ferry tickets online ahead of time; queues are long on warm weekends."
@@ -1095,7 +1111,8 @@
         "handle": "@thivv.jeyan",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "am-coffee-lab",
@@ -1474,7 +1491,8 @@
         "handle": "@fu2zy_peach",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "ghazale",
@@ -1542,7 +1560,8 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "vertigo",
@@ -1595,7 +1614,8 @@
         "handle": "@torontotwinss",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "sorauren-market",
@@ -2394,8 +2414,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "hanlans-point",
@@ -2412,8 +2431,7 @@
         "handle": "@_sudoutdoors_",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "exhibition-place",
@@ -3219,31 +3237,21 @@
         {
           "start": "13:15",
           "end": "13:45",
-          "placeId": null,
-          "title": "Lunch at Pearson",
+          "placeId": "pearson-airport",
+          "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Eat before the UP Express rather than hunting for food with luggage."
+          "notes": "Lunch at Pearson, Terminal 3. Eat before the UP Express rather than hunting for food with luggage."
         },
         {
-          "start": "13:50",
-          "end": "14:15",
-          "placeId": null,
-          "title": "UP Express, Pearson to Union",
+          "start": "14:15",
+          "end": "14:20",
+          "placeId": "up-express",
+          "title": null,
           "type": "transit",
           "locked": false,
-          "notes": "Trains every 15 min, 25 min ride. Buy on the app.",
-          "mode": "transit"
-        },
-        {
-          "start": "14:20",
-          "end": "14:55",
-          "placeId": null,
-          "title": "Union to St. James Town",
-          "type": "transit",
-          "locked": false,
-          "notes": "Line 1 north to Bloor, Line 2 east to Sherbourne. About 25 min with the walk.",
-          "mode": "transit"
+          "notes": "UP Express from Pearson, 25 min, trains every 15. Buy on the app. Then down to Line 1 for Bloor.",
+          "mode": "drive"
         },
         {
           "start": "15:00",
@@ -3313,6 +3321,15 @@
           "locked": false,
           "notes": "Open 24/7 at Yonge & Bloor, and on the way back to St. James Town. The reliable late stop on a night when everything else has closed.",
           "mode": "transit"
+        },
+        {
+          "start": "23:03",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3325,6 +3342,15 @@
       "base": "St. James Town",
       "items": [
         {
+          "start": "07:59",
+          "end": "08:29",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "08:45",
           "end": "09:30",
           "placeId": "egg-club",
@@ -3332,7 +3358,7 @@
           "type": "meal",
           "locked": false,
           "notes": "Breakfast. The goated spot, 531 Yonge.",
-          "mode": "transit"
+          "mode": "walk"
         },
         {
           "start": "09:50",
@@ -3463,6 +3489,15 @@
           "locked": false,
           "notes": "No menu: tell the bartender what you like and they build it. Ten minutes from Zui. Very short slot, so this is a nightcap or it is next trip.",
           "mode": "walk"
+        },
+        {
+          "start": "23:22",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3475,6 +3510,15 @@
       "base": "Financial District",
       "items": [
         {
+          "start": "06:11",
+          "end": "06:41",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "07:00",
           "end": "07:40",
           "placeId": "brick-room",
@@ -3482,7 +3526,7 @@
           "type": "coffee",
           "locked": false,
           "notes": "Breakfast in the PATH, two minutes from the conference doors. Early: the first workshop starts at 08:00. Confirm it opens by 07:00.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
           "start": "08:00",
@@ -3551,6 +3595,15 @@
           "locked": false,
           "notes": "Late dinner, 15 min walk west from the Sheraton. Solo booths. Later than originally planned because the happy hour runs to 21:00, so check the kitchen is still serving.",
           "mode": "walk"
+        },
+        {
+          "start": "22:38",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3563,6 +3616,15 @@
       "base": "Financial District",
       "items": [
         {
+          "start": "07:12",
+          "end": "07:42",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "08:00",
           "end": "08:50",
           "placeId": "dual-citizen-sheraton",
@@ -3570,7 +3632,7 @@
           "type": "coffee",
           "locked": false,
           "notes": "NVIDIA meetup day 2: Isaac Sim and Isaac ROS. Coffee at 08:00 in the conference hotel, so it costs you nothing but the early start and you are already at the doors for 09:00. Replaced breakfast at Mossop's Social, now on the shortlist.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
           "start": "09:00",
@@ -3629,6 +3691,15 @@
           "locked": false,
           "notes": "Shim-Sutcliffe building, RAIC Gold Medal 2021. Six minutes from dinner. Go for the lobby, the concrete is the point. Confirm the lobby bar is still serving this late.",
           "mode": "walk"
+        },
+        {
+          "start": "23:23",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3641,6 +3712,15 @@
       "base": "Financial District",
       "items": [
         {
+          "start": "07:12",
+          "end": "07:42",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "08:00",
           "end": "08:50",
           "placeId": "dual-citizen-sheraton",
@@ -3648,7 +3728,7 @@
           "type": "coffee",
           "locked": false,
           "notes": "NVIDIA meetup day 3: Agentic Skills. Coffee at 08:00 in the conference hotel. Replaced breakfast at Blackbird Baking, which is 20 min away in Baldwin Village and could never have made an 08:00 start; it is on the shortlist now.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
           "start": "09:00",
@@ -3718,6 +3798,15 @@
           "locked": false,
           "notes": "Last night of the conference. Ask for the love bomb.",
           "mode": "transit"
+        },
+        {
+          "start": "23:24",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3729,6 +3818,15 @@
       "color": "#329f47",
       "base": "Financial District",
       "items": [
+        {
+          "start": "06:56",
+          "end": "07:26",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
         {
           "start": "07:45",
           "end": "08:25",
@@ -3788,6 +3886,15 @@
           "locked": true,
           "notes": "Weezer, with The Shins and Silversun Pickups.",
           "mode": "transit"
+        },
+        {
+          "start": "22:58",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3795,10 +3902,19 @@
       "date": "2026-09-26",
       "dayNumber": 7,
       "weekday": "Saturday",
-      "label": "CityPASS harbourfront + Ossington night",
+      "label": "CityPASS harbourfront + Toronto Islands",
       "color": "#00a377",
       "base": "St. James Town",
       "items": [
+        {
+          "start": "07:21",
+          "end": "07:51",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
         {
           "start": "08:15",
           "end": "08:50",
@@ -3850,16 +3966,6 @@
           "mode": "walk"
         },
         {
-          "start": "13:55",
-          "end": "14:05",
-          "placeId": "ferry-terminal",
-          "title": null,
-          "type": "activity",
-          "locked": false,
-          "notes": "Two minutes from lunch and two from the cruise dock. Note the fares for a possible island run: the reel says the skyline is best on the ride BACK after dark.",
-          "mode": "walk"
-        },
-        {
           "start": "15:00",
           "end": "16:30",
           "placeId": "city-cruises",
@@ -3870,28 +3976,98 @@
           "mode": "transit"
         },
         {
-          "start": "17:00",
-          "end": "17:50",
-          "placeId": "toronto-music-garden",
+          "start": "16:45",
+          "end": "16:55",
+          "placeId": "ferry-terminal",
           "title": null,
-          "type": "outdoors",
+          "type": "activity",
           "locked": false,
-          "notes": "Walk west along the water from the dock. Designed around a Yo-Yo Ma cello suite.",
+          "notes": "Buy online before you get here, the queue is routinely longer than the crossing. Board for Ward's: the plan is to land east and walk the island chain west, so the last ferry is the night one from Hanlan's.",
           "mode": "walk"
         },
         {
-          "start": "18:45",
-          "end": "20:15",
+          "start": "16:55",
+          "end": "17:15",
+          "placeId": null,
+          "title": "Ferry across to Ward's Island",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 15 min. Ferry times are hand-set here: the router has no ferry data, so the map draws this leg straight across the harbour. Check the live schedule on the day.",
+          "mode": "transit"
+        },
+        {
+          "start": "17:20",
+          "end": "17:55",
+          "placeId": "wards-island",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Quietest of the three islands. Start here and walk west.",
+          "mode": "transit"
+        },
+        {
+          "start": "17:55",
+          "end": "18:15",
+          "placeId": null,
+          "title": "Boardwalk west to Centre Island",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 20 min along the water.",
+          "mode": "transit"
+        },
+        {
+          "start": "18:15",
+          "end": "19:00",
+          "placeId": "centre-island",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Skyline view back at the city. Bike rental here if you want to cover more ground.",
+          "mode": "walk"
+        },
+        {
+          "start": "19:00",
+          "end": "19:25",
+          "placeId": null,
+          "title": "Walk west to Hanlan's Point",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 20 min, the last stretch of the island chain.",
+          "mode": "transit"
+        },
+        {
+          "start": "19:25",
+          "end": "20:10",
+          "placeId": "hanlans-point",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Timed so you catch the ferry back after dark, which the reel calls the best $9 in Toronto and the single best skyline view in the city. This is the reason the islands took the evening.",
+          "mode": "walk"
+        },
+        {
+          "start": "20:10",
+          "end": "20:35",
+          "placeId": null,
+          "title": "Night ferry, Hanlan's Point back to the city",
+          "type": "transit",
+          "locked": false,
+          "notes": "The skyline shot. About 15 min on the water plus boarding.",
+          "mode": "transit"
+        },
+        {
+          "start": "20:55",
+          "end": "22:25",
           "placeId": "gloria-great-hall",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner. 1087 Queen W. Martini happy hour runs 5-7pm if you shift earlier.",
+          "notes": "Dinner pushed late by the island run. Confirm the kitchen serves past 21:00 on a Saturday before you commit to this order.",
           "mode": "transit"
         },
         {
-          "start": "20:30",
-          "end": "20:50",
+          "start": "22:35",
+          "end": "22:45",
           "placeId": "ossington-ave",
           "title": null,
           "type": "sight",
@@ -3900,34 +4076,23 @@
           "mode": "walk"
         },
         {
-          "start": "20:55",
-          "end": "21:25",
+          "start": "22:50",
+          "end": "23:00",
           "placeId": "bang-bang",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "1000/10. London fog and mango are the standouts. Expect a line, it is Saturday.",
+          "notes": "Last stop, and the Saturday line is real. If it has wrapped round the block, call it and go home.",
           "mode": "walk"
         },
         {
-          "start": "21:35",
-          "end": "22:15",
-          "placeId": "paris-paris",
+          "start": "23:26",
+          "end": null,
+          "placeId": "stay-sherbourne",
           "title": null,
-          "type": "drinks",
+          "type": "lodging",
           "locked": false,
-          "notes": "Wine bar, best around 9pm but this is close enough. Two minutes from Bang Bang.",
-          "mode": "walk"
-        },
-        {
-          "start": "22:30",
-          "end": "23:00",
-          "placeId": "future-nightclub",
-          "title": null,
-          "type": "drinks",
-          "locked": false,
-          "notes": "Free entry before 23:30 on a Saturday, which is exactly why this is the last stop. Twelve minutes east on Queen.",
-          "mode": "transit"
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -3940,6 +4105,15 @@
       "base": "East End-Danforth",
       "items": [
         {
+          "start": "08:14",
+          "end": "08:44",
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "09:00",
           "end": "09:35",
           "placeId": "le-beau",
@@ -3947,7 +4121,7 @@
           "type": "meal",
           "locked": false,
           "notes": "Breakfast. 665 Dundas E, butter croissant. Pack first.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
           "start": "09:50",
@@ -4019,64 +4193,63 @@
           "mode": "walk"
         },
         {
-          "start": "18:15",
-          "end": "18:35",
-          "placeId": "cibc-square-park",
-          "title": null,
-          "type": "activity",
-          "locked": false,
-          "notes": "Shifted 10 min later to absorb the run in from the Beaches.",
-          "mode": "transit"
-        },
-        {
-          "start": "18:50",
-          "end": "19:00",
-          "placeId": "gooderham-building",
-          "title": null,
-          "type": "sight",
-          "locked": false,
-          "notes": "The flatiron. Classic shot is looking east down Wellington, five minutes from the park and five from dinner.",
-          "mode": "walk"
-        },
-        {
-          "start": "19:15",
-          "end": "20:45",
-          "placeId": "cactus-club",
-          "title": null,
-          "type": "meal",
-          "locked": false,
-          "notes": "Dinner. 77 Adelaide W, 10 min walk. The peach bellini you asked for.",
-          "mode": "walk"
-        },
-        {
-          "start": "21:00",
-          "end": "21:25",
-          "placeId": "humble-donkey",
-          "title": null,
-          "type": "coffee",
-          "locked": false,
-          "notes": "Best late-night laptop-friendly cafe downtown, patties from Patty Cake. Ten minutes from dinner.",
-          "mode": "walk"
-        },
-        {
-          "start": "21:50",
-          "end": "22:15",
-          "placeId": "polson-pier",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Skyline across the harbour, and night is when it is worth seeing. Check how you are getting back east before you commit, this is a quiet corner after dark.",
-          "mode": "transit"
-        },
-        {
-          "start": "22:30",
-          "end": "23:00",
+          "start": "18:25",
+          "end": "19:15",
           "placeId": "biidaasige-park",
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Ten minutes from Polson. Toronto's largest new park in a generation, two separate accounts flagged it. Night visit: trails will be dark, so this may be a drive-past rather than a walk.",
+          "notes": "Golden hour starts 18:29, sunset 19:07. Moved off the 22:30 slot so the new park is seen in light.",
           "mode": "transit"
+        },
+        {
+          "start": "19:45",
+          "end": "20:10",
+          "placeId": "polson-pier",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Blue hour. Civil dusk 19:36, so the skyline across the harbour is lit. 23 min walk west from Biidaasige.",
+          "mode": "walk"
+        },
+        {
+          "start": "20:40",
+          "end": "22:05",
+          "placeId": "cactus-club",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Dinner. 77 Adelaide W. Now a 22 min ride back in from the Port Lands, not a 10 min walk. Sunday kitchen close is worth a look before you count on a 20:40 sit-down.",
+          "mode": "transit"
+        },
+        {
+          "start": "22:25",
+          "end": "22:35",
+          "placeId": "gooderham-building",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Floodlit at night. Photo looking east down Wellington.",
+          "mode": "walk"
+        },
+        {
+          "start": "22:50",
+          "end": "23:00",
+          "placeId": "cibc-square-park",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Elevated skyline and CN Tower, lit. Sunset view lost to Biidaasige.",
+          "mode": "walk"
+        },
+        {
+          "start": "23:39",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -4088,6 +4261,15 @@
       "color": "#009bc4",
       "base": "East End-Danforth",
       "items": [
+        {
+          "start": "07:21",
+          "end": "07:51",
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
         {
           "start": "08:15",
           "end": "08:40",
@@ -4187,6 +4369,15 @@
           "locked": true,
           "notes": "Malcolm Todd.",
           "mode": "drive"
+        },
+        {
+          "start": "22:49",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -4198,6 +4389,15 @@
       "color": "#008fdb",
       "base": "Niagara Falls",
       "items": [
+        {
+          "start": "06:20",
+          "end": "06:50",
+          "placeId": null,
+          "title": "Wake, get ready",
+          "type": "free",
+          "locked": false,
+          "notes": "Out the door by 07:35 for the 08:47 GO train."
+        },
         {
           "start": "06:50",
           "end": "07:30",
@@ -4387,6 +4587,24 @@
       "base": "Mississauga",
       "items": [
         {
+          "start": "01:30",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Home from Niagara. Line 1 north then Line 2 east from Union; if the last subway has gone, the 300 or 302 Blue Night runs Bloor-Danforth all night."
+        },
+        {
+          "start": "06:57",
+          "end": "07:27",
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "08:05",
           "end": "08:20",
           "placeId": "brickhouse-waffle",
@@ -4394,7 +4612,7 @@
           "type": "meal",
           "locked": false,
           "notes": "Rated 6/10 in the reel, matcha kinda mid. It is two minutes from Cafe 85 and this is a long day west, so it is here on convenience, not merit.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
           "start": "08:30",
@@ -4555,6 +4773,15 @@
           "locked": false,
           "notes": "Toronto icon, open to 3am, so the 23:00 cut-off is yours not theirs. Nachos after a very long day.",
           "mode": "walk"
+        },
+        {
+          "start": "23:38",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -4566,6 +4793,15 @@
       "color": "#8173e0",
       "base": "East End-Danforth",
       "items": [
+        {
+          "start": "07:10",
+          "end": "07:40",
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
         {
           "start": "08:15",
           "end": "08:45",
@@ -4658,7 +4894,17 @@
         },
         {
           "start": "16:20",
-          "end": "16:45",
+          "end": "17:05",
+          "placeId": "toronto-music-garden",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Moved off the harbourfront day so the islands could have the evening. It sits 9 min south of Arcadia Earth, so it costs almost nothing here.",
+          "mode": "walk"
+        },
+        {
+          "start": "17:30",
+          "end": "17:45",
           "placeId": "trinity-bellwoods",
           "title": null,
           "type": "outdoors",
@@ -4667,23 +4913,13 @@
           "mode": "transit"
         },
         {
-          "start": "17:05",
-          "end": "18:25",
+          "start": "18:05",
+          "end": "18:55",
           "placeId": "milou",
           "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Dinner. The steak in Little Portugal. Thursday is one of the days it is open.",
-          "mode": "transit"
-        },
-        {
-          "start": "18:45",
-          "end": "19:10",
-          "placeId": "rendezviews",
-          "title": null,
-          "type": "drinks",
-          "locked": false,
-          "notes": "Big patio bar eight minutes from the arena doors. One drink before Phoebe Bridgers, then walk over.",
+          "notes": "Dinner. The steak in Little Portugal. Thursday is one of the days it is open. Trimmed to 65 min: the Music Garden moved onto this day and the arena is a hard 19:30.",
           "mode": "transit"
         },
         {
@@ -4695,6 +4931,15 @@
           "locked": true,
           "notes": "Phoebe Bridgers with Alex G. 25 min in from Milou, leave by 18:45.",
           "mode": "transit"
+        },
+        {
+          "start": "23:47",
+          "end": null,
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment."
         }
       ]
     },
@@ -4707,6 +4952,15 @@
       "base": "East End-Danforth",
       "items": [
         {
+          "start": "07:27",
+          "end": "07:57",
+          "placeId": "stay-stephenson",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Wake, get ready, out the door."
+        },
+        {
           "start": "08:15",
           "end": "09:00",
           "placeId": "mon-k",
@@ -4714,16 +4968,16 @@
           "type": "meal",
           "locked": false,
           "notes": "Breakfast. Second visit, closest good thing to the east-end place.",
-          "mode": "walk"
+          "mode": "transit"
         },
         {
-          "start": "09:15",
+          "start": "09:20",
           "end": "11:00",
-          "placeId": null,
-          "title": "Pack and clear the apartment",
+          "placeId": "stay-stephenson",
+          "title": null,
           "type": "free",
           "locked": false,
-          "notes": "Do the real packing here, not after checkout."
+          "notes": "Pack and clear the apartment. Do the real packing here, not after checkout."
         },
         {
           "start": "11:00",
@@ -4735,33 +4989,24 @@
           "notes": ""
         },
         {
-          "start": "12:00",
-          "end": "12:40",
-          "placeId": null,
-          "title": "East end to Union",
-          "type": "transit",
-          "locked": false,
-          "notes": "Line 2 west to Bloor-Yonge, Line 1 south to Union. Pad it: 30 min plus the walk.",
-          "mode": "transit"
-        },
-        {
-          "start": "12:45",
-          "end": "13:10",
+          "start": "12:40",
+          "end": "12:45",
           "placeId": "up-express",
           "title": null,
           "type": "transit",
           "locked": false,
-          "notes": "Union to Pearson in about 20 min, trains roughly every 15. Fixed fare, no traffic risk.",
+          "notes": "Line 2 west to Bloor-Yonge, Line 1 south to Union. Pad it: 30 min plus the walk. Then over to the UP Express platform.",
           "mode": "transit"
         },
         {
           "start": "13:15",
           "end": "14:00",
-          "placeId": null,
-          "title": "Lunch at Pearson, Terminal 3",
+          "placeId": "pearson-airport",
+          "title": null,
           "type": "meal",
           "locked": false,
-          "notes": "Eat airside once you are through security."
+          "notes": "UP Express from Union, about 25 min, trains roughly every 15. Fixed fare, no traffic risk. Then eat airside once you are through security.",
+          "mode": "drive"
         },
         {
           "start": "14:45",

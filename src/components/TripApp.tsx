@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import maplibregl, { type Map as MLMap, type StyleSpecification } from 'maplibre-gl';
-import type { TripData, Leg, Place, Day, Item, Advice } from './types';
+import type { TripData, Leg, Place, Day, Item, Advice, Spare } from './types';
 
 // CARTO's dark basemap. Free, no key, and already the right value range for
 // the portfolio's palette, so the trip data stays the only saturated thing
@@ -12,7 +12,7 @@ const fmt = (iso: string) =>
     { month: 'short', day: 'numeric', timeZone: 'UTC' });
 
 export default function TripApp({ data }: { data: TripData }) {
-  const { trip, places, days, legs, modes, advice } = data;
+  const { trip, places, days, legs, spare, modes, advice } = data;
   const mapRef = useRef<MLMap | null>(null);
   const holder = useRef<HTMLDivElement | null>(null);
   const [active, setActive] = useState<number | null>(null);
@@ -62,6 +62,7 @@ export default function TripApp({ data }: { data: TripData }) {
       if (map.getSource('legs')) return;
       map.addSource('legs', { type: 'geojson', data: legGeoJSON(legs) });
       map.addSource('stops', { type: 'geojson', data: stopGeoJSON(stops) });
+      map.addSource('spare', { type: 'geojson', data: spareGeoJSON(spare, null) });
 
       // line-dasharray takes no data-driven expression, so each mode gets its
       // own layer with a static dash and a filter.
@@ -97,6 +98,44 @@ export default function TripApp({ data }: { data: TripData }) {
           'text-color': '#fafafa',
           'text-halo-color': '#09090b',
           'text-halo-width': 1.6,
+        },
+      });
+
+      // Unscheduled options. Every hue in the ramp belongs to a day, so these
+      // are told apart by weight instead: an unfilled ring, no numeral, and no
+      // saturation. Added before the stop layers so a planned pin always draws
+      // on top of an option sitting at the same address.
+      map.addLayer({
+        id: 'spare-ring',
+        type: 'circle',
+        source: 'spare',
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 3.5, 14, 6, 17, 8],
+          'circle-color': '#09090b',
+          'circle-opacity': ['case', ['get', 'near'], 0.55, 0.2],
+          'circle-stroke-color': '#d4d4d8',
+          'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 10, 1, 14, 1.5, 17, 2],
+          'circle-stroke-opacity': ['case', ['get', 'near'], 0.95, 0.22],
+        },
+      });
+      map.addLayer({
+        id: 'spare-label',
+        type: 'symbol',
+        source: 'spare',
+        minzoom: 12.5,
+        layout: {
+          'text-field': ['get', 'name'],
+          'text-size': 10,
+          'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+          'text-offset': [0, 1.1],
+          'text-anchor': 'top',
+          'text-allow-overlap': false,
+        },
+        paint: {
+          'text-color': '#d4d4d8',
+          'text-halo-color': '#09090b',
+          'text-halo-width': 1.4,
+          'text-opacity': ['case', ['get', 'near'], 0.95, 0.25],
         },
       });
 
@@ -153,7 +192,25 @@ export default function TripApp({ data }: { data: TripData }) {
              </div>`)
           .addTo(map);
       });
-      for (const id of ['stop-dot', 'stop-halo']) {
+      map.on('click', 'spare-ring', (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const p = f.properties as Record<string, string>;
+        new maplibregl.Popup({ offset: 12, closeButton: true })
+          .setLngLat((f.geometry as GeoJSON.Point).coordinates as [number, number])
+          .setHTML(
+            `<div style="font-family:var(--font-sans);max-width:240px">
+               <div style="font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#d4d4d8">
+                 Unscheduled${p.category ? ` &middot; ${esc(p.category)}` : ''}</div>
+               <div style="font-weight:600;margin-top:3px">${esc(p.name)}</div>
+               ${p.neighbourhood ? `<div style="font-size:12px;color:#a1a1aa">${esc(p.neighbourhood)}</div>` : ''}
+               ${p.tip ? `<div style="font-size:12px;color:#a1a1aa;margin-top:6px">${esc(p.tip)}</div>` : ''}
+               <div style="font-size:12px;color:#a1a1aa;margin-top:6px;padding-top:6px;border-top:1px solid #27272a">
+                 ${p.walkable ? `A walk from ${esc(p.walkable)}` : 'No day passes within walking distance'}</div>
+             </div>`)
+          .addTo(map);
+      });
+      for (const id of ['stop-dot', 'stop-halo', 'spare-ring']) {
         map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));
         map.on('mouseleave', id, () => (map.getCanvas().style.cursor = ''));
       }
@@ -184,6 +241,10 @@ export default function TripApp({ data }: { data: TripData }) {
       : (['==', ['get', 'dayNumber'], active] as unknown as maplibregl.FilterSpecification);
     map.setFilter('leg-label', dayFilter);
     for (const id of ['stop-halo', 'stop-dot', 'stop-num']) map.setFilter(id, dayFilter);
+    // Unscheduled pins are never filtered out, only dimmed: the point of them is
+    // to be visible when a day runs short, including the ones you would have to
+    // travel for.
+    (map.getSource('spare') as maplibregl.GeoJSONSource)?.setData(spareGeoJSON(spare, active));
 
     const pts = stops
       .filter((s) => active === null || s.day.dayNumber === active)
@@ -364,6 +425,12 @@ export default function TripApp({ data }: { data: TripData }) {
               {spec.label}
             </span>
           ))}
+          <span className="flex items-center gap-1.5">
+            <svg width="18" height="10" aria-hidden>
+              <circle cx="9" cy="5" r="3.5" fill="#09090b" stroke="#d4d4d8" strokeWidth="1.5" />
+            </svg>
+            Unscheduled ({spare.length})
+          </span>
         </footer>
       </aside>
     </div>
@@ -461,6 +528,29 @@ function legGeoJSON(legs: Leg[]): GeoJSON.FeatureCollection {
       properties: {
         mode: l.mode, dayNumber: l.dayNumber, color: l.color,
         label: `${l.minutes} min`,
+      },
+    })),
+  };
+}
+
+// `near` is what the paint expressions dim on. With no day selected everything
+// reads at full strength; with one selected, only what you could walk to from
+// that day's route does.
+function spareGeoJSON(spare: Spare[], active: number | null): GeoJSON.FeatureCollection {
+  return {
+    type: 'FeatureCollection',
+    features: spare.map((p) => ({
+      type: 'Feature',
+      geometry: { type: 'Point', coordinates: [p.lon, p.lat] },
+      properties: {
+        name: p.name,
+        category: p.category ?? '',
+        neighbourhood: p.neighbourhood ?? '',
+        tip: p.notes ?? '',
+        near: active === null || p.nearDays.includes(active),
+        walkable: p.nearDays.length
+          ? `day${p.nearDays.length > 1 ? 's' : ''} ${p.nearDays.join(', ')}`
+          : '',
       },
     })),
   };
