@@ -1,28 +1,39 @@
 # trip-mapper
 
-Plan a trip in one JSON file. Generates a day-coded map, an itinerary, a booking
-checklist and a Google My Maps import. No dependencies.
+Plan a trip in one JSON file. Generates a day-coded map and itinerary you can
+pan, filter by day and read stop by stop.
 
-## How to use
+![The Toronto trip: day-coded pins, travel legs between them, and the day's itinerary in the sidebar](docs/screenshot.png)
+
+## Run it locally
+
+Needs [Node](https://nodejs.org) 22 or newer.
 
 ```bash
+git clone https://github.com/CPollreis/trip-mapper.git
+cd trip-mapper
+npm install
 npm run dev
 ```
 
-Opens http://localhost:4173, rebuilds when you save, reloads the tab. Edit the
-trip file in one window, watch the map change in the other.
+Then open **http://localhost:4321/trip-mapper**.
+
+The `/trip-mapper` path is not optional. The site deploys to GitHub Pages under
+a repo subpath, so `base` is set in `astro.config.mjs` and dev honours it too.
+Plain `http://localhost:4321/` returns a 404.
+
+The dev server rebuilds when you save and reloads the tab, so you can edit the
+trip file in one window and watch the map change in the other.
 
 | command | what it does |
 |---|---|
 | `npm run dev` | build, serve, watch, live reload |
-| `npm run build` | build once into `dist/<trip>/` |
+| `npm run build` | type-check and build the static site into `dist/` |
+| `npm run preview` | serve the built `dist/` |
 | `npm run trips` | list your trip files |
-| `npm run new-trip -- --city <slug> --start <date> --end <date>` | start a new trip |
+| `npm run scan` | check tracked files for personal data, showing any matches |
 
-Add `-- trips/<file>.json` to any command when you have more than one trip, and
-`-- --port 5000` to `dev` to move it off the default port.
-
-**Start a trip**
+## Start a trip
 
 ```bash
 npm run new-trip -- --city lisbon --start 2027-04-02 --end 2027-04-09
@@ -38,12 +49,17 @@ them rather than over them.
 geography behind them. To add coastline and transit lines, create
 `cities/<slug>.json`; `cities/toronto.json` is the worked example.
 
+## Keeping private details out of git
+
+This repo is public, so the rule it enforces is that locations and times are
+publishable and every other personal detail is not.
+
 **`resources/`** is for your own files: tickets, receipts, confirmations.
 Everything you put there is gitignored and stays on your machine.
 
-**Keep private details out of git** with `resources/private.json`. Fields there
-replace the same fields on the matching place at build time, so the committed
-trip file can hold a neighbourhood while your local build has the real address:
+**`resources/private.json`** overrides fields on the matching place at build
+time, so the committed trip file can hold a neighbourhood while your local
+build has the real address:
 
 ```json
 { "places": { "stay-01": {
@@ -51,5 +67,10 @@ trip file can hold a neighbourhood while your local build has the real address:
     "lat": 12.3456, "lon": -65.4321 } } }
 ```
 
-Generated output lands in `dist/<trip>/` and is gitignored: `index.html`,
-`mymaps.csv`, `itinerary.md`, `reservations.md`, `shortlist.md`, `unresolved.md`.
+Two guards back this up. `scripts/scan-personal.mjs` fails the build on contact
+details, booking references, door codes and payment fragments; run it yourself
+with `npm run scan`. `scripts/guard-public.mjs` refuses to produce a public
+bundle while any `resources/` file is on disk, which is why the deploy workflow
+builds from a clean CI checkout rather than from your local `dist/`.
+
+Build output lands in `dist/` and is gitignored.

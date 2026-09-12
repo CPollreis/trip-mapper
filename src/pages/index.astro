@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import TripApp from '../components/TripApp.tsx';
 import { loadTrip } from '../lib/load.mjs';
-import { MODES } from '../lib/modes.mjs';
+import { MODES, haversineKm, WALK_LIMIT_KM, DETOUR } from '../lib/modes.mjs';
+import type { Place } from '../components/types';
 
 // Build time only. A CI checkout has no resources/ directory, so the overlay is
 // absent there and the deployed site gets neighbourhood-level data.
@@ -14,10 +15,40 @@ if (errors.length) {
 for (const w of warnings) console.warn(`warn  ${w}`);
 if (overlaid) console.log(`  private overlay applied to ${overlaid} places (local build)`);
 
-const mapped = trip.places.filter((p: { lat?: unknown }) => typeof p.lat === 'number');
+// loadTrip comes from an untyped .mjs, so name the shapes this page relies on.
+type RawItem = { placeId?: string | null };
+type RawDay = { dayNumber: number; items: RawItem[] };
+const allDays: RawDay[] = trip.days;
+// Unresolved places carry null coordinates; `mapped` is what filters them out.
+const allPlaces: Place[] = trip.places;
+
+const mapped = allPlaces.filter((p) => typeof p.lat === 'number');
 const routed = legs.length > 0 && legs.every((l) => l.routed);
 
-const data = { trip: trip.trip, places: mapped, days: trip.days, legs,
+// Everything with coordinates that no day actually schedules: the shortlist,
+// plus anything that fell out of a plan. Drawn on the map in a neutral ring so
+// a day that runs short has visible options. The unresolved reels have no
+// coordinates and so cannot appear here at all.
+const scheduled = new Set(allDays.flatMap((d) => d.items.map((i) => i.placeId).filter(Boolean)));
+// WALK_LIMIT_KM is a road distance; these pins are measured straight-line, so
+// undo the detour factor to ask the same question: is this a walk from there?
+const NEAR_KM = WALK_LIMIT_KM / DETOUR;
+const byPlaceId = new Map(allPlaces.map((p) => [p.id, p]));
+const spare = mapped
+  .filter((p) => !scheduled.has(p.id))
+  .map((p) => ({
+    ...p,
+    // Which days pass within walking distance. Static, so the client never
+    // recomputes geometry when you change the day filter.
+    nearDays: allDays
+      .filter((d) => d.items.some((i) => {
+        const stop = i.placeId ? byPlaceId.get(i.placeId) : undefined;
+        return stop && typeof stop.lat === 'number' && haversineKm(stop, p) <= NEAR_KM;
+      }))
+      .map((d) => d.dayNumber),
+  }));
+
+const data = { trip: trip.trip, places: mapped, days: trip.days, legs, spare,
                advice: trip.advice ?? [], modes: MODES, routed };
 const title = trip.trip.title ?? `${trip.trip.city} trip`;
 ---
