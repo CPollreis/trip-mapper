@@ -69,7 +69,7 @@
       "lat": 43.65111,
       "lon": -79.38347,
       "address": "123 Queen St W, Toronto, ON",
-      "notes": "Host venue for the three NVIDIA daily meetups. Inside the Sheraton Centre, the same building as ROSCon, so there is no travel time. The organiser's own post asked \"the same ROSCon Sheraton?\", so find the exact spot in the lobby on day 1. Not the same as the unresolved Dual Citizen saved off Instagram (the one with the waterfall); confirm whether that is this location.",
+      "notes": "Host venue for the three NVIDIA daily meetups. Inside the Sheraton Centre, the same building as ROSCon, so there is no travel time. The organiser's own post asked \"the same ROSCon Sheraton?\", so find the exact spot in the lobby on day 1. This is also the \"waterfall\" Dual Citizen saved off Instagram (@dualcitizentoronto) - confirmed, Dual Citizen has only one Toronto location.",
       "source": {
         "type": "fixed",
         "url": "",
@@ -320,8 +320,7 @@
         "handle": "@jen.trt",
         "caption_excerpt": "my new favorite WFH spot in downtown toronto",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ezras-pound",
@@ -644,8 +643,7 @@
         "handle": "@chris.caren",
         "caption_excerpt": "UofT glaze",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "acacia-cafe",
@@ -662,8 +660,7 @@
         "handle": "@cherstravels",
         "caption_excerpt": "3 of my fav, most aesthetic cafés at uoft",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "arbor-room",
@@ -714,8 +711,7 @@
         "handle": "@casswebs",
         "caption_excerpt": "waterfront library",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ferry-terminal",
@@ -970,8 +966,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "square-one",
@@ -1111,8 +1106,7 @@
         "handle": "@thivv.jeyan",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "am-coffee-lab",
@@ -1129,8 +1123,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "seven-west-cafe",
@@ -1351,8 +1344,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "oklahoma-burgers",
@@ -1403,8 +1395,7 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "moon-milk",
@@ -1421,8 +1412,7 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "bang-bang",
@@ -1473,8 +1463,7 @@
         "handle": "@fu2zy_peach",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "paris-paris",
@@ -1491,8 +1480,7 @@
         "handle": "@fu2zy_peach",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ghazale",
@@ -1560,8 +1548,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "vertigo",
@@ -1578,8 +1565,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "twister-karaoke",
@@ -1596,8 +1582,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "rendezviews",
@@ -1614,8 +1599,7 @@
         "handle": "@torontotwinss",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "sorauren-market",
@@ -1632,8 +1616,7 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "blackbird-baking",
@@ -1684,8 +1667,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "forno-cultura",
@@ -1719,8 +1701,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "gouter",
@@ -1737,8 +1718,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "fleur-du-jour",
@@ -1755,8 +1735,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "ba-noi",
@@ -1773,8 +1752,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "mon-k",
@@ -1808,8 +1786,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "brodflour",
@@ -1826,8 +1803,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "nadege",
@@ -1861,8 +1837,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "tre-mari",
@@ -1879,8 +1854,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "serano-bakery",
@@ -1914,8 +1888,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "le-genie",
@@ -1966,8 +1939,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "dear-grain",
@@ -1984,8 +1956,7 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "queens-park",
@@ -2257,8 +2228,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "hto-park",
@@ -2275,8 +2245,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "humber-bay-bridge",
@@ -2310,8 +2279,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "toronto-railway-museum",
@@ -2345,8 +2313,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "evergreen-brick-works",
@@ -2482,8 +2449,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "reference-library",
@@ -2500,8 +2466,7 @@
         "handle": "@secret_toronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "downsview-park",
@@ -2518,8 +2483,7 @@
         "handle": "@dreamyvoyagerr",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "paradise-theatre",
@@ -2536,8 +2500,7 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "sherway-gardens",
@@ -2571,8 +2534,7 @@
         "handle": "@kate.ontario",
         "caption_excerpt": "",
         "confidence": "inferred"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "toronto-zoo",
@@ -2589,8 +2551,7 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "horseshoe-falls",
@@ -2645,8 +2606,7 @@
       "booking": {
         "level": "recommended",
         "how": "Niagara Parks site, timed entry."
-      },
-      "shortlist": true
+      }
     },
     {
       "id": "journey-behind-falls",
@@ -2786,330 +2746,23 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      },
-      "shortlist": true
-    },
-    {
-      "id": "unresolved-dzxpjwoub85",
-      "name": "Unidentified reel by @hadar.realtor",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Realtor condo tour, not a visitable place.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DZxPjWoub85/",
-        "handle": "@hadar.realtor",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbodu-oerul",
-      "name": "Unidentified reel by @lexilaube",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Multi-stop road trip reel, no Toronto venue named.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DboDU_OERUL/",
-        "handle": "@lexilaube",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dzu-gjao7fj",
-      "name": "Unidentified reel by @fred.bk",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Shopify office workspace. Commenters confirm it is not publicly accessible.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DZU-gJAO7fj/",
-        "handle": "@fred.bk",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbt5kujt7ry",
-      "name": "Unidentified reel by @whilmina",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Opinion reel on downtown rent. No venue.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Dbt5Kujt7ry/",
-        "handle": "@whilmina",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dzpucfvxdsp",
-      "name": "Unidentified reel by @nicktarmo",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Opinion reel on city vs suburbs. No venue.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DZpucfVxdsp/",
-        "handle": "@nicktarmo",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-db1dnapgq-u",
-      "name": "Unidentified reel by @arjsun",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Summer photo carousel, no location given. Commenters repeatedly asked where and got no answer.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Db1DnApGQ_u/",
-        "handle": "@arjsun",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dabymgot6ed",
-      "name": "Unidentified reel by @lucasrozmus.realtor",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Realtor's six-things-about-Toronto reel. No single venue, but name-drops St. Lawrence Market, Kensington Market, Chinatown, Little Portugal, High Park, Scarborough Bluffs, Rouge National Urban Park.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DabYMgoT6Ed/",
-        "handle": "@lucasrozmus.realtor",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbylv9-x3mi",
-      "name": "Unidentified reel by @brewingbrokers",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Midtown neighbourhood tier ranking. Opinion content, no venue.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DbYlV9-x3mI/",
-        "handle": "@brewingbrokers",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dzykl6im7x9",
-      "name": "Unidentified reel by @torontotwinss",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Sponsored 24-hour Toronto montage (#ad for A&W). No specific venue identifiable from the caption.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DZYKl6iM7X9/",
-        "handle": "@torontotwinss",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbosy9igegl",
-      "name": "Unidentified reel by @travelmowgly",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "CN Tower day vs night photo comparison. The shooting location is not given, and the tower itself is already on the plan.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Dbosy9iGEgL/",
-        "handle": "@travelmowgly",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbexv1jnkr6",
-      "name": "Unidentified reel by @callmesilvs",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "General new-to-Toronto advice reel. No venue.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DbExV1JNkR6/",
-        "handle": "@callmesilvs",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-db1bue4ooz-",
-      "name": "Unidentified reel by @jamie.fischh",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "NOT TORONTO. This is the Brooklyn Bridge in New York (#nyc #brooklynbridge). Likely saved by mistake.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Db1bUe4OOz-/",
-        "handle": "@jamie.fischh",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbeeppsokq8",
-      "name": "Unidentified reel by @cole_ryski",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Photography project: CN Tower shot from many points on a 3 km radius. A technique, not a destination.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DbEEPpSOKq8/",
-        "handle": "@cole_ryski",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbzixqkj61w",
-      "name": "Unidentified reel by @jordshore",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "'Best new spot for a nighttime stroll', a waterfront park with skyline views, but never named. A commenter also asked and got no answer. Possibly Love Park or The Bentway; not confident enough to place a pin.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DbzIxqKJ61W/",
-        "handle": "@jordshore",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbqgopikycx",
-      "name": "Unidentified reel by @arjsun",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "'Arrival of august' photo set. No location given; a commenter asked and got no answer.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/DbqgoPIkYcX/",
-        "handle": "@arjsun",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-dbtvw-wkedk",
-      "name": "Unidentified reel by @sidneysmithcommons",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Carousel comparing travel times to parks near UofT (Queen's Park, High Park and others). A reference chart, not a single destination.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Dbtvw-WkeDK/",
-        "handle": "@sidneysmithcommons",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "unresolved-da2tcweukr2",
-      "name": "Unidentified reel by @kurt.wang",
-      "category": "sight",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Sunrise skyline photo. Shooting location never given; a commenter asked directly and got no answer.",
-      "source": {
-        "type": "instagram",
-        "url": "https://www.instagram.com/p/Da2tCwEukr2/",
-        "handle": "@kurt.wang",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
-      }
-    },
-    {
-      "id": "dual-citizen",
-      "name": "Dual Citizen Coffee Roasters",
-      "category": "coffee",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "The cafe with a waterfall inside.",
-      "source": {
-        "type": "instagram",
-        "url": "",
-        "handle": "@dualcitizentoronto",
-        "caption_excerpt": "",
-        "confidence": "unresolved"
       }
     },
     {
       "id": "blossom-moment",
       "name": "Blossom Moment",
       "category": "coffee",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
+      "neighbourhood": "Financial District",
+      "lat": 43.6495,
+      "lon": -79.37957,
+      "address": "Scotia Plaza, 40 King St W, Toronto, ON",
       "notes": "Aesthetic cafe near Union. Strawberry matcha latte, pistachio latte.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "@jasminekharoud02",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
       }
     },
     {
@@ -3117,16 +2770,16 @@
       "name": "Bello Pizza Waterworks",
       "category": "food",
       "neighbourhood": "Waterworks",
-      "lat": null,
-      "lon": null,
-      "address": "",
+      "lat": 43.64673,
+      "lon": -79.39923,
+      "address": "50 Brant St, Toronto, ON M5V 3G9 (Waterworks Food Hall)",
       "notes": "Peaches and prosciutto pizza called a mythical pull.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "@chrispoletek",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
       }
     },
     {
@@ -3134,50 +2787,50 @@
       "name": "Short Turn",
       "category": "food",
       "neighbourhood": "Bathurst & Queen",
-      "lat": null,
-      "lon": null,
-      "address": "",
+      "lat": 43.64739,
+      "lon": -79.40365,
+      "address": "576 Queen St W, Toronto, ON",
       "notes": "The pancakes. Run don't walk. At Bathurst and Queen.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "@brazilianfoodie",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
       }
     },
     {
       "id": "burattino",
       "name": "Burattino Pizza",
       "category": "food",
-      "neighbourhood": "",
-      "lat": null,
-      "lon": null,
-      "address": "",
-      "notes": "Called the best pepperoni pizza in Toronto.",
+      "neighbourhood": "Junction",
+      "lat": 43.6652,
+      "lon": -79.47309,
+      "address": "3109 Dundas St W, Toronto, ON M6P 1Z9",
+      "notes": "Called the best pepperoni pizza in Toronto. \"Home of the 120 Pepperoni.\" Also has a Queen St W location (923 Queen St W, Fri-Sun only).",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
       }
     },
     {
       "id": "daisy-mays",
-      "name": "Daisy Mays",
+      "name": "Daisy May's",
       "category": "food",
       "neighbourhood": "Seaton Village",
-      "lat": null,
-      "lon": null,
-      "address": "",
+      "lat": 43.6689,
+      "lon": -79.41267,
+      "address": "968 Bathurst St, Toronto, ON",
       "notes": "On Bathurst between Bloor and Dupont.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "@insta.noodls",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
       }
     },
     {
@@ -3185,16 +2838,33 @@
       "name": "Aqualuna",
       "category": "sight",
       "neighbourhood": "East Bayfront",
-      "lat": null,
-      "lon": null,
-      "address": "",
+      "lat": 43.6462,
+      "lon": -79.36141,
+      "address": "155 Merchants' Wharf, Toronto, ON",
       "notes": "Architecture stop on the waterfront.",
       "source": {
         "type": "instagram",
         "url": "",
         "handle": "@park.estudio",
         "caption_excerpt": "",
-        "confidence": "unresolved"
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "sisters-and-co",
+      "name": "Sisters and Co",
+      "category": "food",
+      "neighbourhood": "Trinity-Bellwoods",
+      "lat": 43.65097,
+      "lon": -79.41176,
+      "address": "887 Dundas St W, Toronto, ON M6J 1V9",
+      "notes": "Pancakes (the ones Bad Bunny endorsed).",
+      "source": {
+        "type": "instagram",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
       }
     }
   ],
@@ -3273,6 +2943,24 @@
           "mode": "walk"
         },
         {
+          "start": "16:00",
+          "end": "16:45",
+          "placeId": "little-canada",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "16:15",
+          "end": "17:00",
+          "placeId": "reference-library",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "16:45",
           "end": "18:15",
           "placeId": "eaton-centre",
@@ -3313,6 +3001,15 @@
           "mode": "walk"
         },
         {
+          "start": "21:30",
+          "end": "22:15",
+          "placeId": "vertigo",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "21:45",
           "end": "22:45",
           "placeId": "seven-west-cafe",
@@ -3351,6 +3048,24 @@
           "notes": "Wake, get ready, out the door."
         },
         {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "acacia-cafe",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "08:30",
+          "end": "09:15",
+          "placeId": "emmer",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "08:45",
           "end": "09:30",
           "placeId": "egg-club",
@@ -3361,6 +3076,24 @@
           "mode": "walk"
         },
         {
+          "start": "08:45",
+          "end": "09:30",
+          "placeId": "gouter",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "09:45",
+          "end": "10:30",
+          "placeId": "fleur-du-jour",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "09:50",
           "end": "10:10",
           "placeId": "queens-park",
@@ -3369,6 +3102,24 @@
           "locked": false,
           "notes": "Canada's first municipal park, and the gateway to the UofT block. Twenty minutes west of breakfast.",
           "mode": "walk"
+        },
+        {
+          "start": "10:00",
+          "end": "10:45",
+          "placeId": "ba-noi",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "10:15",
+          "end": "11:00",
+          "placeId": "bakerbots",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "10:25",
@@ -3391,6 +3142,15 @@
           "mode": "walk"
         },
         {
+          "start": "11:15",
+          "end": "12:00",
+          "placeId": "tre-mari",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "11:20",
           "end": "13:20",
           "placeId": "rom",
@@ -3399,6 +3159,15 @@
           "locked": false,
           "notes": "Trimmed by 20 min to make room for the UofT stops. Still over two hours, but the ROM can eat a day: pick two or three galleries before you go in.",
           "mode": "walk"
+        },
+        {
+          "start": "11:30",
+          "end": "12:15",
+          "placeId": "downsview-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "13:45",
@@ -3429,6 +3198,24 @@
           "locked": false,
           "notes": "CityPASS 2 of 5. Ten minutes uphill from Ezra’s.",
           "mode": "walk"
+        },
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "placeId": "uoft-campus",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "16:15",
+          "end": "17:00",
+          "placeId": "trinity-college",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "17:30",
@@ -3471,6 +3258,33 @@
           "mode": "transit"
         },
         {
+          "start": "19:45",
+          "end": "20:30",
+          "placeId": "daisy-mays",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "20:30",
+          "end": "21:15",
+          "placeId": "raps",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "20:45",
+          "end": "21:30",
+          "placeId": "paradise-theatre",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "21:20",
           "end": "22:35",
           "placeId": "zui-beer-bar",
@@ -3479,6 +3293,15 @@
           "locked": false,
           "notes": "15 min east along Bloor. Cyberpunk bar, Chinese street snacks, drink towers.",
           "mode": "walk"
+        },
+        {
+          "start": "21:30",
+          "end": "22:15",
+          "placeId": "twister-karaoke",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "22:45",
@@ -3673,6 +3496,15 @@
           "mode": "walk"
         },
         {
+          "start": "19:45",
+          "end": "20:30",
+          "placeId": "bello-waterworks",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "20:50",
           "end": "22:05",
           "placeId": "hanoi-bites",
@@ -3681,6 +3513,15 @@
           "locked": false,
           "notes": "Dinner. 12 min walk south to Waterworks Food Hall.",
           "mode": "walk"
+        },
+        {
+          "start": "21:30",
+          "end": "22:15",
+          "placeId": "rendezviews",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "22:20",
@@ -3729,6 +3570,15 @@
           "locked": false,
           "notes": "NVIDIA meetup day 3: Agentic Skills. Coffee at 08:00 in the conference hotel. Replaced breakfast at Blackbird Baking, which is 20 min away in Baldwin Village and could never have made an 08:00 start; it is on the shortlist now.",
           "mode": "transit"
+        },
+        {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "humble-donkey",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "09:00",
@@ -3780,6 +3630,15 @@
           "mode": "walk"
         },
         {
+          "start": "19:45",
+          "end": "20:30",
+          "placeId": "short-turn",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "21:00",
           "end": "21:35",
           "placeId": "hanbingo",
@@ -3788,6 +3647,15 @@
           "locked": false,
           "notes": "Dessert. 397 Spadina, 8 min north. Korean bingsu, Thu-Sun only, open until 4am.",
           "mode": "walk"
+        },
+        {
+          "start": "21:30",
+          "end": "22:15",
+          "placeId": "future-nightclub",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "21:55",
@@ -3868,6 +3736,24 @@
           "mode": "walk"
         },
         {
+          "start": "15:00",
+          "end": "15:45",
+          "placeId": "acadia-books",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "placeId": "gbc-waterfront",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "17:40",
           "end": "18:40",
           "placeId": "st-lawrence-market",
@@ -3926,6 +3812,33 @@
           "mode": "transit"
         },
         {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "nova-era",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "08:30",
+          "end": "09:15",
+          "placeId": "castle-and-coal",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "08:45",
+          "end": "09:30",
+          "placeId": "dear-grain",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "09:20",
           "end": "11:10",
           "placeId": "ripleys-aquarium",
@@ -3934,6 +3847,24 @@
           "locked": false,
           "notes": "CityPASS 3 of 5. Opens 09:00. Go early, it is a Saturday.",
           "mode": "transit"
+        },
+        {
+          "start": "10:00",
+          "end": "10:45",
+          "placeId": "martin-goodman-trail",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "10:15",
+          "end": "11:00",
+          "placeId": "hto-park",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "11:15",
@@ -3974,6 +3905,15 @@
           "locked": false,
           "notes": "CityPASS 5 of 5, and the window closes Sept 29.",
           "mode": "transit"
+        },
+        {
+          "start": "15:00",
+          "end": "15:45",
+          "placeId": "stackt-market",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "16:45",
@@ -4046,6 +3986,15 @@
           "mode": "walk"
         },
         {
+          "start": "19:30",
+          "end": "20:15",
+          "placeId": "pizzeria-badiali",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "20:10",
           "end": "20:35",
           "placeId": null,
@@ -4064,6 +4013,15 @@
           "locked": false,
           "notes": "Dinner pushed late by the island run. Confirm the kitchen serves past 21:00 on a Saturday before you commit to this order.",
           "mode": "transit"
+        },
+        {
+          "start": "21:30",
+          "end": "22:15",
+          "placeId": "paris-paris",
+          "title": null,
+          "type": "drinks",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "22:35",
@@ -4112,6 +4070,15 @@
           "type": "lodging",
           "locked": false,
           "notes": "Wake, get ready, out the door."
+        },
+        {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "blossom-moment",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "09:00",
@@ -4181,6 +4148,15 @@
           "locked": false,
           "notes": "10 min walk from the new place. Gentle way to learn the neighbourhood.",
           "mode": "walk"
+        },
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "placeId": "aqualuna",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "17:20",
@@ -4281,6 +4257,15 @@
           "mode": "transit"
         },
         {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "am-coffee-lab",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "09:00",
           "end": "09:50",
           "placeId": "evergreen-brick-works",
@@ -4331,6 +4316,15 @@
           "mode": "transit"
         },
         {
+          "start": "14:30",
+          "end": "15:15",
+          "placeId": "toronto-zoo",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "15:50",
           "end": "16:25",
           "placeId": "scarborough-bluffs",
@@ -4339,6 +4333,15 @@
           "locked": false,
           "notes": "90m cliffs and beach. Much closer from the Beaches than from downtown, which is why it lands here and not on a downtown day.",
           "mode": "transit"
+        },
+        {
+          "start": "16:00",
+          "end": "16:45",
+          "placeId": "aga-khan",
+          "title": null,
+          "type": "sight",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "17:00",
@@ -4478,6 +4481,15 @@
           "mode": "walk"
         },
         {
+          "start": "14:30",
+          "end": "15:15",
+          "placeId": "niagara-takes-flight",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "14:40",
           "end": "15:40",
           "placeId": "niagara-city-cruises",
@@ -4486,6 +4498,15 @@
           "locked": false,
           "notes": "The boat into the mist. Ponchos provided, you still get soaked. Phone in a bag.",
           "mode": "walk"
+        },
+        {
+          "start": "14:45",
+          "end": "15:30",
+          "placeId": "niagara-bus-terminal",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "16:10",
@@ -4615,6 +4636,15 @@
           "mode": "transit"
         },
         {
+          "start": "08:15",
+          "end": "09:00",
+          "placeId": "ten-dean",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "08:30",
           "end": "09:10",
           "placeId": "cafe-85",
@@ -4625,6 +4655,24 @@
           "mode": "transit"
         },
         {
+          "start": "08:30",
+          "end": "09:15",
+          "placeId": "barbershop-patisserie",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
+          "start": "08:45",
+          "end": "09:30",
+          "placeId": "noctua-bakery",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "09:35",
           "end": "09:45",
           "placeId": "trillium-park",
@@ -4633,6 +4681,15 @@
           "locked": false,
           "notes": "Free. 1200 trees planted during the build. First stop on the run west along the lake.",
           "mode": "transit"
+        },
+        {
+          "start": "09:45",
+          "end": "10:30",
+          "placeId": "brodflour",
+          "title": null,
+          "type": "coffee",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "10:00",
@@ -4653,6 +4710,15 @@
           "locked": false,
           "notes": "Free. Skyline shots back east, on the Martin Goodman Trail and directly on the route to Etobicoke.",
           "mode": "transit"
+        },
+        {
+          "start": "11:00",
+          "end": "11:45",
+          "placeId": "sorauren-market",
+          "title": null,
+          "type": "activity",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "11:35",
@@ -4735,6 +4801,15 @@
           "mode": "transit"
         },
         {
+          "start": "19:30",
+          "end": "20:15",
+          "placeId": "cafe-polonez",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "19:45",
           "end": "20:10",
           "placeId": "canada-computers",
@@ -4743,6 +4818,15 @@
           "locked": false,
           "notes": "284 College St. Closes between 19:00 and 20:00 by branch, so ring ahead or treat this as a browse. Three storefronts on the block.",
           "mode": "walk"
+        },
+        {
+          "start": "19:45",
+          "end": "20:30",
+          "placeId": "burattino",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "20:30",
@@ -4833,6 +4917,15 @@
           "mode": "walk"
         },
         {
+          "start": "10:00",
+          "end": "10:45",
+          "placeId": "sisters-and-co",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
+        },
+        {
           "start": "10:45",
           "end": "11:10",
           "placeId": "grange-park",
@@ -4891,6 +4984,15 @@
           "locked": false,
           "notes": "At The Well, 2nd floor above Indigo. 50% off with student ID until Oct 31.",
           "mode": "transit"
+        },
+        {
+          "start": "15:30",
+          "end": "16:15",
+          "placeId": "moon-milk",
+          "title": null,
+          "type": "meal",
+          "locked": false,
+          "notes": "Added from the shortlist — optional, skip if the day is full."
         },
         {
           "start": "16:20",
