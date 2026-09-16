@@ -19,8 +19,17 @@ export default function TripApp({ data }: { data: TripData }) {
   const [ready, setReady] = useState(false);
   const [panel, setPanel] = useState(true);
   const [tab, setTab] = useState<'plan' | 'tips'>('plan');
+  // Index into `legs`, shared by the map's click-to-select and the planner's
+  // leg rows so either side can drive the other.
+  const [selectedLeg, setSelectedLeg] = useState<number | null>(null);
+  // Which side made the last selection, so the effect that reacts to it only
+  // re-centers the map (planner-driven) or scrolls the rail (map-driven),
+  // never both at once.
+  const originRef = useRef<'map' | 'planner' | null>(null);
+  const legRowRefs = useRef(new Map<number, HTMLLIElement>());
 
   const byId = useMemo(() => new Map(places.map((p) => [p.id, p])), [places]);
+  const legIndex = useMemo(() => new Map(legs.map((l, i) => [l, i])), [legs]);
 
   // One stop per scheduled item that has a place, so a venue visited twice
   // gets a pin on each of its days.
@@ -82,6 +91,20 @@ export default function TripApp({ data }: { data: TripData }) {
         });
       }
 
+      // Invisible and much wider than the visible mode lines, purely so a
+      // click/tap has a realistic chance of landing on a 1.5-5px line.
+      map.addLayer({
+        id: 'leg-hit',
+        type: 'line',
+        source: 'legs',
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: {
+          'line-color': '#000000',
+          'line-opacity': 0,
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 14, 14, 20, 17, 26],
+        },
+      });
+
       map.addLayer({
         id: 'leg-label',
         type: 'symbol',
@@ -98,6 +121,23 @@ export default function TripApp({ data }: { data: TripData }) {
           'text-color': '#fafafa',
           'text-halo-color': '#09090b',
           'text-halo-width': 1.6,
+        },
+      });
+
+      // Drawn on top of the base lines and labels so a selected leg reads
+      // clearly regardless of which mode color it started as. Filtered to
+      // nothing by default; the selectedLeg effect below turns it on.
+      map.addLayer({
+        id: 'leg-highlight',
+        type: 'line',
+        source: 'legs',
+        filter: ['==', ['get', 'id'], -1],
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: {
+          'line-color': '#25c6eb',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 10, 3.5, 14, 6, 17, 9],
+          'line-opacity': 0.95,
+          'line-blur': 0.4,
         },
       });
 
@@ -210,7 +250,15 @@ export default function TripApp({ data }: { data: TripData }) {
              </div>`)
           .addTo(map);
       });
-      for (const id of ['stop-dot', 'stop-halo', 'spare-ring']) {
+      map.on('click', 'leg-hit', (e) => {
+        const f = e.features?.[0];
+        if (!f) return;
+        const id = f.properties?.id as number;
+        originRef.current = 'map';
+        setSelectedLeg((prev) => (prev === id ? null : id));
+        setTab('plan');
+      });
+      for (const id of ['stop-dot', 'stop-halo', 'spare-ring', 'leg-hit']) {
         map.on('mouseenter', id, () => (map.getCanvas().style.cursor = 'pointer'));
         map.on('mouseleave', id, () => (map.getCanvas().style.cursor = ''));
       }
@@ -240,6 +288,7 @@ export default function TripApp({ data }: { data: TripData }) {
       ? null
       : (['==', ['get', 'dayNumber'], active] as unknown as maplibregl.FilterSpecification);
     map.setFilter('leg-label', dayFilter);
+    map.setFilter('leg-hit', dayFilter);
     for (const id of ['stop-halo', 'stop-dot', 'stop-num']) map.setFilter(id, dayFilter);
     // Unscheduled pins are never filtered out, only dimmed: the point of them is
     // to be visible when a day runs short, including the ones you would have to
@@ -250,7 +299,36 @@ export default function TripApp({ data }: { data: TripData }) {
       .filter((s) => active === null || s.day.dayNumber === active)
       .map((s) => [s.place.lon, s.place.lat] as [number, number]);
     fitTo(map, pts);
+
+    // A leg selected from a day that just got filtered away would leave the
+    // highlight layer glowing over a base line that's no longer drawn.
+    setSelectedLeg((prev) =>
+      prev !== null && active !== null && legs[prev]?.dayNumber !== active ? null : prev);
   }, [active, ready]);
+
+  // Selection can originate from either side: a map click on 'leg-hit', or a
+  // click on a LegRow in the planner. Either way this is the single place
+  // that reacts — highlighting the map edge always, and nudging whichever
+  // side didn't originate the click (re-centering the map for a planner pick,
+  // scrolling the rail for a map pick).
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    map.setFilter('leg-highlight',
+      (selectedLeg === null
+        ? ['==', ['get', 'id'], -1]
+        : ['==', ['get', 'id'], selectedLeg]) as unknown as maplibregl.FilterSpecification);
+
+    if (selectedLeg !== null) {
+      const leg = legs[selectedLeg];
+      if (leg && originRef.current === 'planner') {
+        fitTo(map, [[leg.from.lon, leg.from.lat], [leg.to.lon, leg.to.lat]]);
+      } else if (originRef.current === 'map') {
+        legRowRefs.current.get(selectedLeg)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+    originRef.current = null;
+  }, [selectedLeg, ready]);
 
   const flyTo = (p: Place) => {
     mapRef.current?.flyTo({ center: [p.lon, p.lat], zoom: 15.5, speed: 1.1 });
@@ -379,9 +457,29 @@ export default function TripApp({ data }: { data: TripData }) {
                 {d.items.map((it, i) => {
                   const p = it.placeId ? byId.get(it.placeId) : undefined;
                   const leg = p ? legsByArrival.get(`${d.date}|${p.id}|${it.start}`) : undefined;
+                  const legId = leg ? legIndex.get(leg) ?? null : null;
                   return (
-                    <li key={i} className="relative py-2">
-                      {leg && <LegRow leg={leg} modes={modes} />}
+                    <li
+                      key={i}
+                      ref={(el) => {
+                        if (legId === null) return;
+                        if (el) legRowRefs.current.set(legId, el);
+                        else legRowRefs.current.delete(legId);
+                      }}
+                      className="relative py-2"
+                    >
+                      {leg && (
+                        <LegRow
+                          leg={leg}
+                          modes={modes}
+                          selected={legId !== null && legId === selectedLeg}
+                          onClick={() => {
+                            if (legId === null) return;
+                            originRef.current = 'planner';
+                            setSelectedLeg((prev) => (prev === legId ? null : legId));
+                          }}
+                        />
+                      )}
                       <span
                         className="absolute -left-[25px] top-3.5 h-2 w-2 rounded-full border-2 border-bg"
                         style={{ background: it.locked ? '#fafafa' : d.color }}
@@ -437,19 +535,27 @@ export default function TripApp({ data }: { data: TripData }) {
   );
 }
 
-function LegRow({ leg, modes }: { leg: Leg; modes: TripData['modes'] }) {
+function LegRow({ leg, modes, selected, onClick }: {
+  leg: Leg; modes: TripData['modes']; selected: boolean; onClick: () => void;
+}) {
   const spec = modes[leg.mode];
   return (
-    <div className="mb-1.5 flex items-center gap-1.5 text-[10px] text-faint">
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={selected}
+      className={`-mx-1 mb-1.5 flex items-center gap-1.5 rounded px-1 py-0.5 text-[10px] transition
+                  ${selected ? 'bg-cyan/10 text-cyan' : 'text-faint hover:text-muted'}`}
+    >
       <svg width="14" height="4" aria-hidden>
-        <line x1="0" y1="2" x2="14" y2="2" stroke={spec?.color ?? '#71717a'} strokeWidth="2"
-              strokeDasharray={spec?.dash ?? undefined} />
+        <line x1="0" y1="2" x2="14" y2="2" stroke={selected ? '#25c6eb' : (spec?.color ?? '#71717a')}
+              strokeWidth={selected ? 3 : 2} strokeDasharray={spec?.dash ?? undefined} />
       </svg>
       <span className="tabular">
         {spec?.label ?? leg.mode} {leg.minutes} min &middot; {leg.km} km
         {!leg.routed && <span title="straight-line estimate"> approx</span>}
       </span>
-    </div>
+    </button>
   );
 }
 
@@ -522,11 +628,11 @@ function fitTo(map: MLMap, pts: [number, number][]) {
 function legGeoJSON(legs: Leg[]): GeoJSON.FeatureCollection {
   return {
     type: 'FeatureCollection',
-    features: legs.map((l) => ({
+    features: legs.map((l, i) => ({
       type: 'Feature',
       geometry: { type: 'LineString', coordinates: [[l.from.lon, l.from.lat], [l.to.lon, l.to.lat]] },
       properties: {
-        mode: l.mode, dayNumber: l.dayNumber, color: l.color,
+        id: i, mode: l.mode, dayNumber: l.dayNumber, color: l.color,
         label: `${l.minutes} min`,
       },
     })),
