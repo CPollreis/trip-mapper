@@ -932,6 +932,444 @@
     "up-express>pearson-airport": {
       "roadKm": 26.99,
       "carMin": 24.5
+    },
+    "allan-gardens>little-canada": {
+      "roadKm": 1.21,
+      "carMin": 3.3
+    },
+    "little-canada>reference-library": {
+      "roadKm": 1.86,
+      "carMin": 4
+    },
+    "reference-library>eaton-centre": {
+      "roadKm": 2.67,
+      "carMin": 6.3
+    },
+    "yonge-street>vertigo": {
+      "roadKm": 0.43,
+      "carMin": 0.9
+    },
+    "vertigo>seven-west-cafe": {
+      "roadKm": 1.45,
+      "carMin": 3.2
+    },
+    "stay-sherbourne>acacia-cafe": {
+      "roadKm": 2.46,
+      "carMin": 4.9
+    },
+    "acacia-cafe>emmer": {
+      "roadKm": 1.04,
+      "carMin": 2.5
+    },
+    "emmer>egg-club": {
+      "roadKm": 2.14,
+      "carMin": 4.3
+    },
+    "egg-club>gouter": {
+      "roadKm": 5.71,
+      "carMin": 10.1
+    },
+    "gouter>fleur-du-jour": {
+      "roadKm": 4.05,
+      "carMin": 7.3
+    },
+    "fleur-du-jour>queens-park": {
+      "roadKm": 4.39,
+      "carMin": 6.7
+    },
+    "queens-park>ba-noi": {
+      "roadKm": 3.51,
+      "carMin": 7.2
+    },
+    "ba-noi>bakerbots": {
+      "roadKm": 1.48,
+      "carMin": 3
+    },
+    "bakerbots>hart-house": {
+      "roadKm": 4.55,
+      "carMin": 9.6
+    },
+    "arbor-room>tre-mari": {
+      "roadKm": 7.69,
+      "carMin": 12.5
+    },
+    "tre-mari>rom": {
+      "roadKm": 6.1,
+      "carMin": 11
+    },
+    "rom>downsview-park": {
+      "roadKm": 14.9,
+      "carMin": 23.7
+    },
+    "downsview-park>mcha-bar": {
+      "roadKm": 13.65,
+      "carMin": 20.3
+    },
+    "casa-loma>uoft-campus": {
+      "roadKm": 3.32,
+      "carMin": 7.2
+    },
+    "uoft-campus>trinity-college": {
+      "roadKm": 1.51,
+      "carMin": 3.9
+    },
+    "trinity-college>spadina-museum": {
+      "roadKm": 2.79,
+      "carMin": 5.5
+    },
+    "el-pastorcito>daisy-mays": {
+      "roadKm": 2.59,
+      "carMin": 5.3
+    },
+    "daisy-mays>raps": {
+      "roadKm": 4.66,
+      "carMin": 8.7
+    },
+    "raps>paradise-theatre": {
+      "roadKm": 4.54,
+      "carMin": 9
+    },
+    "paradise-theatre>zui-beer-bar": {
+      "roadKm": 1.26,
+      "carMin": 3.2
+    },
+    "zui-beer-bar>twister-karaoke": {
+      "roadKm": 16.68,
+      "carMin": 23.4
+    },
+    "twister-karaoke>civil-liberties": {
+      "roadKm": 16.03,
+      "carMin": 21.9
+    },
+    "ago>bello-waterworks": {
+      "roadKm": 1.41,
+      "carMin": 3.3
+    },
+    "bello-waterworks>hanoi-bites": {
+      "roadKm": 0,
+      "carMin": 0
+    },
+    "hanoi-bites>rendezviews": {
+      "roadKm": 1.08,
+      "carMin": 2.8
+    },
+    "rendezviews>ace-hotel": {
+      "roadKm": 1.19,
+      "carMin": 3
+    },
+    "dual-citizen-sheraton>humble-donkey": {
+      "roadKm": 0.99,
+      "carMin": 2.4
+    },
+    "humble-donkey>sheraton-centre": {
+      "roadKm": 0.67,
+      "carMin": 1.4
+    },
+    "oklahoma-burgers>short-turn": {
+      "roadKm": 0.7,
+      "carMin": 1.5
+    },
+    "short-turn>hanbingo": {
+      "roadKm": 1.56,
+      "carMin": 3.5
+    },
+    "hanbingo>future-nightclub": {
+      "roadKm": 1.98,
+      "carMin": 4.4
+    },
+    "future-nightclub>dear-darling": {
+      "roadKm": 0.45,
+      "carMin": 1.6
+    },
+    "le-genie>acadia-books": {
+      "roadKm": 1.7,
+      "carMin": 3.5
+    },
+    "acadia-books>gbc-waterfront": {
+      "roadKm": 1.66,
+      "carMin": 4.2
+    },
+    "gbc-waterfront>st-lawrence-market": {
+      "roadKm": 0.98,
+      "carMin": 2.5
+    },
+    "forno-cultura>nova-era": {
+      "roadKm": 2.48,
+      "carMin": 5.3
+    },
+    "nova-era>castle-and-coal": {
+      "roadKm": 0.87,
+      "carMin": 2.2
+    },
+    "castle-and-coal>dear-grain": {
+      "roadKm": 0.44,
+      "carMin": 1.4
+    },
+    "dear-grain>ripleys-aquarium": {
+      "roadKm": 3.67,
+      "carMin": 7.9
+    },
+    "ripleys-aquarium>martin-goodman-trail": {
+      "roadKm": 0.62,
+      "carMin": 2.2
+    },
+    "hto-park>toronto-railway-museum": {
+      "roadKm": 0.67,
+      "carMin": 2.1
+    },
+    "city-cruises>stackt-market": {
+      "roadKm": 3.14,
+      "carMin": 7
+    },
+    "stackt-market>ferry-terminal": {
+      "roadKm": 3.1,
+      "carMin": 6.4
+    },
+    "hanlans-point>pizzeria-badiali": {
+      "roadKm": 3.71,
+      "carMin": 9.4
+    },
+    "pizzeria-badiali>gloria-great-hall": {
+      "roadKm": 0.92,
+      "carMin": 2.2
+    },
+    "gloria-great-hall>paris-paris": {
+      "roadKm": 0.97,
+      "carMin": 2.1
+    },
+    "paris-paris>ossington-ave": {
+      "roadKm": 0.35,
+      "carMin": 0.7
+    },
+    "stay-sherbourne>blossom-moment": {
+      "roadKm": 3.22,
+      "carMin": 6.5
+    },
+    "blossom-moment>le-beau": {
+      "roadKm": 3.04,
+      "carMin": 6
+    },
+    "the-beaches>aqualuna": {
+      "roadKm": 7.11,
+      "carMin": 11.8
+    },
+    "aqualuna>kew-beach": {
+      "roadKm": 6.69,
+      "carMin": 9.9
+    },
+    "riverdale-park-east>am-coffee-lab": {
+      "roadKm": 22.75,
+      "carMin": 24.1
+    },
+    "am-coffee-lab>evergreen-brick-works": {
+      "roadKm": 21.34,
+      "carMin": 21.8
+    },
+    "rc-harris>toronto-zoo": {
+      "roadKm": 25.9,
+      "carMin": 29.4
+    },
+    "toronto-zoo>scarborough-bluffs": {
+      "roadKm": 16.3,
+      "carMin": 24.4
+    },
+    "scarborough-bluffs>aga-khan": {
+      "roadKm": 11.22,
+      "carMin": 18.4
+    },
+    "aga-khan>guild-park": {
+      "roadKm": 12.95,
+      "carMin": 20.1
+    },
+    "stay-stephenson>horseshoe-falls": {
+      "roadKm": 140.05,
+      "carMin": 114.9
+    },
+    "horseshoe-falls>niagara-takes-flight": {
+      "roadKm": 6.52,
+      "carMin": 14
+    },
+    "whirlpool-aero-car>table-rock": {
+      "roadKm": 7.04,
+      "carMin": 11.7
+    },
+    "niagara-city-cruises>journey-behind-falls": {
+      "roadKm": 1.38,
+      "carMin": 2.8,
+      "manual": "same walk as table-rock>cruises (1.28) plus journey>table-rock (0.1); OSRM returns 3.26 km the wrong way round the loop"
+    },
+    "journey-behind-falls>clifton-hill": {
+      "roadKm": 1.59,
+      "carMin": 3.1
+    },
+    "niagara-skywheel>skylon-tower": {
+      "roadKm": 1.3,
+      "carMin": 2.8
+    },
+    "brickhouse-waffle>ten-dean": {
+      "roadKm": 2.24,
+      "carMin": 5
+    },
+    "ten-dean>cafe-85": {
+      "roadKm": 1.58,
+      "carMin": 3.5
+    },
+    "cafe-85>barbershop-patisserie": {
+      "roadKm": 3.48,
+      "carMin": 7.3
+    },
+    "barbershop-patisserie>noctua-bakery": {
+      "roadKm": 4.79,
+      "carMin": 10
+    },
+    "noctua-bakery>trillium-park": {
+      "roadKm": 7.71,
+      "carMin": 14.3
+    },
+    "trillium-park>brodflour": {
+      "roadKm": 2.39,
+      "carMin": 5.8
+    },
+    "brodflour>exhibition-place": {
+      "roadKm": 2.3,
+      "carMin": 5.7
+    },
+    "humber-bay-bridge>sorauren-market": {
+      "roadKm": 4.46,
+      "carMin": 9
+    },
+    "sorauren-market>memory-express": {
+      "roadKm": 11.7,
+      "carMin": 15.1
+    },
+    "chinatown>cafe-polonez": {
+      "roadKm": 5.32,
+      "carMin": 10.7
+    },
+    "cafe-polonez>canada-computers": {
+      "roadKm": 4.62,
+      "carMin": 10.2
+    },
+    "canada-computers>burattino": {
+      "roadKm": 7.57,
+      "carMin": 14.5
+    },
+    "burattino>ghazale": {
+      "roadKm": 5.72,
+      "carMin": 11.7
+    },
+    "osgoode-hall>sisters-and-co": {
+      "roadKm": 2.49,
+      "carMin": 5.4
+    },
+    "sisters-and-co>grange-park": {
+      "roadKm": 1.72,
+      "carMin": 3.7
+    },
+    "arcadia-earth>moon-milk": {
+      "roadKm": 6.33,
+      "carMin": 9.5
+    },
+    "moon-milk>toronto-music-garden": {
+      "roadKm": 5.25,
+      "carMin": 9.4
+    },
+    "rendezviews>tiff-shop": {
+      "roadKm": 0.43,
+      "carMin": 1.2
+    },
+    "tiff-shop>ace-hotel": {
+      "roadKm": 1.21,
+      "carMin": 3.1
+    },
+    "sankofa-square>brickhouse-waffle": {
+      "roadKm": 0.57,
+      "carMin": 1.4
+    },
+    "brickhouse-waffle>yonge-street": {
+      "roadKm": 0.29,
+      "carMin": 0.8
+    },
+    "tre-mari>mcha-bar": {
+      "roadKm": 4.97,
+      "carMin": 8.2
+    },
+    "casa-loma>dupont-station": {
+      "roadKm": 0.8,
+      "carMin": 1.7
+    },
+    "ace-hotel>rendezviews": {
+      "roadKm": 1.24,
+      "carMin": 3.2
+    },
+    "roy-thomson-hall>tiff-shop": {
+      "roadKm": 0.49,
+      "carMin": 1.3
+    },
+    "tiff-shop>oklahoma-burgers": {
+      "roadKm": 0.69,
+      "carMin": 1.6
+    },
+    "cn-tower>toronto-railway-museum": {
+      "roadKm": 0.24,
+      "carMin": 0.8
+    },
+    "toronto-railway-museum>alexandros": {
+      "roadKm": 1.45,
+      "carMin": 3.2
+    },
+    "biidaasige-park>distillery-district": {
+      "roadKm": 1.79,
+      "carMin": 4.2
+    },
+    "distillery-district>polson-pier": {
+      "roadKm": 2.29,
+      "carMin": 5.4
+    },
+    "serano-bakery>woodbine-beach": {
+      "roadKm": 5.24,
+      "carMin": 10
+    },
+    "horseshoe-falls>table-rock": {
+      "roadKm": 0.4,
+      "carMin": 1,
+      "manual": "Table Rock sits at the Horseshoe brink; OSRM returns 6.48 km around the one-way Parkway loop"
+    },
+    "stay-stephenson>cafe-85": {
+      "roadKm": 8.1,
+      "carMin": 15.7
+    },
+    "mossops-social>rom": {
+      "roadKm": 4.04,
+      "carMin": 9.3
+    },
+    "rom>osgoode-hall": {
+      "roadKm": 2.91,
+      "carMin": 7.5
+    },
+    "grange-park>butter-baker": {
+      "roadKm": 1,
+      "carMin": 2.2
+    },
+    "butter-baker>401-richmond": {
+      "roadKm": 1.68,
+      "carMin": 3.5
+    },
+    "nadege>trinity-bellwoods": {
+      "roadKm": 1.06,
+      "carMin": 2.9
+    },
+    "milou>toronto-music-garden": {
+      "roadKm": 4.27,
+      "carMin": 8.4
+    },
+    "toronto-music-garden>arcadia-earth": {
+      "roadKm": 2.18,
+      "carMin": 5.3
+    },
+    "acadia-books>st-lawrence-market": {
+      "roadKm": 0.93,
+      "carMin": 2.1
     }
   }
 }
