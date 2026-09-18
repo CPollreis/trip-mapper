@@ -142,6 +142,27 @@
       }
     },
     {
+      "id": "yzd-downsview",
+      "name": "YZD (Former Downsview Airport)",
+      "category": "venue",
+      "neighbourhood": "Downsview",
+      "lat": 43.73752,
+      "lon": -79.46954,
+      "address": "590 Wilson Ave, North York, ON M3K 1E3",
+      "notes": "DroneArt Show: Harry Potter, Sept 25-26 only. Open-air airfield site on the Downsview lands; Google pins the entrance at 34 Hanover Rd. Paid parking on site. Transit is Line 1 north to Wilson or Downsview Park, then a walk in — about an hour from the harbourfront, so this is a long way out of the downtown core.",
+      "source": {
+        "type": "web",
+        "url": "https://thedroneartshow.com/toronto/harry-potter/",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "held",
+        "how": "Fever, already purchased. The ticket validates in the Fever app at the entrance, so install it and log in before the day. Doors 18:00, show 20:00, late entry may not be permitted."
+      }
+    },
+    {
       "id": "cn-tower",
       "name": "CN Tower",
       "category": "sight",
@@ -149,7 +170,7 @@
       "lat": 43.64256,
       "lon": -79.38709,
       "address": "290 Bremner Blvd, Toronto, ON",
-      "notes": "CityPASS. Timed entry, reserve ahead.",
+      "notes": "CityPASS. Timed entry, reserve ahead. CityPASS daytime slot given up on Sept 26 to free the middle of the day for Gloria; the 360 booking on Sept 21 includes elevation plus the Main and Lower Observation Levels after dinner, so the tower is still covered, at night rather than in daylight.",
       "source": {
         "type": "web",
         "url": "https://www.citypass.com/toronto",
@@ -160,6 +181,28 @@
       "booking": {
         "level": "required",
         "how": "My CityPASS app. Timed entry."
+      },
+      "shortlist": true
+    },
+    {
+      "id": "cn-tower-360",
+      "name": "360 The Restaurant at the CN Tower",
+      "category": "food",
+      "neighbourhood": "Harbourfront",
+      "lat": 43.64256,
+      "lon": -79.38709,
+      "address": "290 Bremner Blvd, Toronto, ON",
+      "notes": "Revolving restaurant inside the CN Tower, same address as the tower itself. Dining here normally covers the elevator ride up, so check whether it duplicates the CityPASS CN Tower visit already booked for Sept 26.",
+      "source": {
+        "type": "fixed",
+        "url": "",
+        "handle": "",
+        "caption_excerpt": "",
+        "confidence": "confirmed"
+      },
+      "booking": {
+        "level": "held",
+        "how": "OpenTable, confirmed by email Sept 16, reserved for 1. Mon Sept 21, 19:45-21:45 Toronto time."
       }
     },
     {
@@ -355,7 +398,8 @@
         "handle": "@joyceposted",
         "caption_excerpt": "cyberpunk-inspired bar with Chinese street snacks",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "nathan-phillips-square",
@@ -406,7 +450,8 @@
         "handle": "@mytoronnodiary",
         "caption_excerpt": "10/10 view in Toronnooooooo",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "hanoi-bites",
@@ -491,7 +536,8 @@
         "handle": "@boyanace",
         "caption_excerpt": "this doesn't feel like Toronto and maybe that's why I love it",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "rc-harris",
@@ -542,7 +588,8 @@
         "handle": "@juni.toronto",
         "caption_excerpt": "Toronto’s newest and largest park in a generation",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "polson-pier",
@@ -559,7 +606,8 @@
         "handle": "@travelmowgly",
         "caption_excerpt": "Polson Pier",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "riverdale-park-east",
@@ -936,6 +984,10 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
+      },
+      "booking": {
+        "level": "held",
+        "how": "OpenTable, confirmed by email Sept 16, reserved for 1. Sun Sept 27, 20:30 Toronto time."
       }
     },
     {
@@ -1015,14 +1067,15 @@
       "lat": 43.58451,
       "lon": -79.64522,
       "address": "Burnhamthorpe Rd W, Mississauga",
-      "notes": "Flagged with a question mark. Nearest Java-U to Square One, about 10 min walk south of the mall. Verify this is the one you meant.",
+      "notes": "Flagged with a question mark. Nearest Java-U to Square One, about 10 min walk south of the mall. Verify this is the one you meant. Pulled off Day 11's timed schedule: transit from Sherway Gardens is 56-70 min depending on the run, which only fits if you skip straight to Square One instead of detouring here first. Not worth a second paid ride on top of the Bluffs-to-Malcolm-Todd one.",
       "source": {
         "type": "fixed",
         "url": "",
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "eaton-centre",
@@ -1300,7 +1353,8 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "hanbingo",
@@ -1334,7 +1388,8 @@
         "handle": "@todotoronto",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "raps",
@@ -1544,7 +1599,8 @@
         "handle": "@julia.c.hanley",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "future-nightclub",
@@ -2172,7 +2228,8 @@
         "handle": "@theinsidertoronto",
         "caption_excerpt": "",
         "confidence": "confirmed"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "distillery-district",
@@ -2189,7 +2246,8 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "graffiti-alley",
@@ -2414,7 +2472,8 @@
         "handle": "",
         "caption_excerpt": "",
         "confidence": "inferred"
-      }
+      },
+      "shortlist": true
     },
     {
       "id": "wards-island",
@@ -2933,7 +2992,7 @@
           "placeId": null,
           "title": "Breakfast at YWG before boarding",
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Flight is 09:25, so eat landside early."
         },
         {
@@ -2960,7 +3019,7 @@
           "placeId": "pearson-airport",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch at Pearson, Terminal 3. Eat before the UP Express rather than hunting for food with luggage."
         },
         {
@@ -3008,7 +3067,7 @@
           "placeId": "firefly-burger",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dinner. Easy first night food, open late.",
           "mode": "transit"
         },
@@ -3028,7 +3087,7 @@
           "placeId": "brickhouse-waffle",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Moved off Day 11: it opens 14:00 and sits at Yonge & Dundas, nowhere near the Mississauga run. Here it is a two-minute walk from Sankofa Square, on the same Yonge walk north to 7 West.",
           "mode": "walk"
         },
@@ -3086,7 +3145,7 @@
           "placeId": "egg-club",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. The goated spot, 531 Yonge.",
           "mode": "walk"
         },
@@ -3135,7 +3194,7 @@
           "placeId": "mcha-bar",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch. 491 Bloor W, 10 min west of the ROM."
         },
         {
@@ -3180,42 +3239,23 @@
         },
         {
           "start": "19:45",
-          "end": "21:00",
-          "placeId": "el-pastorcito",
+          "end": "21:45",
+          "placeId": "cn-tower-360",
           "title": null,
           "type": "meal",
-          "locked": false,
-          "notes": "Dinner. Tacos al pastor on Bloor West.",
+          "locked": true,
+          "notes": "360 The Restaurant, OpenTable booking confirmed, reserved for 1, 19:45-21:45 Toronto. $75/person minimum food spend, and it includes elevation plus the Main and Lower Observation Levels after the meal. Displaced Taqueria el Pastorcito, Zui Beer Bar and Civil Liberties, all shortlisted. Christie Pits to the tower is about 30 min, so 18:30-19:45 is slack.",
           "mode": "transit"
         },
         {
-          "start": "21:30",
-          "end": "22:45",
-          "placeId": "zui-beer-bar",
-          "title": null,
-          "type": "drinks",
-          "locked": false,
-          "notes": "15 min east along Bloor. Cyberpunk bar, Chinese street snacks, drink towers.",
-          "mode": "walk"
-        },
-        {
-          "start": "23:00",
-          "end": "23:15",
-          "placeId": "civil-liberties",
-          "title": null,
-          "type": "drinks",
-          "locked": false,
-          "notes": "No menu: tell the bartender what you like and they build it. Ten minutes from Zui. Very short slot, so this is a nightcap or it is next trip.",
-          "mode": "walk"
-        },
-        {
-          "start": "23:45",
+          "start": "22:30",
           "end": null,
           "placeId": "stay-sherbourne",
           "title": null,
           "type": "lodging",
           "locked": false,
-          "notes": "Back at the apartment."
+          "notes": "Back at the apartment. 32 min in from the CN Tower on a Monday night.",
+          "mode": "transit"
         }
       ]
     },
@@ -3262,7 +3302,7 @@
           "placeId": "butter-baker",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch in the one-hour gap between workshops. 114 Dundas W, 9 min walk each way, so the window is genuinely tight: take the almond walnut croissant to go if the morning session runs over.",
           "mode": "walk"
         },
@@ -3310,7 +3350,7 @@
           "placeId": "yunnan-noodle-shack",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Late dinner, 15 min walk west from the Sheraton. Solo booths. Later than originally planned because the happy hour runs to 21:00, so check the kitchen is still serving.",
           "mode": "walk"
         },
@@ -3376,7 +3416,7 @@
           "placeId": "aux-merveilleux",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch break. 224 Queen W. Vergeoise waffle.",
           "mode": "walk"
         },
@@ -3396,7 +3436,7 @@
           "placeId": "hanoi-bites",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dinner. 12 min walk south to Waterworks Food Hall.",
           "mode": "walk"
         },
@@ -3463,7 +3503,7 @@
           "placeId": "kajiken",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch break. Michelin-recognized aburi soba, 214 Queen W.",
           "mode": "walk"
         },
@@ -3503,7 +3543,7 @@
           "placeId": "oklahoma-burgers",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dinner. 147 Spadina, billed as the best burger in the city.",
           "mode": "walk"
         },
@@ -3513,7 +3553,7 @@
           "placeId": "hanbingo",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dessert. 397 Spadina, 8 min north. Korean bingsu, Thu-Sun only, open until 4am.",
           "mode": "walk"
         },
@@ -3566,13 +3606,13 @@
           "mode": "transit"
         },
         {
-          "start": "09:00",
+          "start": "09:05",
           "end": "09:15",
           "placeId": "st-patrick-station",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "From the TTC station architecture montage. You ride Line 1 from Baldwin Village to the hackathon anyway, so get off here and look up. [Google: walk from Little Pebbles Cafe is 17 min, plan allows 15. Short by 2.] [Google: 17 min from Little Pebbles Cafe, plan allows 15. Short by 2.]",
+          "notes": "From the TTC station architecture montage. You ride Line 1 from Baldwin Village to the hackathon anyway, so get off here and look up. 17 min walk from Little Pebbles Cafe, 20 allotted.",
           "mode": "walk"
         },
         {
@@ -3591,7 +3631,7 @@
           "placeId": "le-genie",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch break. 382 Yonge, passion fruit mango tart.",
           "mode": "walk"
         },
@@ -3610,7 +3650,7 @@
           "placeId": "st-lawrence-market",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dinner. 5 min east of the hackathon, then 12 min south to the arena. Vendors wind down by 19:00 so go straight in. Peameal bacon sandwich.",
           "mode": "walk"
         },
@@ -3639,7 +3679,7 @@
       "date": "2026-09-26",
       "dayNumber": 7,
       "weekday": "Saturday",
-      "label": "CityPASS harbourfront + Toronto Islands",
+      "label": "CityPASS harbourfront + Harry Potter drones",
       "color": "#00a377",
       "base": "St. James Town",
       "items": [
@@ -3650,16 +3690,16 @@
           "title": null,
           "type": "lodging",
           "locked": false,
-          "notes": "Wake, get ready, out the door. Out by 07:31 sharp — the real route to breakfast is 42 min, not the old straight-line guess."
+          "notes": "Wake, get ready, out the door by 07:45. Google puts the real route to breakfast at 37 min on a Saturday morning — 5 min walk to Sherbourne, Line 2 west, then the 510 south — so breakfast sits at 08:30, not 08:15, and you no longer have to leave at 07:31."
         },
         {
-          "start": "08:15",
-          "end": "08:45",
+          "start": "08:30",
+          "end": "09:00",
           "placeId": "forno-cultura",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Breakfast. 609 King W, affogato al caffe. Real route (checked live): 5 min walk to Sherbourne, Line 2 west to Spadina, board 07:36, transfer to the 510B streetcar south, then a 14 min walk in — 42 min door to door.",
+          "notes": "Breakfast. 609 King W, affogato al caffe. 37 min door to door, verified live at the real Saturday departure time; the 45 min gap absorbs it.",
           "mode": "transit"
         },
         {
@@ -3673,34 +3713,24 @@
           "mode": "transit"
         },
         {
-          "start": "11:30",
-          "end": "13:00",
-          "placeId": "cn-tower",
+          "start": "12:00",
+          "end": "13:30",
+          "placeId": "gloria-great-hall",
           "title": null,
-          "type": "sight",
-          "locked": false,
-          "notes": "CityPASS 4 of 5. 100 m walk from the aquarium door.",
-          "mode": "walk"
+          "type": "meal",
+          "locked": true,
+          "notes": "Lunch. SLOT ONLY — not booked yet, book this for 12:00 Sat Sept 26. Gloria opens 10:00 on weekends and 17:00 Mon-Fri, which is why Saturday is the only daytime option that works. 31 min in from the aquarium, so the 45 min gap is comfortable. Replaces the CityPASS CN Tower slot and the Alexandros booking — cancel Alexandros.",
+          "mode": "transit"
         },
         {
-          "start": "13:15",
-          "end": "13:30",
+          "start": "14:15",
+          "end": "14:30",
           "placeId": "toronto-railway-museum",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "In Roundhouse Park at the base of the CN Tower, so it is literally on the walk between the aquarium and the tower.",
-          "mode": "walk"
-        },
-        {
-          "start": "14:00",
-          "end": "14:30",
-          "placeId": "alexandros",
-          "title": null,
-          "type": "meal",
-          "locked": false,
-          "notes": "Lunch. 5 Queens Quay W, fast Greek gyros, 7 min from the cruise dock.",
-          "mode": "walk"
+          "notes": "Roundhouse Park, at the base of the CN Tower and a few minutes' walk from the cruise dock. 40 min back in from Gloria, so you land about 14:10.",
+          "mode": "transit"
         },
         {
           "start": "15:00",
@@ -3709,108 +3739,38 @@
           "title": null,
           "type": "activity",
           "locked": false,
-          "notes": "CityPASS 5 of 5, and the window closes Sept 29.",
-          "mode": "transit"
-        },
-        {
-          "start": "16:45",
-          "end": "17:00",
-          "placeId": "ferry-terminal",
-          "title": null,
-          "type": "activity",
-          "locked": false,
-          "notes": "Buy online before you get here, the queue is routinely longer than the crossing. Board for Ward's: the plan is to land east and walk the island chain west, so the last ferry is the night one from Hanlan's.",
+          "notes": "CityPASS 5 of 5, and the window closes Sept 29. Hard stop 16:30: the ride north to the drone show is 62 min and doors are at 18:00.",
           "mode": "walk"
-        },
-        {
-          "start": "17:00",
-          "end": "17:20",
-          "placeId": null,
-          "title": "Ferry across to Ward's Island",
-          "type": "transit",
-          "locked": false,
-          "notes": "About 15 min. Ferry times are hand-set here: the router has no ferry data, so the map draws this leg straight across the harbour. Check the live schedule on the day.",
-          "mode": "transit"
-        },
-        {
-          "start": "17:30",
-          "end": "18:00",
-          "placeId": "wards-island",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Quietest of the three islands. Start here and walk west.",
-          "mode": "transit"
         },
         {
           "start": "18:00",
-          "end": "18:30",
-          "placeId": null,
-          "title": "Boardwalk west to Centre Island",
-          "type": "transit",
-          "locked": false,
-          "notes": "About 20 min along the water.",
-          "mode": "transit"
-        },
-        {
-          "start": "18:30",
-          "end": "19:15",
-          "placeId": "centre-island",
+          "end": "21:00",
+          "placeId": "yzd-downsview",
           "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Skyline view back at the city. Bike rental here if you want to cover more ground.",
-          "mode": "walk"
-        },
-        {
-          "start": "19:15",
-          "end": "19:45",
-          "placeId": null,
-          "title": "Walk west to Hanlan's Point",
-          "type": "transit",
-          "locked": false,
-          "notes": "About 20 min, the last stretch of the island chain.",
+          "type": "show",
+          "locked": true,
+          "notes": "DroneArt Show: Harry Potter. Ticket held via Fever. Doors 18:00, show 20:00, about 60 min including an intermission — 1,200 drones, a live violinist and synchronised LED wristbands. Late entry may not be permitted, so the 18:00 arrival is deliberate, not padding: Google says 62 min from the City Cruises dock and you leave at 16:45. Eat here — there are food and drink vendors and merch from doors, and this block is the day's dinner now that Gloria is out of reach. Ticket validates in the Fever app at the gate.",
           "mode": "transit"
         },
         {
-          "start": "19:45",
-          "end": "20:30",
-          "placeId": "hanlans-point",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Timed so you catch the ferry back after dark, which the reel calls the best $9 in Toronto and the single best skyline view in the city. This is the reason the islands took the evening.",
-          "mode": "walk"
-        },
-        {
-          "start": "20:30",
-          "end": "21:15",
-          "placeId": null,
-          "title": "Night ferry, Hanlan's Point back to the city",
-          "type": "transit",
-          "locked": false,
-          "notes": "The skyline shot. About 15 min on the water plus boarding.",
-          "mode": "transit"
-        },
-        {
-          "start": "21:15",
-          "end": "22:45",
-          "placeId": "gloria-great-hall",
-          "title": null,
-          "type": "meal",
-          "locked": false,
-          "notes": "Dinner pushed late by the island run. Confirm the kitchen serves past 21:00 on a Saturday before you commit to this order.",
-          "mode": "transit"
-        },
-        {
-          "start": "23:00",
-          "end": "23:15",
+          "start": "22:30",
+          "end": "23:00",
           "placeId": "ossington-ave",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "Saturday night on Ossington is the whole point of this strip. Walk it before you stop anywhere.",
-          "mode": "walk"
+          "notes": "Saturday night on Ossington is the whole point of this strip, and this is the only Saturday evening left in the trip, so it survives the trip north. 68 min back down from Downsview, leaving at 21:15 once the field clears.",
+          "mode": "transit"
+        },
+        {
+          "start": "23:45",
+          "end": null,
+          "placeId": "stay-sherbourne",
+          "title": null,
+          "type": "lodging",
+          "locked": false,
+          "notes": "Back at the apartment. Google says 32 min in from Ossington on a Saturday night.",
+          "mode": "transit"
         }
       ]
     },
@@ -3818,19 +3778,10 @@
       "date": "2026-09-27",
       "dayNumber": 8,
       "weekday": "Sunday",
-      "label": "Move east, Kensington + Port Lands",
+      "label": "Move east, Kensington + Toronto Islands",
       "color": "#00a2a1",
       "base": "East End-Danforth",
       "items": [
-        {
-          "start": "00:15",
-          "end": null,
-          "placeId": "stay-sherbourne",
-          "title": null,
-          "type": "lodging",
-          "locked": false,
-          "notes": "Back at the apartment."
-        },
         {
           "start": "08:30",
           "end": "08:45",
@@ -3846,7 +3797,7 @@
           "placeId": "le-beau",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. 665 Dundas E, butter croissant. Pack first.",
           "mode": "transit"
         },
@@ -3865,18 +3816,18 @@
           "placeId": "kensington-market",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch. Pedestrian Sunday: the market goes car-free. Locals call it free therapy.",
           "mode": "transit"
         },
         {
-          "start": "14:00",
-          "end": "14:15",
+          "start": "13:45",
+          "end": "14:00",
           "placeId": "blackbird-baking",
           "title": null,
           "type": "coffee",
           "locked": false,
-          "notes": "Triple chocolate cookies. Two minutes from Kensington, and this is the day it finally fits after the NVIDIA meetup took its old slot.",
+          "notes": "Triple chocolate cookies, two minutes' walk from Kensington. Pulled 15 min earlier: Google puts Blackbird to the east-end place at exactly 45 min on a Sunday, and the 15:00 check-in is locked, so the old slot had literally zero margin with luggage.",
           "mode": "walk"
         },
         {
@@ -3886,85 +3837,107 @@
           "title": null,
           "type": "lodging",
           "locked": true,
-          "notes": "Line 2 east to Main Street.",
+          "notes": "Line 2 east to Main Street. Drop the bags and turn straight back around — the island ferry is downtown and you want the 17:00 boat.",
           "mode": "transit"
         },
         {
           "start": "16:00",
-          "end": "17:00",
-          "placeId": "the-beaches",
+          "end": "16:15",
+          "placeId": "ferry-terminal",
           "title": null,
-          "type": "outdoors",
+          "type": "activity",
           "locked": false,
-          "notes": "10 min walk from the new place. Gentle way to learn the neighbourhood."
+          "notes": "Buy online before you get here, the queue is longer than the crossing. 50 min straight in from the east-end place with 60 to do it. Board for Ward's and walk the chain west.",
+          "mode": "transit"
         },
         {
-          "start": "17:30",
-          "end": "17:45",
-          "placeId": "kew-beach",
+          "start": "16:15",
+          "end": "16:35",
+          "placeId": null,
+          "title": "Ferry across to Ward's Island",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 15 min plus boarding. Hand-set: the router has no ferry data, so the map draws this straight across the harbour. Check live sailings on the day.",
+          "mode": "transit"
+        },
+        {
+          "start": "16:45",
+          "end": "17:15",
+          "placeId": "wards-island",
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Next to Woodbine, five minutes along the boardwalk from the stop above. Same beach walk, different stretch.",
+          "notes": "Quietest of the three islands. Start here and walk west.",
+          "mode": "transit"
+        },
+        {
+          "start": "17:15",
+          "end": "17:45",
+          "placeId": null,
+          "title": "Boardwalk west to Centre Island",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 20 min along the water.",
+          "mode": "transit"
+        },
+        {
+          "start": "17:45",
+          "end": "18:15",
+          "placeId": "centre-island",
+          "title": null,
+          "type": "outdoors",
+          "locked": false,
+          "notes": "Skyline view back at the city.",
           "mode": "walk"
         },
         {
-          "start": "18:30",
-          "end": "19:00",
-          "placeId": "biidaasige-park",
+          "start": "18:15",
+          "end": "18:45",
+          "placeId": null,
+          "title": "Walk west to Hanlan's Point",
+          "type": "transit",
+          "locked": false,
+          "notes": "About 20 min, the last stretch of the chain.",
+          "mode": "transit"
+        },
+        {
+          "start": "18:45",
+          "end": "19:15",
+          "placeId": "hanlans-point",
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Golden hour starts 18:29, sunset 19:07. Moved off the 22:30 slot so the new park is seen in light.",
-          "mode": "transit"
+          "notes": "Sunset is 19:05, so this slot holds the sunset itself. NOTE: the 20:30 Cactus Club booking pulls the whole chain an hour earlier, so the crossing back is blue hour rather than full dark. If you want the full-dark skyline the reel is about, move the dinner booking later.",
+          "mode": "walk"
         },
         {
           "start": "19:15",
-          "end": "19:45",
-          "placeId": "distillery-district",
-          "title": null,
-          "type": "sight",
+          "end": "20:00",
+          "placeId": null,
+          "title": "Ferry back from Hanlan's Point",
+          "type": "transit",
           "locked": false,
-          "notes": "Moved out of the 09:50 slot: it does not open until 11:00 on Sundays. Now in the evening, 1.3 km from Biidaasige Park and on the way to Polson Pier, and it is open until 20:00.",
+          "notes": "The skyline shot, at dusk rather than full dark. Last boat off Hanlan's is 22:30 on the fall schedule, so this is well inside the backstop.",
           "mode": "transit"
         },
         {
-          "start": "20:15",
-          "end": "20:30",
-          "placeId": "polson-pier",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Blue hour. Civil dusk 19:36, so the skyline across the harbour is lit. 23 min walk west from Biidaasige."
-        },
-        {
-          "start": "21:15",
-          "end": "22:15",
+          "start": "20:30",
+          "end": "21:30",
           "placeId": "cactus-club",
           "title": null,
           "type": "meal",
-          "locked": false,
-          "notes": "Dinner. 77 Adelaide W. Now a 22 min ride back in from the Port Lands, not a 10 min walk. Sunday kitchen close is worth a look before you count on a 20:40 sit-down.",
-          "mode": "transit"
+          "locked": true,
+          "notes": "Dinner. Cactus Club Cafe First Canadian Place, 77 Adelaide St W, booking confirmed, reserved for 1, 20:30 Toronto. Ferry lands 20:00 and it is a 19 min walk up, so you arrive about 20:19.",
+          "mode": "walk"
         },
         {
-          "start": "22:30",
-          "end": "22:45",
+          "start": "21:45",
+          "end": "22:00",
           "placeId": "gooderham-building",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "Floodlit at night. Photo looking east down Wellington. [Google lists the building as temporarily closed. This slot is a night look at the flatiron exterior, which is unaffected.]",
-          "mode": "walk"
-        },
-        {
-          "start": "23:00",
-          "end": "23:15",
-          "placeId": "cibc-square-park",
-          "title": null,
-          "type": "activity",
-          "locked": false,
-          "notes": "Elevated skyline and CN Tower, lit. Sunset view lost to Biidaasige.",
+          "notes": "Floodlit at night, photo looking east down Wellington. 43 min home east from here.",
           "mode": "walk"
         }
       ]
@@ -4021,7 +3994,7 @@
           "placeId": "serano-bakery",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. 830 Pape Ave, Biscoff tsoureki.",
           "mode": "transit"
         },
@@ -4046,24 +4019,14 @@
           "mode": "transit"
         },
         {
-          "start": "16:00",
-          "end": "16:30",
+          "start": "16:30",
+          "end": "17:15",
           "placeId": "scarborough-bluffs",
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "90m cliffs and beach. Much closer from the Beaches than from downtown, which is why it lands here and not on a downtown day. Take a taxi/rideshare, not transit: checked live, transit from RC Harris runs about 60-80 min on a Monday (the seasonal weekend express bus to the Bluffs doesn't run). Drive is about 12 min.",
-          "mode": "drive"
-        },
-        {
-          "start": "17:00",
-          "end": "17:45",
-          "placeId": "guild-park",
-          "title": null,
-          "type": "outdoors",
-          "locked": false,
-          "notes": "Architectural relics salvaged from demolished downtown buildings, including the Greek Theatre from the old Bank of Toronto. Twenty minutes further east from the Bluffs by car; same fix as the last leg, take a taxi/rideshare rather than transit.",
-          "mode": "drive"
+          "notes": "90m cliffs and beach. 50 min by transit from R.C. Harris, not the 30 the old car-based plan assumed, so this slot now allows 60. Guild Park came off the day: it is another 54 min further out and there is no way back in time for the show.",
+          "mode": "transit"
         },
         {
           "start": "18:15",
@@ -4071,9 +4034,9 @@
           "placeId": "mirello",
           "title": null,
           "type": "meal",
-          "locked": false,
-          "notes": "45 min, back to a normal dinner length now that the Bluffs and Guild Park legs are driving instead of relying on unrealistic weekday transit. Leaves 45 min of slack before History's hard 19:00, not the old 20.",
-          "mode": "drive"
+          "locked": true,
+          "notes": "Dinner, booked. 46 min by transit from the Bluffs with 60 to do it.",
+          "mode": "transit"
         },
         {
           "start": "19:00",
@@ -4082,7 +4045,7 @@
           "title": null,
           "type": "show",
           "locked": true,
-          "notes": "Malcolm Todd.",
+          "notes": "Malcolm Todd. UBER THIS HOP — deliberate, not an oversight: transit from Mirello is 44 min against a 15 min gap and would put you at the door around 19:31 for a 19:00 show. By car it is about 12 min. This is the one paid ride on the day.",
           "mode": "drive"
         },
         {
@@ -4119,7 +4082,7 @@
           "placeId": null,
           "title": "Breakfast",
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Slow morning, eat at the apartment. The old 08:47 GO train and WEGO connections are gone — Queen Tour handles Niagara transit door to door now."
         },
         {
@@ -4246,7 +4209,7 @@
           "placeId": "cafe-85",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. Bay and Gerrard. Order the tiramisu french toast, then head west.",
           "mode": "transit"
         },
@@ -4257,17 +4220,17 @@
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Free. 1200 trees planted during the build. First stop on the run west along the lake. [Google: transit from Cafe 85 is 52 min, plan allows 25. Short by 27.] [Google: 52 min from Cafe 85, plan allows 25. Short by 27.]",
+          "notes": "Free. 1200 trees planted during the build. First stop on the run west along the lake. 52 min by transit from Cafe 85, 60 allotted.",
           "mode": "transit"
         },
         {
-          "start": "10:45",
+          "start": "10:50",
           "end": "11:00",
           "placeId": "exhibition-place",
           "title": null,
           "type": "sight",
           "locked": false,
-          "notes": "Grounds of the CNE, five minutes west of Trillium. [Google: walk from Trillium Park is 17 min, plan allows 15. Short by 2.] [Google: 17 min from Trillium Park, plan allows 15. Short by 2.]",
+          "notes": "Grounds of the CNE, five minutes west of Trillium. 17 min walk from Trillium Park, 20 allotted.",
           "mode": "walk"
         },
         {
@@ -4277,7 +4240,7 @@
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Free. Skyline shots back east, on the Martin Goodman Trail and directly on the route to Etobicoke. [Google: transit from Exhibition Place is 57 min, plan allows 35. Short by 22.] [Google: 57 min from Exhibition Place, plan allows 35. Short by 22.]",
+          "notes": "Free. Skyline shots back east, on the Martin Goodman Trail and directly on the route to Etobicoke. 57 min by transit from Exhibition Place, 60 allotted.",
           "mode": "transit"
         },
         {
@@ -4301,24 +4264,14 @@
           "mode": "transit"
         },
         {
-          "start": "15:15",
-          "end": "15:30",
-          "placeId": "java-u",
-          "title": null,
-          "type": "coffee",
-          "locked": false,
-          "notes": "Lunch. The Java-U you flagged with a question mark, 10 min walk south of Square One. About 45 min over from Etobicoke; a rideshare is the sane option.",
-          "mode": "drive"
-        },
-        {
           "start": "16:00",
           "end": "16:45",
           "placeId": "square-one",
           "title": null,
           "type": "activity",
           "locked": false,
-          "notes": "Biggest mall in Ontario. Calmer than downtown, which was the point.",
-          "mode": "walk"
+          "notes": "Biggest mall in Ontario. Calmer than downtown, which was the point. 56-70 min by transit from Sherway Gardens depending on the run; 75 allotted.",
+          "mode": "transit"
         },
         {
           "start": "16:45",
@@ -4366,7 +4319,7 @@
           "title": null,
           "type": "activity",
           "locked": false,
-          "notes": "284 College St. Real chance it's already closed — branches on this block close between 19:00 and 20:00, and nothing about the evening schedule can beat that. Ring ahead, and treat this as a walk-by, not a planned stop. Three storefronts on the block if one's dark. [Google: walk from Chinatown is 11 min, plan allows 5. Short by 6.] [Google: 11 min from Chinatown, plan allows 5. Short by 6.]",
+          "notes": "284 College St. Real chance it's already closed — branches on this block close between 19:00 and 20:00, and nothing about the evening schedule can beat that. Ring ahead, and treat this as a walk-by, not a planned stop. Three storefronts on the block if one's dark. 11 min walk from Chinatown, 15 allotted.",
           "mode": "walk"
         },
         {
@@ -4375,7 +4328,7 @@
           "placeId": "ghazale",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Pulled forward 25 min — the old 20:30 start was sitting on unused slack after Canada Computers, not a real constraint. Still a late-ish dinner given how long the day runs, but no longer needs a past-21:00 seating check. [VERIFIED PERMANENTLY CLOSED on Google Maps — needs replacing.]",
           "mode": "walk"
         },
@@ -4395,7 +4348,7 @@
           "placeId": "sneaky-dees",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Toronto icon, open to 3am. Nachos after a very long day.",
           "mode": "walk"
         }
@@ -4473,7 +4426,7 @@
           "placeId": "butter-baker",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. 114 Dundas W, on the way in from the east end.",
           "mode": "walk"
         },
@@ -4503,7 +4456,7 @@
           "placeId": "nadege",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Lunch. 780 Queen W, strawberry fields cake.",
           "mode": "walk"
         },
@@ -4514,7 +4467,7 @@
           "title": null,
           "type": "outdoors",
           "locked": false,
-          "notes": "Largest park in the downtown core, and it sits directly between Arcadia Earth and dinner. [Google: transit from Toronto Music Garden is 33 min, plan allows 25. Short by 8.] [Google: 33 min from Toronto Music Garden, plan allows 25. Short by 8.]",
+          "notes": "Largest park in the downtown core. 6 min walk from Nadege, 15 allotted.",
           "mode": "walk"
         },
         {
@@ -4523,7 +4476,7 @@
           "placeId": "milou",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Dinner. The steak in Little Portugal. Thursday is one of the days it is open. Trimmed to 65 min: the Music Garden moved onto this day and the arena is a hard 19:30."
         },
         {
@@ -4552,7 +4505,7 @@
           "title": null,
           "type": "show",
           "locked": true,
-          "notes": "Phoebe Bridgers with Alex G. 25 min in from Milou, leave by 18:45. [Google: 37 min from Milou, plan allows 35. Locked item, leave 2 min earlier.]",
+          "notes": "Phoebe Bridgers with Alex G. 17 min by transit from Arcadia Earth, 30 allotted.",
           "mode": "transit"
         }
       ]
@@ -4589,7 +4542,7 @@
           "placeId": "mon-k",
           "title": null,
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Breakfast. Second visit, closest good thing to the east-end place. Opens 09:00, so this is the earliest it can be.",
           "mode": "transit"
         },
@@ -4637,7 +4590,7 @@
           "placeId": null,
           "title": "Eat airside, then head to the gate",
           "type": "meal",
-          "locked": false,
+          "locked": true,
           "notes": "Only if security cleared on time — if the T1→T3 transfer or the line ran long, skip this and go straight to the gate. Be there by 14:15, 30 min before the 14:45 departure; budget carriers often close boarding earlier than legacy airlines.",
           "mode": "walk"
         },

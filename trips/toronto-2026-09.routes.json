@@ -1370,6 +1370,58 @@
     "acadia-books>st-lawrence-market": {
       "roadKm": 0.93,
       "carMin": 2.1
+    },
+    "city-cruises>yzd-downsview": {
+      "roadKm": 16.04,
+      "carMin": 27.9
+    },
+    "yzd-downsview>ossington-ave": {
+      "roadKm": 12.19,
+      "carMin": 21.1
+    },
+    "ossington-ave>stay-sherbourne": {
+      "roadKm": 5.76,
+      "carMin": 11.5
+    },
+    "the-beaches>ferry-terminal": {
+      "roadKm": 8.69,
+      "carMin": 14.9
+    },
+    "hanlans-point>cactus-club": {
+      "roadKm": 3.5,
+      "carMin": 8.2
+    },
+    "el-pastorcito>cn-tower-360": {
+      "roadKm": 7.87,
+      "carMin": 12.3
+    },
+    "cn-tower-360>stay-sherbourne": {
+      "roadKm": 4.32,
+      "carMin": 8.6
+    },
+    "christie-pits>cn-tower-360": {
+      "roadKm": 5.92,
+      "carMin": 12.8
+    },
+    "ripleys-aquarium>gloria-great-hall": {
+      "roadKm": 4.07,
+      "carMin": 7.5
+    },
+    "gloria-great-hall>toronto-railway-museum": {
+      "roadKm": 4.13,
+      "carMin": 8.2
+    },
+    "toronto-railway-museum>city-cruises": {
+      "roadKm": 1,
+      "carMin": 3.1
+    },
+    "stay-stephenson>ferry-terminal": {
+      "roadKm": 9.69,
+      "carMin": 15.2
+    },
+    "scarborough-bluffs>mirello": {
+      "roadKm": 6.15,
+      "carMin": 9.9
     }
   }
 }
